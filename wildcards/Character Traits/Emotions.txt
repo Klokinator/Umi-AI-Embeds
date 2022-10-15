@@ -1,0 +1,36 @@
+embarrassed, embarrassed expression, blushing
+angry, angry expression
+sad, sad expression
+happy, happy expression
+happy, happy expression, big smile, cheerful
+embarrassed, embarrassed expression, blushing, tears, crying, sobbing uncontrollably, tears running down face
+angry, angry expression, tears, crying, sobbing uncontrollably, tears running down face
+sad, sad expression, tears, crying, sobbing uncontrollably, tears running down face
+happy, happy expression, tears, crying, sobbing uncontrollably, tears running down face
+happy, happy expression, big smile, cheerful, tears, crying, sobbing uncontrollably, tears running down face
+embarrassed, embarrassed expression, blushing, slight crying, tears
+angry, angry expression, slight crying, tears
+sad, sad expression, slight crying, tears
+happy, happy expression, slight crying, tears
+happy, happy expression, big smile, cheerful, slight crying, tears
+happy, happy expression, happy crying, big smile
+Smug, smirk
+Smug, smirk, confident
+Smug, smirk
+Smug, smirk, confident
+Smug, smirk
+Smug, smirk, confident
+Smug, smirk, laughing
+Smug, smirk, confident, laughing
+Smug, smirk, laughing
+Smug, smirk, confident, laughing
+Smug, smirk, laughing
+Smug, smirk, confident, laughing
+Judgmental expression, annoyance
+Judgmental expression, disgust
+Judgmental expression, disgust
+Judgmental expression, disgust
+Disgust, hatred
+Disgust, hatred
+Disgust, hatred
+Disgust, hatred
