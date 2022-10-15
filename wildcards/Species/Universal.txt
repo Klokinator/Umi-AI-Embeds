@@ -1,1 +1,1 @@
-__Species/Universal/Addons__, __Species/Universal/Skin Colors__, {No Wings|__Species/Universal/Wings}
+__Species/Universal/Addons__, __Species/Universal/Skin Colors__, {No Wings|__Species/Universal/Wings__}

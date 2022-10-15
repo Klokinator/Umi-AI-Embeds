@@ -1,6 +1,6 @@
 __Species/Angels__
 __Species/Catkin__
-__Species/Centaurs__
+#__Species/Centaurs__
 __Species/Constructs__
 __Species/Crocodilians__
 __Species/Demons__
@@ -14,7 +14,7 @@ __Species/Genies__
 __Species/Giants__
 __Species/Goblins__
 __Species/Humans__
-__Species/Minotaurs__
+#__Species/Minotaurs__
 __Species/Robots__
 __Species/Scalies__
 __Species/Slimefolk__

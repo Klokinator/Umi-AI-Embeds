@@ -1,1 +1,1 @@
-{FullbodySFWBi|UpperSFWBi, LowerSFWBi}, ModifierSFW
+{__Clothing/FullbodySFWBi__|__Clothing/UpperSFWBi__, __Clothing/LowerSFWBi__}, __Clothing/ModifierSFW__

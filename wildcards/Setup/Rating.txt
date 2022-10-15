@@ -1,2 +1,2 @@
-SFW, __SFW__, {__Species/Pick A Species__|Species/Universal}, __Character Traits/Customization__
-NSFW, __NSFW__,{__Species/Pick A Species__|Species/Universal}, __Character Traits/Customization__
+SFW, __Setup/Rating-SFW__, {__Species/Pick A Species__|__Species/Universal__}, __Character Traits/Customization__
+NSFW, __Setup/Rating-NSFW__,{__Species/Pick A Species__|__Species/Universal__}, __Character Traits/Customization__

@@ -1,1 +1,1 @@
-{FullbodyNSFWBi|UpperNSFWBi, LowerNSFWBi}, ModifierNSFW
+{__Clothing/FullbodyNSFWBi__|__Clothing/UpperNSFWBi__, __Clothing/LowerNSFWBi__}, __Clothing/ModifierNSFW__
