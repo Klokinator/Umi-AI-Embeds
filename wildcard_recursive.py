@@ -60,12 +60,11 @@ class Script(scripts.Script):
         return ""
 
     def replace_wildcard(self, chunk):
-        file_dir = os.path.dirname("E:\\AI TESTS\\stable-diffuse\\")
+        file_dir = os.path.dirname(os.path.realpath("__file__"))
         replacement_file = os.path.join(file_dir, f"scripts\\wildcards\\{chunk}.txt")
         if os.path.exists(replacement_file):
             with open(replacement_file, encoding="utf8") as f:
                 return random.choice(f.read().splitlines())
-        print(f'could not find chunk: {chunk}')
         self.invalid_wildcards.append(chunk)
         return chunk
 
