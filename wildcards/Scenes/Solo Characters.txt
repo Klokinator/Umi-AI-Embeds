@@ -1,0 +1,10 @@
+1boy, male, male focus, shota, aged_down, __character traits/penis size__, __character traits/muscle type__
+1boy, male, male focus, teenager, mature, __character traits/penis size__, __character traits/muscle type__
+1boy, male, male focus, adult, mature, __character traits/penis size__, __character traits/muscle type__
+1boy, male, male focus, older man, mature, adult, __character traits/penis size__, __character traits/muscle type__
+1boy, male, male focus, old man, aged, adult, __character traits/penis size__, __character traits/muscle type__
+1girl, female, female focus, loli, aged_down, __character traits/breast size__, __character traits/muscle type__
+1girl, female, female focus, teenager, mature, __character traits/breast size__, __character traits/muscle type__
+1girl, female, female focus, adult, mature, __character traits/breast size__, __character traits/muscle type__
+1girl, female, female focus, older woman, mature, adult, __character traits/breast size__, __character traits/muscle type__
+1girl, female, female focus, old woman, aged, adult, __character traits/breast size__, __character traits/muscle type__

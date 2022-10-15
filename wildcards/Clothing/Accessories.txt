@@ -1,0 +1,1 @@
+{No Earrings|__Clothing/Accessories/Earrings__}, {No Glasses|__Clothing/Accessories/Glasses__}, {No Gloves|__Clothing/Accessories/Gloves__}, {No Hats|__Clothing/Accessories/Headwear__}, {No Cape|__Clothing/Accessories/Neckwear__}, {75%__Clothing/Accessories/Shoes__|Barefoot}

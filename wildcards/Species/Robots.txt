@@ -1,0 +1,2 @@
+Robot, metal body, metal skin, armored, robotic, joints, doll joints
+Robot, metal body, metal skin, armored, robotic

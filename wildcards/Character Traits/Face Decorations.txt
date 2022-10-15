@@ -4,6 +4,6 @@ freckles
 small beauty mark
 medium beauty mark
 large beauty mark
-scar
+facial scar
 bandaid on face
 face tattoo

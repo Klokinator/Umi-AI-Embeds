@@ -1,0 +1,19 @@
+__Setup/Art Styles__, __Setup/Camera Angles__, __Scene/Location__, __Setup/Rating__, __Clothing/Accessories__
+# This is the primary setup file.
+# First, we generate an art style for the prompt. These can vary in quality and style. Some are better than others at certain things.
+# Next, we set the camera angle. These allow the 'shot' to be more dynamic.
+# Next is the scene's 'location.' This includes bedrooms, the street, the pool, dungeon, etc.
+# After that comes the Rating. This initiates a multi-step process that will link us through the following steps:
+# ---Set whether the prompt is SFW or NSFW. NSFW prompts can involve sex scenes, but typically feature skimpy and see-through clothing, or nudity of varying levels.
+# ---Afterwards, it jumps to the character count. You can have a scene with just one character, or a scene with multiple. For now, only one character is supported.
+# ---Scenes/Solo Characters loads a random breast and penis size next, along with body type and age. It also loads a character's level of muscularity. If you want to change a character's body type, including BBW or other such options, those go in Scenes/Solo Characters.
+# ---After a character type has been picked, it next loads clothing options. There are two methods. The first is to combine a top piece of clothing and a bottom piece. The second is to load an entire outfit type. NSFW prefers skimpy and revealing clothing, while SFW excludes those options.
+# ---Male characters will have male-coded clothing, and vice-versa for females. However, the Bisexual option will allow for both.
+# ---Once clothing has been created, Setup/Clothes Options will load the Clothing/Modifier option for SFW or NSFW. These apply things like frills, spikes, torn clothing, or other such options. As always, NSFW has more options here.
+# ---Once clothing has been created, Setup/Clothes Options will load the Clothing/Modifier option for SFW or NSFW. These apply things like frills, spikes, torn clothing, or other such options. As always, NSFW has more options here.
+# ---After the character and clothes have been loaded, Setup/Rating next loads a species for the character. There are many species, but generally this will apply skin colors and other such modifiers.
+# ---There is also a Universal Species option, which dynamically creates a species based on random skin color, ears, tails, and wings. It assumes a humanoid physiology.
+# ---Setup/Rating finally loads the Character Traits/Customization Wildcard. This single file loads ALL the other remaining files in Character Traits. These include:
+# ------Ear Types, Emotions, Eye Colors, Eye Types, Face Decorations, Hair options, and Tattoo Styles. Note that Tattoos have a 15% chance not to appear, and characters have a 1% chance to be bald. You can adjust these options as desired.
+# Now that Setup/Rating has finished, we load Clothing/Accessories from the CORE. This pulls from the Accessories folder all the little knickknacks and doodads that can really liven up a character. If you like cross necklaces and earrings like me, you can increase the weight inside here to make them or other options more likely.
+# Accessories include: Earrings, Glasses, Gloves, Headwear (Hats/Shawls/Etc), Neckwear (Capes/Necklaces/Chokers/etc), and Shoes (Barefoot/Shoes/Boots/High Heels/Etc).
