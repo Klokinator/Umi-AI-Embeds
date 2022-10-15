@@ -68,13 +68,19 @@ class Script(scripts.Script):
                 tags = tags.replace(match, "");
         return tags
 
-    def replace_wildcard(self, chunk):
-        file_dir = os.path.dirname(os.path.realpath("__file__"))
+    def get_tags(self,chunk):
+        file_dir = os.path.dirname("E:\\AI TESTS\\stable-diffuse\\")
         replacement_file = os.path.join(file_dir, f"scripts\\wildcards\\{chunk}.txt")
         if os.path.exists(replacement_file):
             with open(replacement_file, encoding="utf8") as f:
-                chosen_tags = random.choice(f.read().splitlines())
-                return self.strip_negative_tags(chosen_tags)
+                lines = f.read().splitlines()
+                return [item for item in lines if not item.startswith('#')]
+        return []
+
+    def replace_wildcard(self, chunk):
+        tags = self.get_tags(chunk)
+        if len(tags) > 0:
+            return self.strip_negative_tags(random.choice(tags))
         self.invalid_wildcards.append(chunk)
         return chunk
 
