@@ -29,6 +29,7 @@ class Script(scripts.Script):
 
     re_combinations = re.compile(r"\{([^{}]*)}")
     invalid_wildcards = []
+    negative_tags = []
 
     def replace_combinations(self, match):
         if match is None or len(match.groups()) == 0:
@@ -59,12 +60,21 @@ class Script(scripts.Script):
 
         return ""
 
+    def strip_negative_tags(self, tags):
+        matches = re.findall('\*\*.*?\*\*', tags)
+        if matches:
+            for match in matches:
+                self.negative_tags.append(match.replace("**", ""));
+                tags = tags.replace(match, "");
+        return tags
+
     def replace_wildcard(self, chunk):
         file_dir = os.path.dirname(os.path.realpath("__file__"))
         replacement_file = os.path.join(file_dir, f"scripts\\wildcards\\{chunk}.txt")
         if os.path.exists(replacement_file):
             with open(replacement_file, encoding="utf8") as f:
-                return random.choice(f.read().splitlines())
+                chosen_tags = random.choice(f.read().splitlines())
+                return self.strip_negative_tags(chosen_tags)
         self.invalid_wildcards.append(chunk)
         return chunk
 
@@ -86,8 +96,11 @@ class Script(scripts.Script):
         return self.re_combinations.sub(self.replace_combinations, template)
 
     def generate_prompt(self, template):
-        while template != self.pick_variant(self.replace_wildcard_recursive(template)):
-            template = self.pick_variant(self.replace_wildcard_recursive(template));
+        prevTemplate = template
+        template = self.pick_variant(self.replace_wildcard_recursive(template))
+        while prevTemplate != template:
+            prevTemplate = template
+            template = self.pick_variant(self.replace_wildcard_recursive(template))
 
         return template
 
@@ -100,7 +113,16 @@ class Script(scripts.Script):
         p.styles = ['None', 'None']
 
         original_prompt = p.prompt[0] if type(p.prompt) == list else p.prompt
-        all_prompts = [self.generate_prompt(original_prompt) for _ in range(p.batch_size * p.n_iter)]
+        negative_prompt = p.negative_prompt[0] if type(p.negative_prompt) == list else p.negative_prompt
+
+        all_prompts = []
+        negative_prompts = []
+        for _ in range(p.batch_size * p.n_iter):
+            all_prompts.append(self.generate_prompt(original_prompt))
+            new_negative_prompt = self.generate_prompt(f"{negative_prompt} {' '.join(list(set(self.negative_tags)))}")
+            negative_prompts.append(new_negative_prompt)
+            self.negative_tags = []
+
 
         # TODO: Pregenerate seeds to prevent overlaps when batch_size is > 1
         # Known issue: Clicking "recycle seed" on an image in a batch_size > 1 may not get the correct seed.
@@ -126,7 +148,10 @@ class Script(scripts.Script):
         print('Invalid wildcards that were found ', self.invalid_wildcards)
         for batch_no in range(state.job_count):
             state.job = f"{batch_no+1} out of {state.job_count}"
+            # batch_no*p.batch_size:(batch_no+1)*p.batch_size
             p.prompt = all_prompts[batch_no*p.batch_size:(batch_no+1)*p.batch_size]
+            p.negative_prompt = negative_prompts[batch_no*p.batch_size:(batch_no+1)*p.batch_size][0]
+
             if cmd_opts.enable_console_prompts:
                 print(f"wildcards.py: {p.prompt}")
             proc = process_images(p)
