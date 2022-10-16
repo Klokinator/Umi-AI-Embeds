@@ -1,4 +1,5 @@
 (masterpiece:1.1), (best quality:1.1)
+(masterpiece:1.1), (best quality:1.1), (Irakli Nadar:1.1)
 (NAI Diffusion Anime (Full):1.2), Perfect Face
 (NAI Diffusion Anime (Full):1.2), Perfect Face
 (NAI Diffusion Anime (Full):1.2), Perfect Face

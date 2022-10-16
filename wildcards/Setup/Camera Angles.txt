@@ -1,11 +1,11 @@
-pov, looking at viewer
-pov, looking away
-from side, looking at viewer
-from side, looking away
-from behind, looking at viewer
-from behind, looking away
-from below, looking at viewer
-from below, looking away
+pov, looking at viewer, multiple views
+pov, looking away, multiple views
+from side, looking at viewer, multiple views
+from side, looking away, multiple views
+from behind, looking at viewer, multiple views
+from behind, looking away, multiple views
+from below, looking at viewer, multiple views
+from below, looking away, multiple views
 pov, looking at viewer, **multiple views**
 pov, looking away, **multiple views**
 from side, looking at viewer, **multiple views**

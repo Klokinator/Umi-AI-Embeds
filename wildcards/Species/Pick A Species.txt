@@ -13,6 +13,7 @@ __Species/Furries__
 __Species/Genies__
 __Species/Giants__
 __Species/Goblins__
+__Species/Harpies__
 __Species/Humans__
 #__Species/Minotaurs__
 __Species/Robots__
