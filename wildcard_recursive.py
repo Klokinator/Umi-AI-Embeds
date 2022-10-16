@@ -95,7 +95,7 @@ class Script(scripts.Script):
 
     def select_tags(self, chunk, tags):
         preset = self.tag_presets.get(chunk)
-        if preset:
+        if preset is not None:
             try:
                 return tags[int(preset)]
             except Exception:
