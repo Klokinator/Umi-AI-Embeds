@@ -1,0 +1,6 @@
+#Goblin, green skin, pointy ears, shortstack, short, __SPECIES BASE/All Body Types Male__
+#Goblin, green skin, pointy ears, __SPECIES BASE/All Body Types Male__
+#Goblin, goblin girl, green skin, pointy ears, shortstack, short, __SPECIES BASE/All Body Types Female__
+#Goblin, goblin girl, green skin, pointy ears, __SPECIES BASE/All Body Types Female__
+Goblin, green skin, pointy ears, shortstack, short, __SPECIES BASE/All Body Types Bisexual__
+Goblin, green skin, pointy ears, __SPECIES BASE/All Body Types Bisexual__

@@ -1,0 +1,3 @@
+#Dragon girl, humanoid, dragonkin, dragon tail, dragon teeth, __ColorRefs__ scales, __ColorRefs__ eyes, anthro, scaley, __SPECIES BASE/All Body Types Female__
+#Dragon, humanoid, dragonkin, dragon tail, dragon teeth, __ColorRefs__ scales, __ColorRefs__ eyes, anthro, scaley, __SPECIES BASE/All Body Types Male__
+Dragon, humanoid, dragonkin, dragon tail, dragon teeth, __ColorRefs__ scales, __ColorRefs__ eyes, anthro, scaley, __SPECIES BASE/All Body Types Bisexual__

@@ -1,0 +1,6 @@
+# This prompt requires the custom AI fusion detailed here: https://boards.4chan.org/h/thread/6918936#p6918979
+(detailed face and __ColorRefs__ eyes:1.4), (detailed lips:1.4), lineart, (realistic:0.4), {SFW, __CLOTHING/FullbodySFWBi__|NSFW, __CLOTHING/FullbodyNSFWBi__}, 1girl, __BODY/Body Mass__, __BODY/Breast Size__, __BASIC/Emotions__, __CONFIG/Hair Config__, {30%__CLOTHING/Misc-Gloves__, |}{30%__CLOTHING/Misc-Earrings__, |}{20%__SPECIES CUSTOM/Headwear__|20%__SPECIES CUSTOM/Horns__|20%__SPECIES CUSTOM/Animal Ears__|}
+#This is a version similar to the above prompt, but designed to work with the Dolls species specifically.
+lineart, (realistic:0.4), {(hollow eyes:1.2)|(glowing red eyes:1.2)}, (detailed lips:1.2), SFW 1girl, female, (Doll joints:1.17), (puppet:1.2), (marionette:1.2), (Pale white skin:1.2) __SPECIES BASE/Doll Body Types__, {__CONFIG/Clothes Config SFW__|__CONFIG/Clothes Config NSFW__}, __CONFIG/Clothes Extra Config__**, (nipples)****, (pussy)****, (penis)**
+#A doll version that looks more like the 'sex dolls' from 4chan.
+lineart, (realistic:0.4), (glowing pink eyes:1.2), (detailed lips:1.2), nsfw 1girl, female, (dark red Doll joints:1.17), (puppet:1.2), (marionette:1.2), (Pale white skin:1.2) __SPECIES BASE/Doll Body Types__, {__CONFIG/Clothes Config SFW__|__CONFIG/Clothes Config NSFW__}

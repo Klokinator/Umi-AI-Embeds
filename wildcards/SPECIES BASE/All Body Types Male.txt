@@ -1,0 +1,6 @@
+#This section also loads the Rating Config, which determines all clothing options.
+#male focus, shota, aged_down, __BODY/Penis Size__, __BODY/Body Mass__, __CONFIG/Rating Config__
+#male focus, teenager, mature, __BODY/Penis Size__, __BODY/Body Mass__, __CONFIG/Rating Config__
+#male focus, adult, mature, __BODY/Penis Size__, __BODY/Body Mass__, __CONFIG/Rating Config__
+#male focus, older man, mature, adult, __BODY/Penis Size__, __BODY/Body Mass__, __CONFIG/Rating Config__
+#male focus, old man, aged, adult, __BODY/Penis Size__, __BODY/Body Mass__, __CONFIG/Rating Config__

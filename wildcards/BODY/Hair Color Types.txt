@@ -1,0 +1,14 @@
+single-color hair, __BODY/Hair Colors__
+single-color hair, __BODY/Hair Colors__
+single-color hair, __BODY/Hair Colors__
+single-color hair, __BODY/Hair Colors__
+single-color hair, __BODY/Hair Colors__
+multicolored hair, __BODY/Hair Colors__
+colored inner hair, __BODY/Hair Colors__, __BODY/Hair Colors Alt__
+gradient hair, __BODY/Hair Colors__, __BODY/Hair Colors Alt__
+split-color hair, __BODY/Hair Colors__, __BODY/Hair Colors Alt__
+streaked hair, __BODY/Hair Colors__, __BODY/Hair Colors Alt__
+two-tone hair, __BODY/Hair Colors__, __BODY/Hair Colors Alt__
+colored hair tips, __BODY/Hair Colors__, __BODY/Hair Colors Alt__
+translucent hair, __BODY/Hair Colors__
+rainbow hair

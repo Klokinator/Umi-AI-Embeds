@@ -1,0 +1,6 @@
+#This section also loads the Rating Config, which determines all clothing options.
+female focus, loli, aged_down, __BODY/Breast Size__, __BODY/Body Mass__, __CONFIG/Rating Config__
+female focus, teenager, mature, __BODY/Breast Size__, __BODY/Body Mass__, __CONFIG/Rating Config__
+female focus, adult, mature, __BODY/Breast Size__, __BODY/Body Mass__, __CONFIG/Rating Config__
+female focus, older woman, mature, adult, __BODY/Breast Size__, __BODY/Body Mass__, __CONFIG/Rating Config__
+female focus, old woman, aged, adult, __BODY/Breast Size__, __BODY/Body Mass__, __CONFIG/Rating Config__

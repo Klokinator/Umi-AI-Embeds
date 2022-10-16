@@ -1,0 +1,9 @@
+#Vampire, cape, bat wings, pale white skin, {50%glowing |}red eyes, fangs, pointy fangs, __SPECIES BASE/All Body Types Male__
+#Vampire, cape, pale white skin, {50%glowing |}red eyes, fangs, pointy fangs, __SPECIES BASE/All Body Types Male__
+#Vampire, pale white skin, {50%glowing |}red eyes, fangs, pointy fangs, __SPECIES BASE/All Body Types Male__
+#Vampire girl, cape, bat wings, pale white skin, {50%glowing |}red eyes, fangs, pointy fangs, __SPECIES BASE/All Body Types Female__
+#Vampire girl, cape, pale white skin, {50%glowing |}red eyes, fangs, pointy fangs, __SPECIES BASE/All Body Types Female__
+#Vampire girl, pale white skin, {50%glowing |}red eyes, fangs, pointy fangs, __SPECIES BASE/All Body Types Female__
+Vampire, cape, bat wings, pale white skin, {50%glowing |}red eyes, fangs, pointy fangs, __SPECIES BASE/All Body Types Bisexual__
+Vampire, cape, pale white skin, {50%glowing |}red eyes, fangs, pointy fangs, __SPECIES BASE/All Body Types Bisexual__
+Vampire, pale white skin, {50%glowing |}red eyes, fangs, pointy fangs, __SPECIES BASE/All Body Types Bisexual__

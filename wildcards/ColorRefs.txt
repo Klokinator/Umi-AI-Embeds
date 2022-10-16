@@ -1,0 +1,20 @@
+aqua
+black
+yellow
+blue
+light blue
+dark blue
+brown
+light brown
+green
+dark green
+light green
+grey
+orange
+pink
+purple
+light purple
+red
+white
+gold
+silver

@@ -1,0 +1,2 @@
+# Needs to load custom female body types, since this species cannot have genitals. It is always female.
+SFW 1girl, female, (Doll joints:1.17), (puppet:1.2), (marionette:1.2), {(hollow eyes:1.2)|(blank eyes:1.2)}, (Pale white skin:1.2) __SPECIES BASE/Doll Body Types__, {__CONFIG/Clothes Config SFW__|__CONFIG/Clothes Config NSFW__}, __CONFIG/Clothes Extra Config__**(nipples:1.2)****(pussy:1.2)****(penis:1.2)**

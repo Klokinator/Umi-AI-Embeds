@@ -1,0 +1,2 @@
+# Generates Artstyles, Camera Angles, Location, Emotions, Poses, in that order.
+__BASIC/Art Styles__, __BASIC/Camera Angles__, __BASIC/Location__, __BASIC/Emotions__, {__BASIC/Pose Body__|__BASIC/Pose Arm__, __BASIC/Pose Leg__}

@@ -1,1 +1,0 @@
-{50%__Clothing/Accessories/Earrings__|}, {50%__Clothing/Accessories/Glasses__|}, {50%__Clothing/Accessories/Gloves__|}, {50%__Clothing/Accessories/Headwear__|}, {50%__Clothing/Accessories/Neckwear__|}, {75%__Clothing/Accessories/Shoes__|Barefoot}
