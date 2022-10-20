@@ -1,7 +1,4 @@
-import math
 import os
-import sys
-import traceback
 import random
 import re
 from random import choices
@@ -12,159 +9,254 @@ import modules.images as images
 import gradio as gr
 
 from modules.processing import Processed, process_images
-from PIL import Image
 from modules.shared import opts, cmd_opts, state
 from modules.styles import StyleDatabase
 
 
-def replace_combinations(match):
-    if match is None or len(match.groups()) == 0:
-        return ""
-
-    variants = [s.strip() for s in match.groups()[0].split("|")]
-    weights = []
-    for i, variant in enumerate(variants):
-        first = variant.split("%")
-        if len(first) == 2:
-            num, first_variant = first
-            variants[i] = first_variant
-            try:
-                weights.append(int(num))
-            except ValueError:
-                weights.append(0)
-        else:
-            weights.append(0)
-    summed = sum(weights)
-    zero_weights = weights.count(0)
-    weights = list(map(lambda x: (100 - summed) / zero_weights if x == 0 else x, weights))
-
+def get_index(items, item):
     try:
-        picked = choices(variants, weights)[0]
-        return picked
-    except ValueError as e:
-        return ""
-
-
-def get_tags(chunk):
-    file_dir = os.path.dirname(os.path.realpath("__file__"))
-    replacement_file = os.path.join(file_dir, f"scripts\\wildcards\\{chunk}.txt")
-    if os.path.exists(replacement_file):
-        with open(replacement_file, encoding="utf8") as f:
-            lines = f.read().splitlines()
-            return [item for item in lines if not item.startswith('#')]
-    return []
-
-def get_index(list, item):
-    try:
-        return list.index(item)
+        return items.index(item)
     except Exception:
         return None
 
-def get_editable_options():
-    return get_tags("CONFIG/Config items")
 
-def strip_tag(tag):
+def parse_tag(tag):
     return tag.replace("__", "")
 
 
-class Script(scripts.Script):
-    def title(self):
-        return "Wildcards recursive"
+class TagLoader:
+    loaded_tags = {}
+    missing_tags = set()
 
-    def ui(self, is_img2img):
-        same_seed = gr.Checkbox(label='Use same seed for each image', value=False)
-        gen_negative_prompt = gr.Checkbox(label='Generate negative prompts ?', value=True)
-        options = [gr.Dropdown(label=opt, choices=["RANDOM"] + get_tags(strip_tag(opt)), value="RANDOM") for opt in get_editable_options()]
+    def load_tags(self, filePath):
+        filepath_lower = filePath.lower()
+        if self.loaded_tags.get(filePath):
+            return self.loaded_tags.get(filePath)
 
-        return [same_seed, gen_negative_prompt] + options
+        replacement_file = os.path.join(os.getcwd(), f"scripts/wildcards/{filePath}.txt")
+        if os.path.exists(replacement_file):
+            with open(replacement_file, encoding="utf8") as f:
+                lines = f.read().splitlines()
+                # remove 'commented out' lines
+                self.loaded_tags[filepath_lower] = [item for item in lines if not item.startswith('#')]
+        else:
+            self.missing_tags.add(filePath)
+            return []
 
-    re_combinations = re.compile(r"\{([^{}]*)}")
-    invalid_wildcards = []
-    negative_tags = []
-    tag_presets = {}
+        return self.loaded_tags.get(filepath_lower) if self.loaded_tags.get(filepath_lower) else []
 
 
+class TagSelector:
+    previously_selected_tags = {}
+    def __init__(self, tag_loader, options):
+        self.tag_loader = tag_loader
+        self.selected_options = options['selected_options']
 
-    def strip_negative_tags(self, tags):
-        matches = re.findall('\*\*.*?\*\*', tags)
-        if matches:
-            for match in matches:
-                self.negative_tags.append(match.replace("**", ""));
-                tags = tags.replace(match, "");
-        return tags
+    def get_tag_choice(self, parsed_tag, tags):
+        if self.selected_options.get(parsed_tag.lower()) is not None:
+            return tags[self.selected_options.get(parsed_tag.lower())]
+        return choices(tags)[0] if len(tags) > 0 else ""
 
-    def select_tags(self, chunk, tags):
-        preset = self.tag_presets.get(chunk)
-        if preset is not None:
-            try:
-                return tags[int(preset)]
-            except Exception:
-                pass
-            return preset
-        return random.choice(tags)
+    def select(self, tag):
+        self.previously_selected_tags.setdefault(tag, 0)
 
-    def replace_wildcard(self, chunk):
-        tags = get_tags(chunk)
-        if len(tags) > 0:
-            return self.strip_negative_tags(self.select_tags(chunk, tags))
-        self.invalid_wildcards.append(chunk)
-        return chunk
+        if self.previously_selected_tags.get(tag) < 100:
+            self.previously_selected_tags[tag] += 1
+            parsed_tag = parse_tag(tag)
+            tags = self.tag_loader.load_tags(parsed_tag)
+            if len(tags) > 0:
+                return self.get_tag_choice(parsed_tag, tags)
+            return tag
+        print(f'loaded tag more than 100 times {tag}')
+        return ""
+
+
+class TagReplacer:
+    def __init__(self, tag_selector, options):
+        self.tag_selector = tag_selector
+        self.options = options
+        self.wildcard_regex = re.compile('__(.*?)__')
+
+    def replace_wildcard(self, matches):
+        if matches is None or len(matches.groups()) == 0:
+            return ""
+
+        match = matches.groups()[0]
+        return self.tag_selector.select(match)
 
     def replace_wildcard_recursive(self, prompt):
-        p = prompt
-        matches = re.findall('__.*?__', p)
-        if matches:
-            for match in matches:
-                p = p.replace(match, self.replace_wildcard(match.replace("__", "")))
-            if p != prompt:
-                return self.replace_wildcard_recursive(p)
+        p = self.wildcard_regex.sub(self.replace_wildcard, prompt)
+        while p != prompt:
+            prompt = p
+            p = self.wildcard_regex.sub(self.replace_wildcard, prompt)
 
         return p
 
-    def pick_variant(self, template):
+    def replace(self, prompt):
+        return self.replace_wildcard_recursive(prompt)
+
+
+class DynamicPromptReplacer:
+    def __init__(self):
+        self.re_combinations = re.compile(r"\{([^{}]*)}")
+
+    def get_variant_weight(self, variant):
+        split_variant = variant.split("%")
+        if len(split_variant) == 2:
+            num = split_variant[0]
+            try:
+                return int(num)
+            except ValueError:
+                print(f'{num} is not a number')
+        return 0
+
+    def get_variant(self, variant):
+        split_variant = variant.split("%")
+        if len(split_variant) == 2:
+            return split_variant[1]
+        return variant
+
+    def replace_combinations(self, match):
+        if match is None or len(match.groups()) == 0:
+            return ""
+
+        variants = [s.strip() for s in match.groups()[0].split("|")]
+        weights = [self.get_variant_weight(var) for var in variants]
+        variants = [self.get_variant(var) for var in variants]
+
+        summed = sum(weights)
+        zero_weights = weights.count(0)
+        weights = list(map(lambda x: (100 - summed) / zero_weights if x == 0 else x, weights))
+        try:
+            picked = choices(variants, weights)[0]
+            return picked
+        except ValueError as e:
+            return ""
+
+    def replace(self, template):
         if template is None:
             return None
 
-        return self.re_combinations.sub(replace_combinations, template)
+        return self.re_combinations.sub(self.replace_combinations, template)
 
-    def generate_prompt(self, template):
-        prevTemplate = template
-        template = self.pick_variant(self.replace_wildcard_recursive(template))
-        while prevTemplate != template:
-            prevTemplate = template
-            template = self.pick_variant(self.replace_wildcard_recursive(template))
 
-        return template
+class PromptGenerator:
+    def __init__(self, options):
+        self.tag_loader = TagLoader()
+        self.tag_selector = TagSelector(self.tag_loader, options)
+        self.replacers = [TagReplacer(self.tag_selector, options), DynamicPromptReplacer()]
 
-    def setup_presets(self, args):
-        for i, tag in enumerate(get_editable_options()):
-            location = get_index(get_tags(strip_tag(tag)), args[i])
+    def use_replacers(self, prompt):
+        for replacer in iter(self.replacers):
+            prompt = replacer.replace(prompt)
+
+        return prompt
+
+    def generate_single_prompt(self, original_prompt):
+        previous_prompt = original_prompt
+        prompt = self.use_replacers(original_prompt)
+        while previous_prompt != prompt:
+            previous_prompt = prompt
+            prompt = self.use_replacers(previous_prompt)
+
+        return prompt
+
+    def generate(self, original_prompt, prompt_count):
+        return [self.generate_single_prompt(original_prompt) for _ in range(prompt_count)]
+
+
+class OptionGenerator:
+    def __init__(self, tag_loader):
+        self.tag_loader = tag_loader
+
+    def get_configurable_options(self):
+        return self.tag_loader.load_tags('configuration')
+
+    def get_option_choices(self, tag):
+        return self.tag_loader.load_tags(parse_tag(tag))
+
+    def parse_options(self, options):
+        tag_presets = {}
+        for i, tag in enumerate(self.get_configurable_options()):
+            parsed_tag = parse_tag(tag);
+            location = get_index(self.tag_loader.load_tags(parsed_tag), options[i])
             if location is not None:
-                self.tag_presets[strip_tag(tag)] = location
+                tag_presets[parsed_tag.lower()] = location
 
-        print(f"Tag presets {self.tag_presets}")
+        return tag_presets
 
-    def run(self, p, same_seed, gen_negative_prompt, *args):
-        self.setup_presets(args)
 
-        file_dir = os.path.dirname(os.path.realpath("__file__"))
-        style_file = os.path.join(file_dir, "styles.csv")
-        styledb = StyleDatabase(style_file)
-        styledb.apply_styles(p)
-        p.styles = ['None', 'None']
+class PromptGenerator:
+    def __init__(self, options):
+        self.tag_loader = TagLoader()
+        self.tag_selector = TagSelector(self.tag_loader, options)
+        self.negative_tag_generator = NegativePromptGenerator()
+        self.replacers = [TagReplacer(self.tag_selector, options), DynamicPromptReplacer(), self.negative_tag_generator]
 
+    def use_replacers(self, prompt):
+        for replacer in self.replacers:
+            prompt = replacer.replace(prompt)
+
+        return prompt
+
+    def generate_single_prompt(self, original_prompt):
+        previous_prompt = original_prompt
+        prompt = self.use_replacers(original_prompt)
+        while previous_prompt != prompt:
+            previous_prompt = prompt
+            prompt = self.use_replacers(prompt)
+
+        return prompt
+
+    def generate(self, original_prompt, prompt_count):
+        return [self.generate_single_prompt(original_prompt) for _ in range(prompt_count)]
+
+    def get_negative_tags(self):
+        return self.negative_tag_generator.get_negative_tags()
+
+
+class NegativePromptGenerator:
+    def __init__(self):
+        self.re_combinations = re.compile(r"\{([^{}]*)}")
+        self.negative_tag = []
+
+    def strip_negative_tags(self, tags):
+        matches = re.findall('\*\*.*?\*\*', tags)
+        if matches and len(self.negative_tag) == 0:
+            for match in matches:
+                self.negative_tag.append(match.replace("**", ""))
+                tags = tags.replace(match, "")
+        return tags
+
+    def replace(self, prompt):
+        return self.strip_negative_tags(prompt)
+
+    def get_negative_tags(self):
+        return " ".join(self.negative_tag)
+
+class Script(scripts.Script):
+    def title(self):
+        return "Prompt generator"
+
+    def ui(self, is_img2img):
+        same_seed = gr.Checkbox(label='Use same seed for each image', value=False)
+        negative_prompt = gr.Checkbox(label='Generate negative tags?', value=False)
+        option_generator = OptionGenerator(TagLoader())
+        options = [gr.Dropdown(label=opt, choices=["RANDOM"] + option_generator.get_option_choices(opt), value="RANDOM") for opt in option_generator.get_configurable_options()]
+
+        return [same_seed, negative_prompt] + options
+
+    def run(self, p, same_seed, negative_prompt, *args):
         original_prompt = p.prompt[0] if type(p.prompt) == list else p.prompt
-        negative_prompt = p.negative_prompt[0] if type(p.negative_prompt) == list else p.negative_prompt
 
-        all_prompts = []
-        negative_prompts = []
-        for _ in range(p.batch_size * p.n_iter):
-            all_prompts.append(self.generate_prompt(original_prompt))
-            if gen_negative_prompt:
-                new_negative_prompt = self.generate_prompt(f"{negative_prompt} {' '.join(list(set(self.negative_tags)))}")
-                negative_prompts.append(new_negative_prompt)
-            self.negative_tags = []
+        option_generator = OptionGenerator(TagLoader())
+        options = {}
+        options['selected_options'] = option_generator.parse_options(args)
 
+        prompt_generator = PromptGenerator(options)
+        all_prompts = prompt_generator.generate(original_prompt, p.batch_size * p.n_iter)
+        if negative_prompt:
+            p.negative_prompt += prompt_generator.get_negative_tags()
 
         # TODO: Pregenerate seeds to prevent overlaps when batch_size is > 1
         # Known issue: Clicking "recycle seed" on an image in a batch_size > 1 may not get the correct seed.
@@ -187,13 +279,11 @@ class Script(scripts.Script):
 
         output_images = []
 
-        print('Invalid wildcards that were found ', self.invalid_wildcards)
         for batch_no in range(state.job_count):
             state.job = f"{batch_no+1} out of {state.job_count}"
             # batch_no*p.batch_size:(batch_no+1)*p.batch_size
             p.prompt = all_prompts[batch_no*p.batch_size:(batch_no+1)*p.batch_size]
-            if gen_negative_prompt:
-                p.negative_prompt = negative_prompts[batch_no*p.batch_size:(batch_no+1)*p.batch_size][0]
+
 
             if cmd_opts.enable_console_prompts:
                 print(f"wildcards.py: {p.prompt}")
@@ -201,10 +291,6 @@ class Script(scripts.Script):
             output_images += proc.images
             # TODO: Also add wildcard data to exif of individual images, currently only appear on the saved grid.
             infotext = ""
-            if len(self.invalid_wildcards) > 0:
-                invalid_cards = ",".join(list(set(self.invalid_wildcards)))
-                infotext += f"Invalid wildCards: {invalid_cards} \n"
-                self.invalid_wildcards = []
 
             infotext += "Wildcard prompt: "+original_prompt+"\nExample: "+proc.info
             all_seeds.append(proc.seed)
