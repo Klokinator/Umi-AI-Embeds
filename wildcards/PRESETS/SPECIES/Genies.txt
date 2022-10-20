@@ -1,0 +1,3 @@
+blue skin, blue body, genie blue skin, lamp, __REFS/BODY/Body Types Male__
+blue skin, blue body, genie blue skin, lamp, __REFS/BODY/Body Types Female__
+blue skin, blue body, genie blue skin, lamp, __REFS/BODY/Body Types Unisex__

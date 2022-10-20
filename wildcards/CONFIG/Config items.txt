@@ -1,3 +1,0 @@
-__CORE__
-__PRESETS/Preset Config__
-__BODY/Breast Size__

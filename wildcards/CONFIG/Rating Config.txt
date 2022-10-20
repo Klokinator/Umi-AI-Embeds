@@ -1,2 +1,0 @@
-NSFW, __CONFIG/Clothes Config NSFW__, __CONFIG/Clothes Extra Config__
-SFW, __CONFIG/Clothes Config SFW__, __CONFIG/Clothes Extra Config__

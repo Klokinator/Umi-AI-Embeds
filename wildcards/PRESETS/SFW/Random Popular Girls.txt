@@ -1,0 +1,2 @@
+#This prompt creates a female character based on a pre-existing IP. Note that specific character tags are not included. The engine will try to use any knowledge it has of them taken from the boorus.
+(__REFS/Popular Female Characters__:1.2)

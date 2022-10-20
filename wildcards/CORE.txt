@@ -1,3 +1,17 @@
-#This is the core File. You may either choose to load a preset prompt, or you may load the character generator itself. Preset prompts will give you a very specialized character design, or a scene of your choosing, including dedicated sex scenes. Refer to the PRESETS folder for examples.
-__PRESETS/Preset Config__
-__CONFIG/Call Basics__, __CONFIG/Choose Species__, __CONFIG/Hair Config__
+# To load this file, call __CORE__ from your prompts menu. This will call up either a SFW or NSFW prompt. If you just want to see what the engine can do and don't care whether you get SFW or NSFW content, this is the way to go.
+#
+# This option loads presets from the NSFW folder.
+#
+NSFW, __CONFIG/Preset Config NSFW__
+#
+# This option pulls from the Species lists, then assigns extra parameters.
+#
+NSFW, __CONFIG/Scene Setup__, __CONFIG/Load A Species__, __CONFIG/Clothes Config NSFW U__, __CONFIG/Hair Config U__
+#
+# This option loads presets from the SFW folder.
+#
+SFW, __CONFIG/Preset Config SFW__
+#
+# This option pulls from the Species lists, then assigns extra parameters.
+#
+SFW, __CONFIG/Scene Setup__, __CONFIG/Load A Species__, __CONFIG/Clothes Config SFW U__, __CONFIG/Hair Config U__

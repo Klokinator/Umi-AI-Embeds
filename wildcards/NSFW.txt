@@ -1,0 +1,9 @@
+# To load this file, call __NSFW__ from your prompts menu. This will select from a variety of NSFW character, clothing, and preset options. To do the opposite, call the __SFW__ instead.
+#
+# This first option loads presets from the NSFW folder.
+#
+NSFW, __CONFIG/Preset Config NSFW__
+#
+# This next setting pulls from the Species lists, then assigns extra parameters.
+#
+NSFW, __CONFIG/Scene Setup__, __CONFIG/Load A Species__, __CONFIG/Clothes Config NSFW U__, __CONFIG/Hair Config U__

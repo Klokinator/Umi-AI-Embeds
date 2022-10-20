@@ -1,0 +1,39 @@
+embarrassed, embarrassed expression, blushing
+angry, angry expression
+sad, sad expression
+happy, happy expression
+happy, happy expression, big smile, cheerful
+embarrassed, blushing, tears, crying
+angry, angry expression, tears, crying
+sad, sad expression, tears, crying 
+happy, happy expression, tears, crying
+happy, big smile, cheerful, tears, crying
+embarrassed, blushing, slight crying, tears
+angry, angry expression, slight crying, tears
+sad, sad expression, slight crying, tears
+happy, happy expression, slight crying, tears
+happy, big smile, cheerful, slight crying, tears
+happy, happy expression, happy crying, big smile
+Smug, smirk
+Smug, smirk, confident
+Smug, smirk
+Smug, smirk, confident
+Smug, smirk
+Smug, smirk, confident
+Smug, smirk, laughing
+Smug, smirk, confident, laughing
+Smug, smirk, laughing
+Smug, smirk, confident, laughing
+Smug, smirk, laughing
+Smug, smirk, confident, laughing
+Judgmental expression, annoyance
+Judgmental expression, disgust
+Judgmental expression, disgust
+Judgmental expression, disgust
+Disgust, hatred
+Disgust, hatred
+Disgust, hatred
+Disgust, hatred
+Ahegao, open mouth, saliva, tongue
+Ahegao, open mouth, saliva, tongue
+Ahegao, open mouth, saliva, tongue

@@ -1,0 +1,2 @@
+# Looking for what loads the Clothes Extra Config? Check Rating Config.
+{__REFS/CLOTHING/FullbodyNSFWU__, |__REFS/CLOTHING/UpperNSFWU__, __REFS/CLOTHING/LowerNSFWU__, }__REFS/CLOTHING/ModifierNSFW__

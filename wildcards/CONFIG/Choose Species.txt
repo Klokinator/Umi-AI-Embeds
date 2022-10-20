@@ -1,4 +1,0 @@
-# Note that base species have preset traits. Custom species load a more diverse arrangement of eye shapes and other options. Base species also call the genders from within each individual species' file. This is so that 'dolls' and 'slimes' can only have girls, for instance.
-__CONFIG/Base Species__
-__CONFIG/Custom Species__, __CONFIG/Custom Gender Config__, __BODY/Eye Types__, __BODY/Eye Colors__
-#Note: You can put custom prompts here too if you want to generate VERY specific types of scenes

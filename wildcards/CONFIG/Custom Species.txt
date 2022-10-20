@@ -1,3 +1,0 @@
-__CONFIG/Custom Gender Config__, __SPECIES CUSTOM/Skin Colors__, {50%__SPECIES CUSTOM/Animal Ears__|}, {50%__SPECIES CUSTOM/Ear Types__|}, {50%__SPECIES CUSTOM/Animal Tail__|}, {50%__SPECIES CUSTOM/Headwear__|}, {50%__SPECIES CUSTOM/Horns__|}, {50%__SPECIES CUSTOM/Wings__|}
-__CONFIG/Custom Gender Config__, __SPECIES CUSTOM/Skin Colors__, {__SPECIES CUSTOM/Animal Ears__, |__SPECIES CUSTOM/Ear Types__, |__SPECIES CUSTOM/Horns__, }{50%__SPECIES CUSTOM/Animal Tail__, |}{50%__SPECIES CUSTOM/Headwear__, |}{50%__SPECIES CUSTOM/Wings__|}
-__CONFIG/Custom Gender Config__, __SPECIES CUSTOM/Skin Colors__, __SPECIES CUSTOM/Animal Ears__, __SPECIES CUSTOM/Ear Types__, __SPECIES CUSTOM/Horns__, {50%__SPECIES CUSTOM/Animal Tail__, |}{50%__SPECIES CUSTOM/Wings__|}

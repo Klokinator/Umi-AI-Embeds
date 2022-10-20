@@ -1,0 +1,6 @@
+Goblin, green skin, pointy ears, shortstack, short, __REFS/BODY/Body Types Male__
+Goblin, green skin, pointy ears, __REFS/BODY/Body Types Male__
+Goblin, goblin girl, green skin, pointy ears, shortstack, short, __REFS/BODY/Body Types Female__
+Goblin, goblin girl, green skin, pointy ears, __REFS/BODY/Body Types Female__
+Goblin, green skin, pointy ears, shortstack, short, __REFS/BODY/Body Types Unisex__
+Goblin, green skin, pointy ears, __REFS/BODY/Body Types Unisex__

@@ -1,0 +1,3 @@
+#Slimes can only generate as girls, because slime-girls are obviously a thing.
+(Slime:1.3), (slime girl:1.3), (monster girl:1.1), (liquid body:1.3), (liquid:1.1), (oozing:1.1), __REFS/BODY/Body Types Female__
+(Slime:1.3), (slime girl:1.3), (liquid body:1.3), (liquid:1.1), (oozing:1.1), __REFS/BODY/Body Types Female__

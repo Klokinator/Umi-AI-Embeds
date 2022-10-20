@@ -1,0 +1,20 @@
+detailed face and eyes, sean phillips, greg capullo, michael lark, comic book, film noir**, realistic, anime style, masterpiece**
+90's anime style, retro anime, classic anime, detailed face and eyes
+anime coloring, retro artstyle, detailed face and eyes
+detailed face and eyes, masterpiece, lineart
+(masterpiece:1.1), (best quality:1.1), (Irakli Nadar:1.1)
+(NAI Diffusion Anime (Full):1.2), , detailed face and eyes
+(NovelAI Artstyle:1.2), detailed face and eyes
+(Lineart:1.1), perfect face, detailed face and eyes
+(4k Resolution:1.1), (best quality:1.1), detailed face and eyes
+(manga style:1.1),(limited colors:1.1), detailed face and eyes
+(painting:1.1), (digital painting:1.1), detailed face and eyes
+(traditional media:1.1), (painting:1.1), (digital painting:1.1), detailed face and eyes
+(blizzard:1.1), (painting:1.1), (digital painting:1.1), detailed face and eyes
+monocolored, masterpiece, best quality, (Cutesexyrobutts), (Christopher_young), (Krenz Cushart), (Kyoung Hwan Kim), (Mark Arian)**, full color, color**
+#
+# This next one is for testing purposes to see if I can mimic the style another user posted https://i.imgur.com/mEBDCBj.png and https://i.imgur.com/Y146M7b.png
+#
+Masterpiece, best quality, hyper detailed, Cinematic light, intricate detail, highres, official art, (detailed pupils), [high contrast], 8k
+#
+# reference sheet sakiyamama ((sketch)) https://i.imgur.com/rT0R8Wo.jpeg

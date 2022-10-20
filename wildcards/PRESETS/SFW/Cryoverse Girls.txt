@@ -1,0 +1,10 @@
+# The first girl here is Phoebe Hiro, wife of Jason Hiro.
+1girl, adult, aged_face, cleavage, (narrowed eyes:1.2), (athletic:1.1), short_hair, silver_hair, green_eyes, (brown, leather (pauldrons jacket, blouse, gloves, pants, boots):1.2)
+#
+# The next girl is Amelia Greyheart, fiancé to Hope Hiro.
+#
+1girl, (mature female:1.2), (red eyes and ribbons), (forehead jewel:1.2), adult, aged face, medium breasts, seductive smile, red eyes, gothic lolita, (black hair and dress:1.2), maid headdress
+#
+# The next girl is Archangel Uzziel, also known as the Earthmother.
+#
+angel, halo, angel wings, feather wings, 1girl, (dark skinned female:1.2), very dark skin, mature female, aged_face, big breasts, absurdly long hair, hair over breasts, (green hair and eyes:1.2), flower crown roses, cross earrings, {__CONFIG/Clothes Config SFW U__|__CONFIG/Clothes Config NSFW U__}
