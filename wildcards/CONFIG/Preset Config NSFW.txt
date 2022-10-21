@@ -8,3 +8,5 @@ __REFS/SETUP/Art Styles__, __REFS/SETUP/Emotions__, __REFS/SETUP/Location__, __P
 __PRESETS/NSFW/Oneshot H-Manga__
 # Creates a sexy slimegirl! Can come in multiple colors too!
 __PRESETS/NSFW/Superior Slimegirls__
+# Raving Robogirls in varying levels of BDSM, with universal types and the original 4chan version. Prefers DDIM at 50 steps over Euler, but otherwise works well.
+__PRESETS/NSFW/Raving Robogirls__
