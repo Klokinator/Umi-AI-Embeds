@@ -33,8 +33,8 @@ class TagLoader:
         if self.loaded_tags.get(filePath):
             return self.loaded_tags.get(filePath)
 
-        replacement_file = os.path.join(os.getcwd(), f"scripts/wildcards/{filePath}.txt")
-        if os.path.exists(replacement_file):
+        replacement_file = os.path.join(os.getcwd(), "scripts", "wildcards", f"{filePath}.txt")
+        if os.path.isfile(replacement_file):
             with open(replacement_file, encoding="utf8") as f:
                 lines = f.read().splitlines()
                 # remove 'commented out' lines

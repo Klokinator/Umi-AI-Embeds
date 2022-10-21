@@ -9,3 +9,4 @@ loopback.py
 img2imgalt.py
 custom_code.py
 .idea
+.env
