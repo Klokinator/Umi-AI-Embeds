@@ -4,7 +4,7 @@ masterpiece, best quality, masterpiece, best quality, masterpiece, hyper extreme
 anime coloring, retro artstyle, detailed face and eyes
 detailed face and eyes, masterpiece, lineart
 (masterpiece:1.1), (best quality:1.1), (Irakli Nadar:1.1)
-(NAI Diffusion Anime (Full):1.2), , detailed face and eyes
+(NAI Diffusion Anime (Full):1.2), detailed face and eyes
 (NovelAI Artstyle:1.2), detailed face and eyes
 (Lineart:1.1), perfect face, detailed face and eyes
 (4k Resolution:1.1), (best quality:1.1), detailed face and eyes
