@@ -10,6 +10,7 @@ import gradio as gr
 
 from modules.processing import Processed, process_images
 from modules.shared import opts, cmd_opts, state
+from modules import scripts, script_callbacks, shared
 from modules.styles import StyleDatabase
 
 
@@ -236,85 +237,45 @@ class NegativePromptGenerator:
     def get_negative_tags(self):
         return " ".join(self.negative_tag)
 
+
+
 class Script(scripts.Script):
     def title(self):
         return "Prompt generator"
 
+    def show(self, is_img2img):
+        return scripts.AlwaysVisible
+
     def ui(self, is_img2img):
-        same_seed = gr.Checkbox(label='Use same seed for each image', value=False)
-        negative_prompt = gr.Checkbox(label='Generate negative tags?', value=False)
-        option_generator = OptionGenerator(TagLoader())
-        options = [gr.Dropdown(label=opt, choices=["RANDOM"] + option_generator.get_option_choices(opt), value="RANDOM") for opt in option_generator.get_configurable_options()]
+        with gr.Group():
+            with gr.Row():
+                same_seed = gr.Checkbox(label='Use same prompt for each image', value=False)
+                negative_prompt = gr.Checkbox(label='Generate negative tags?', value=False)
+            option_generator = OptionGenerator(TagLoader())
+            options = [gr.Dropdown(label=opt, choices=["RANDOM"] + option_generator.get_option_choices(opt), value="RANDOM")
+                       for opt in option_generator.get_configurable_options()]
 
         return [same_seed, negative_prompt] + options
 
-    def run(self, p, same_seed, negative_prompt, *args):
-        original_prompt = p.prompt[0] if type(p.prompt) == list else p.prompt
-
+    def process(self, p, same_seed, negative_prompt, *args):
+        original_prompt = p.all_prompts[0]
         option_generator = OptionGenerator(TagLoader())
-        options = {}
-        options['selected_options'] = option_generator.parse_options(args)
-
+        options = {
+            'selected_options': option_generator.parse_options(args)
+        }
         prompt_generator = PromptGenerator(options)
-        all_prompts = prompt_generator.generate(original_prompt, p.batch_size * p.n_iter)
-        if negative_prompt:
-            p.negative_prompt += prompt_generator.get_negative_tags()
 
-        # TODO: Pregenerate seeds to prevent overlaps when batch_size is > 1
-        # Known issue: Clicking "recycle seed" on an image in a batch_size > 1 may not get the correct seed.
-        # (unclear if this is an issue with this script or not, but pregenerating would prevent). However,
-        # filename and exif data on individual images match correct seeds (testable via sending png info to txt2img).
-        all_seeds = []
-        infotexts = []
+        print(p.negative_prompt)
+        for i in range(len(p.all_prompts)):
+            random.seed(p.all_seeds[0 if same_seed else i])
+            prompt = p.all_prompts[i]
+            prompt = prompt_generator.generate_single_prompt(prompt)
+            p.all_prompts[i] = prompt
 
-        initial_seed = None
-        initial_info = None
-
-        print(f"Will process {p.batch_size * p.n_iter} images in {p.n_iter} batches.")
-
-        state.job_count = p.n_iter
-        p.n_iter = 1
-
-        original_do_not_save_grid = p.do_not_save_grid
-
-        p.do_not_save_grid = True
-
-        output_images = []
-
-        for batch_no in range(state.job_count):
-            state.job = f"{batch_no+1} out of {state.job_count}"
-            # batch_no*p.batch_size:(batch_no+1)*p.batch_size
-            p.prompt = all_prompts[batch_no*p.batch_size:(batch_no+1)*p.batch_size]
+        if same_seed and negative_prompt:
+            p.negative_prompt = prompt_generator.get_negative_tags()
+            print('generated negative prompt', p.negative_prompt)
 
 
-            if cmd_opts.enable_console_prompts:
-                print(f"wildcards.py: {p.prompt}")
-            proc = process_images(p)
-            output_images += proc.images
-            # TODO: Also add wildcard data to exif of individual images, currently only appear on the saved grid.
-            infotext = ""
-
-            infotext += "Wildcard prompt: "+original_prompt+"\nExample: "+proc.info
-            all_seeds.append(proc.seed)
-            infotexts.append(infotext)
-            if initial_seed is None:
-                initial_info = infotext
-                initial_seed = proc.seed
-            if not same_seed:
-                p.seed = proc.seed
-
-        p.do_not_save_grid = original_do_not_save_grid
-
-        unwanted_grid_because_of_img_count = len(output_images) < 2 and opts.grid_only_if_multiple
-        if (opts.return_grid or opts.grid_save) and not p.do_not_save_grid and not unwanted_grid_because_of_img_count:
-            grid = images.image_grid(output_images, p.batch_size)
-
-            if opts.return_grid:
-                infotexts.insert(0, initial_info)
-                all_seeds.insert(0, initial_seed)
-                output_images.insert(0, grid)
-
-            if opts.grid_save:
-                images.save_image(grid, p.outpath_grids, "grid", all_seeds[0], original_prompt, opts.grid_format, info=initial_info, short_filename=not opts.grid_extended_filename, p=p, grid=True)
-
-        return Processed(p, output_images, initial_seed, initial_info, all_prompts=all_prompts, all_seeds=all_seeds, infotexts=infotexts, index_of_first_image=0)
+        if original_prompt != p.all_prompts[0]:
+            p.extra_generation_params["Wildcard prompt"] = original_prompt
