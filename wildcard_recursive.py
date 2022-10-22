@@ -220,13 +220,13 @@ class PromptGenerator:
 class NegativePromptGenerator:
     def __init__(self):
         self.re_combinations = re.compile(r"\{([^{}]*)}")
-        self.negative_tag = []
+        self.negative_tag = set()
 
     def strip_negative_tags(self, tags):
         matches = re.findall('\*\*.*?\*\*', tags)
         if matches and len(self.negative_tag) == 0:
             for match in matches:
-                self.negative_tag.append(match.replace("**", ""))
+                self.negative_tag.add(match.replace("**", ""))
                 tags = tags.replace(match, "")
         return tags
 
