@@ -47,10 +47,12 @@ class TagLoader:
 
 
 class TagSelector:
-    previously_selected_tags = {}
+
+
     def __init__(self, tag_loader, options):
         self.tag_loader = tag_loader
-        self.selected_options = options['selected_options']
+        self.previously_selected_tags = {}
+        self.selected_options = dict(options).get('selected_options', {})
 
     def get_tag_choice(self, parsed_tag, tags):
         if self.selected_options.get(parsed_tag.lower()) is not None:
