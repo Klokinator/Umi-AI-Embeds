@@ -1,8 +1,8 @@
-shota, aged_down, __REFS/BODY/Size Penis__, __REFS/BODY/Body Mass__
-shota, teenager, __REFS/BODY/Size Penis__, __REFS/BODY/Body Mass__
-teenager, mature male, __REFS/BODY/Size Penis__, __REFS/BODY/Body Mass__
-mature male, adult, __REFS/BODY/Size Penis__, __REFS/BODY/Body Mass__
-mature male, adult, old, __REFS/BODY/Size Penis__, __REFS/BODY/Body Mass__
+shota, aged_down, __REFS/BODY/Body Mass__
+shota, teenager, __REFS/BODY/Body Mass__
+teenager, mature male, __REFS/BODY/Body Mass__
+mature male, adult, __REFS/BODY/Body Mass__
+mature male, adult, old, __REFS/BODY/Body Mass__
 loli, aged_down, __REFS/BODY/Size Breasts__, __REFS/BODY/Body Mass__
 loli, teenager, __REFS/BODY/Size Breasts__, __REFS/BODY/Body Mass__
 teenager, mature, __REFS/BODY/Size Breasts__, __REFS/BODY/Body Mass__
