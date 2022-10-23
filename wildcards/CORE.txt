@@ -15,3 +15,5 @@ SFW, __CONFIG/Preset Config SFW__
 # This option pulls from the Species lists, then assigns extra parameters.
 #
 SFW, __CONFIG/Scene Setup__, __CONFIG/Load A Species__, __CONFIG/Clothes Config SFW U__, __CONFIG/Hair Config U__
+#
+# This is a test line.
