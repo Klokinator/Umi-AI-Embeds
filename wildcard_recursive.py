@@ -13,6 +13,7 @@ from modules.shared import opts, cmd_opts, state
 from modules import scripts, script_callbacks, shared
 from modules.styles import StyleDatabase
 
+files=[]
 
 def get_index(items, item):
     try:
@@ -26,6 +27,7 @@ def parse_tag(tag):
 
 
 class TagLoader:
+    global files
     loaded_tags = {}
     missing_tags = set()
 
@@ -37,6 +39,7 @@ class TagLoader:
         replacement_file = os.path.join(os.getcwd(), "scripts", "wildcards", f"{filePath}.txt")
         if os.path.isfile(replacement_file):
             with open(replacement_file, encoding="utf8") as f:
+                files.append(f"{filePath}.txt")
                 lines = f.read().splitlines()
                 # remove 'commented out' lines
                 self.loaded_tags[filepath_lower] = [item for item in lines if not item.startswith('#')]
@@ -258,6 +261,8 @@ class Script(scripts.Script):
         return [same_seed, negative_prompt] + options
 
     def process(self, p, same_seed, negative_prompt, *args):
+        global files
+        files.clear()
         original_prompt = p.all_prompts[0]
         option_generator = OptionGenerator(TagLoader())
         options = {
@@ -279,3 +284,4 @@ class Script(scripts.Script):
 
         if original_prompt != p.all_prompts[0]:
             p.extra_generation_params["Wildcard prompt"] = original_prompt
+        p.extra_generation_params["File includes"]="\n".join(files)

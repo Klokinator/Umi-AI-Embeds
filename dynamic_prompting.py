@@ -64,7 +64,8 @@ def replace_wildcard(match):
         logger.warning(f"Missing file {wildcard_path}")
         return ""
 
-    options = [line.strip() for line in wildcard_path.open()]
+    options = [line.strip() for line in wildcard_path.open() if not line.startswith("#")]
+
     return random.choice(options)
     
 def pick_wildcards(template):
