@@ -1,6 +1,6 @@
-Welcome! This is v1 of the first public release of the Umi AI Character Creator!
+Welcome! This is v1 of the first public release of the Umi AI Character Creator/Generator!
 
-Calling this an AI technically isn't correct. It's actually a Wildcard system filled with hundreds, and eventually thousands, of possible options that can all combine in an infinite number of ways.
+Calling this an AI technically isn't correct. It's actually a Wildcard system filled with hundreds, and eventually thousands, of possible options that can all combine in an infinite number of ways. In much the same way as there are mods for Skyrim, Umi AI is a mod for the WebUI AI system.
 
 To start using this engine, you need only put a few things into your txt2img prompt box.
 
@@ -11,6 +11,7 @@ __NSFW__
 Pick one of those and paste it in your prompts. SFW and NSFW will load only scenes and characters of those types respectively. CORE will load either one without bias.
 
 Next, we need to load our negative prompts. There are a lot you can choose, but I like to use:
+
 Negative prompt: lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, out of focus, censorship, Missing vagina, Blurry faces, Blank faces, bad face, Ugly, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, extra ear, amputee, missing hands, missing arms, missing legs, SFW, Extra fingers, 6 fingers, Extra feet, Missing nipples, ghost, multiple boys, multiple girls
 
 These negative prompts will NOT appear, or will at least have a high likelihood not to appear. For example, since the engine hates it when multiple characters are onscreen, we try to minimize the chances of them appearing.
@@ -47,9 +48,8 @@ Example: https://i.imgur.com/0NtG39I.png
 
 This will load from the NSFW prompts and start generating random characters and scenes. These can be male or female, but male characters usually have issues. Umi AI will add more support for them in the coming days, weeks, and months.
 
-Once you paste that wall of text, but before you hit generate, you need to do two more things.
-1. Press the blue arrow next to Generate. https://i.imgur.com/Tvtnb6c.png It will 'pop down' the negative prompts and the sampler/steps info where it all belongs.
-2. Make sure you scroll down to Scripts on WebUI and enable Wildcards Recursive. https://i.imgur.com/fh9gsM8.png
+Once you paste that wall of text, but before you hit generate, you need to do one more thing.
+- Press the blue arrow next to Generate. https://i.imgur.com/Tvtnb6c.png It will 'pop down' the negative prompts and the sampler/steps info where it all belongs.
 
 Aaaand then you can start generating characters and scenes! For further questions, please join the Umi AI discord where I will help you guys get all set up!
 

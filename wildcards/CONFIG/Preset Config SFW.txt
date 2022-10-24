@@ -1,7 +1,5 @@
 # Generates beautiful closeups of randomized girls. Best used with the Super Face Model.
 __PRESETS/SFW/Detailed Face Girls__
-# Makes creepy Victorian doll girls.
-__CONFIG/Scene Setup__, __PRESETS/SFW/Doll Girls SFW__
 # Generates girls from popular IPs and fills in their tags to make them as accurate as possible. NOTE: Temporarily commented out until the full character list has had their tags added.
 #__CONFIG/Scene Setup__, __PRESETS/SFW/Random Popular Girls__
 # Create your own character-specific prompt and put it in here. Examples are provided.

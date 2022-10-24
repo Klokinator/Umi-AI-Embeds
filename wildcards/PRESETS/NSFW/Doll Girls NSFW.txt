@@ -21,3 +21,8 @@ lineart, (realistic:0.4), (glowing pink eyes:1.2), (detailed lips:1.2), 1girl, f
 # Creates sex dolls that take the form of either maids in maid outfits, or wearing negligees. Small variety, but potent: https://i.imgur.com/D7zDv7i.png
 #
 lineart, (realistic:0.4), (glowing pink eyes:1.2), (detailed lips:1.2), 1girl, female, (dark red Doll joints:1.17), (puppet:1.2), (marionette:1.2), (Pale white skin:1.2) (nipples, pussy:1.2), {skimpy negligee, cat ears|lace negligee, cat ears|slave negligee, cat ears|see-thru negligee|sexy maid outfit, maid headdress|skimpy maid outfit, frills, maid headdress|maid outfit with open front, maid headdress|slave maid outfit, maid headdress|lace maid outfit, maid headdress}, ribbon choker
+#
+#
+# This is a specialized Doll prompt that generates creepy gothic dolls with high accuracy. These dolls should not have any genitals.
+#
+{(hollow eyes:1.2)|(glowing red eyes:1.2)}, (detailed lips:1.2), female, (Doll joints:1.17), (puppet:1.2), (marionette:1.2), (Pale white skin:1.2) __REFS/BODY/Body Types Doll__, {__CONFIG/Clothes Config SFW U__|__CONFIG/Clothes Config NSFW U__}, __CONFIG/Clothes Extra Config__**, (nipples)****, (pussy)****, (penis)**
