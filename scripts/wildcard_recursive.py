@@ -286,4 +286,4 @@ class Script(scripts.Script):
 
         if original_prompt != p.all_prompts[0]:
             p.extra_generation_params["Wildcard prompt"] = original_prompt
-            p.extra_generation_params["File includes"] = "\n".join(files)
+            p.extra_generation_params["File includes"] = "\n".join(TagLoader.files)
