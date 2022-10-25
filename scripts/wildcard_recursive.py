@@ -27,7 +27,7 @@ def parse_tag(tag):
 
 class TagLoader:
     files = []
-    wildcard_location = None
+    wildcard_location = os.path.join(".", "extensions", "UnivAICharGen", "wildcards")
     loaded_tags = {}
     missing_tags = set()
 
@@ -35,11 +35,6 @@ class TagLoader:
         filepath_lower = filePath.lower()
         if self.loaded_tags.get(filePath):
             return self.loaded_tags.get(filePath)
-
-        if self.wildcard_location is None:
-            dir_path = glob.glob(f'**/wildcards/', recursive=True)
-            if (len(dir_path)) > 0:
-                self.wildcard_location = dir_path[0]
 
         file_path = os.path.join(self.wildcard_location, f'{filePath}.txt')
 
