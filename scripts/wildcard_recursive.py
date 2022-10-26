@@ -1,5 +1,7 @@
 import os
 import random
+import inspect
+import pathlib
 import re
 import glob
 from random import choices
@@ -27,10 +29,10 @@ def parse_tag(tag):
 
 class TagLoader:
     files = []
-    wildcard_location = os.path.join(".", "extensions", "UnivAICharGen", "wildcards")
+    wildcard_location = os.path.join(pathlib.Path(inspect.getfile(lambda: None)).parent, "wildcards")
     loaded_tags = {}
     missing_tags = set()
-
+    print(f"Path is {wildcard_location}")
     def load_tags(self, filePath):
         filepath_lower = filePath.lower()
         if self.loaded_tags.get(filePath):
