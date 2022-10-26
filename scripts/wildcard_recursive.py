@@ -29,7 +29,7 @@ def parse_tag(tag):
 
 class TagLoader:
     files = []
-    wildcard_location = os.path.join(pathlib.Path(inspect.getfile(lambda: None)).parent, "wildcards")
+    wildcard_location = os.path.join(pathlib.Path(inspect.getfile(lambda: None)).parent.parent, "wildcards")
     loaded_tags = {}
     missing_tags = set()
     print(f"Path is {wildcard_location}")
