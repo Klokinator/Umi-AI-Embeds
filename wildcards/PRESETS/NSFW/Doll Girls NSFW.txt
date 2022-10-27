@@ -1,11 +1,11 @@
 #This is sex-doll type of preset that aims for girls with pale skin and sexy bodies. Taken off 4chan.
 #
-lineart, (realistic:0.4), (glowing pink eyes:1.2), (detailed lips:1.2), 1girl, female, (dark red Doll joints:1.17), (puppet:1.2), (marionette:1.2), (Pale white skin:1.2) __REFS/BODY/Body Types Female SFW__, {__CONFIG/Clothes Config SFW U__|__CONFIG/Clothes Config NSFW U__}
+lineart, (realistic:0.4), (glowing pink eyes:1.2), (detailed lips:1.2), 1girl, female, (dark red Doll joints:1.17), (puppet:1.2), (marionette:1.2), (Pale white skin:1.2) __REFS/BODY/Body Types Female NSFW__, {__CONFIG/Clothes Config SFW U__|__CONFIG/Clothes Config NSFW U__}
 #
 #
 # Sex dolls, but with extremely skimpy clothing, like so: https://i.imgur.com/iyOYeoo.png
 #
-lineart, (realistic:0.4), (glowing pink eyes:1.2), (detailed lips:1.2), 1girl, female, (dark red Doll joints:1.17), (puppet:1.2), (marionette:1.2), (Pale white skin:1.2) __REFS/BODY/Body Types Female SFW__, bikini armor with open front, revealing clothes
+lineart, (realistic:0.4), (glowing pink eyes:1.2), (detailed lips:1.2), 1girl, female, (dark red Doll joints:1.17), (puppet:1.2), (marionette:1.2), (Pale white skin:1.2) __REFS/BODY/Body Types Female NSFW__, bikini armor with open front, revealing clothes
 #
 #
 # Makes sex dolls that have strings hanging all over their bodies, like so: https://i.imgur.com/QX3sn1h.png
@@ -25,4 +25,4 @@ lineart, (realistic:0.4), (glowing pink eyes:1.2), (detailed lips:1.2), 1girl, f
 #
 # This is a specialized Doll prompt that generates creepy gothic dolls with high accuracy. These dolls should not have any genitals.
 #
-{(hollow eyes:1.2)|(glowing red eyes:1.2)}, (detailed lips:1.2), female, (Doll joints:1.17), (puppet:1.2), (marionette:1.2), (Pale white skin:1.2) __REFS/BODY/Body Types Female SFW__, {__CONFIG/Clothes Config SFW U__|__CONFIG/Clothes Config NSFW U__}, __CONFIG/Clothes Extra Config__**, (nipples)****, (pussy)****, (penis)**
+{(hollow eyes:1.2)|(glowing red eyes:1.2)}, (detailed lips:1.2), female, (Doll joints:1.17), (puppet:1.2), (marionette:1.2), (Pale white skin:1.2) __REFS/BODY/Body Types Female NSFW__, {__CONFIG/Clothes Config SFW U__|__CONFIG/Clothes Config NSFW U__}, __CONFIG/Clothes Extra Config__**, (nipples)****, (pussy)****, (penis)**

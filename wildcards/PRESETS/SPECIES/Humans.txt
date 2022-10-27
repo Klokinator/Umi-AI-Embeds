@@ -1,3 +1,2 @@
-Human, __PRESETS/SPECIES/Skin Colors Human__, __REFS/BODY/Body Types Male SFW__**furry****anthro****scales****animal ears****animal tail**
-Human girl, __PRESETS/SPECIES/Skin Colors Human__, __REFS/BODY/Body Types Female SFW__**furry****anthro****scales****animal ears****animal tail**
-Human, __PRESETS/SPECIES/Skin Colors Human__, __REFS/BODY/Body Types Unisex SFW__**furry****anthro****scales****animal ears****animal tail**
+Human, __PRESETS/SPECIES/Skin Colors Human__, __REFS/BODY/Body Types Male SFW__**, furry, anthro, scales, animal ears, animal tail**
+Human girl, __PRESETS/SPECIES/Skin Colors Human__, __REFS/BODY/Body Types Female SFW__**, furry, anthro, scales, animal ears, animal tail**
