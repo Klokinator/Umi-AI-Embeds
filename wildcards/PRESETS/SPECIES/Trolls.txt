@@ -1,3 +1,3 @@
-Troll, giant, giant body, monster, very muscular, __REFS/BODY/Body Types Male__
-Troll, giant, giant body, monster, very muscular, __REFS/BODY/Body Types Female__
-Troll, giant, giant body, monster, very muscular, __REFS/BODY/Body Types Unisex__
+Troll, giant, giant body, monster, very muscular, __REFS/BODY/Body Types Male SFW__
+Troll, giant, giant body, monster, very muscular, __REFS/BODY/Body Types Female SFW__
+Troll, giant, giant body, monster, very muscular, __REFS/BODY/Body Types Unisex SFW__

@@ -1,3 +1,3 @@
-Reptile, anthro, scales, animal horns, reptile tail, lizard tail, dragon tail, demihuman, __REFS/BODY/Body Types Male__**furry**
-Reptile, anthro, scales, animal horns, reptile tail, lizard tail, dragon tail, demihuman, __REFS/BODY/Body Types Female__**furry**
-Reptile, anthro, scales, animal horns, reptile tail, lizard tail, dragon tail, demihuman, __REFS/BODY/Body Types Unisex__**furry**
+Reptile, anthro, scales, animal horns, reptile tail, lizard tail, dragon tail, demihuman, __REFS/BODY/Body Types Male SFW__**furry**
+Reptile, anthro, scales, animal horns, reptile tail, lizard tail, dragon tail, demihuman, __REFS/BODY/Body Types Female SFW__**furry**
+Reptile, anthro, scales, animal horns, reptile tail, lizard tail, dragon tail, demihuman, __REFS/BODY/Body Types Unisex SFW__**furry**

@@ -1,9 +1,9 @@
-Vampire, cape, bat wings, pale white skin, {50%glowing |}red eyes, fangs, pointy fangs, __REFS/BODY/Body Types Male__
-Vampire, cape, pale white skin, {50%glowing |}red eyes, fangs, pointy fangs, __REFS/BODY/Body Types Male__
-Vampire, pale white skin, {50%glowing |}red eyes, fangs, pointy fangs, __REFS/BODY/Body Types Male__
-Vampire girl, cape, bat wings, pale white skin, {50%glowing |}red eyes, fangs, pointy fangs, __REFS/BODY/Body Types Female__
-Vampire girl, cape, pale white skin, {50%glowing |}red eyes, fangs, pointy fangs, __REFS/BODY/Body Types Female__
-Vampire girl, pale white skin, {50%glowing |}red eyes, fangs, pointy fangs, __REFS/BODY/Body Types Female__
-Vampire, cape, bat wings, pale white skin, {50%glowing |}red eyes, fangs, pointy fangs, __REFS/BODY/Body Types Unisex__
-Vampire, cape, pale white skin, {50%glowing |}red eyes, fangs, pointy fangs, __REFS/BODY/Body Types Unisex__
-Vampire, pale white skin, {50%glowing |}red eyes, fangs, pointy fangs, __REFS/BODY/Body Types Unisex__
+Vampire, cape, bat wings, pale white skin, {50%glowing |}red eyes, fangs, pointy fangs, __REFS/BODY/Body Types Male SFW__
+Vampire, cape, pale white skin, {50%glowing |}red eyes, fangs, pointy fangs, __REFS/BODY/Body Types Male SFW__
+Vampire, pale white skin, {50%glowing |}red eyes, fangs, pointy fangs, __REFS/BODY/Body Types Male SFW__
+Vampire girl, cape, bat wings, pale white skin, {50%glowing |}red eyes, fangs, pointy fangs, __REFS/BODY/Body Types Female SFW__
+Vampire girl, cape, pale white skin, {50%glowing |}red eyes, fangs, pointy fangs, __REFS/BODY/Body Types Female SFW__
+Vampire girl, pale white skin, {50%glowing |}red eyes, fangs, pointy fangs, __REFS/BODY/Body Types Female SFW__
+Vampire, cape, bat wings, pale white skin, {50%glowing |}red eyes, fangs, pointy fangs, __REFS/BODY/Body Types Unisex SFW__
+Vampire, cape, pale white skin, {50%glowing |}red eyes, fangs, pointy fangs, __REFS/BODY/Body Types Unisex SFW__
+Vampire, pale white skin, {50%glowing |}red eyes, fangs, pointy fangs, __REFS/BODY/Body Types Unisex SFW__
