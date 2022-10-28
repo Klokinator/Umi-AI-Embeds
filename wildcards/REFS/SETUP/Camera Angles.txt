@@ -1,8 +1,8 @@
-pov, looking at viewer{20%, multiple views|**, multiple views**}
-pov, looking away{20%, multiple views|**, multiple views**}
-from side, looking at viewer{20%, multiple views|**, multiple views**}
-from side, looking away{20%, multiple views|**, multiple views**}
-from behind, looking at viewer{20%, multiple views|**, multiple views**}
-from behind, looking away{20%, multiple views|**, multiple views**}
-from below, looking at viewer{20%, multiple views|**, multiple views**}
-from below, looking away{20%, multiple views|**, multiple views**}
+pov, looking at viewer
+pov, looking away
+from side, looking at viewer
+from side, looking away
+from behind, looking at viewer
+from behind, looking away
+from below, looking at viewer
+from below, looking away

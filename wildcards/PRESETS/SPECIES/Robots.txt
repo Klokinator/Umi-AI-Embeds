@@ -1,2 +1,0 @@
-Robot, metal body, metal skin, armored, robotic, joints, doll joints, {__CONFIG/Clothes Config SFW U__|__CONFIG/Clothes Config NSFW U__}, __CONFIG/Clothes Extra Config__**(nipples:1.2)****(pussy:1.2)****(penis:1.2)**
-Robot, metal body, metal skin, armored, robotic, {__CONFIG/Clothes Config SFW U__|__CONFIG/Clothes Config NSFW U__}, __CONFIG/Clothes Extra Config__**(nipples:1.2)****(pussy:1.2)****(penis:1.2)**

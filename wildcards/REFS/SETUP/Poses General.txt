@@ -1,0 +1,24 @@
+paw pose, {sitting|kneeling|on knees|hunched over|standing}
+claw pose, {sitting|kneeling|on knees|hunched over|standing}
+ojou-sama pose, {standing|leaning back|sitting crossed legs}
+fighting stance, {crouched|on one knee|standing|jumping}
+arms up, {standing|kneeling|leaning|squatting|crossed legs|on knees}
+arms behind back, {standing|kneeling|leaning|squatting|crossed legs|on knees}
+arms behind head, {standing|kneeling|leaning|squatting|crossed legs|on knees}
+hands on hips, {standing|leaning|squatting}
+hands between legs, {standing|leaning|squatting|sitting crossed legs|sitting|kneeling|on knees}
+covering mouth, {standing|leaning|squatting|sitting crossed legs|sitting|kneeling|on knees}
+outstretched arms, {standing|leaning|squatting|sitting crossed legs|sitting|kneeling|on knees|standing on one leg while leaning}
+{Prostration|bowing|begging}
+On knees, praying, own hands together, {closed eyes|looking up|looking down}
+Jojo pose
+Zombie pose
+Dynamic pose, {fighting with weapon|casting magic|shooting gun}
+Submissive pose
+Assertive pose
+Battle pose
+Butterfly pose
+Ghost pose
+{Standing|leaning|sitting}, Smoking a cigarette
+Sitting on {fancy|elaborate|golden|silver|iron|skull} throne
+Dancing

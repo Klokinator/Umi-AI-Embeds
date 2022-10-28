@@ -11,18 +11,14 @@ Kilt
 Lederhosen
 Leggings
 Leotard
-Loincloth
-Miniskirt
 Overalls
 Overskirt
 Palazzo Pants
 Parachute Pants
-Pelvic curtain
-Sash
 Shorts
 Skirt
 Slacks
-Suspenders
+Suspenders, jeans
 Rompers
 Swimming Trunks
 Yoga Pants
@@ -38,7 +34,6 @@ high-waist skirt
 high-low skirt
 long skirt
 lowleg skirt
-miniskirt
 overall skirt
 plaid skirt
 pleated skirt
@@ -48,27 +43,12 @@ legskin
 hakama skirt
 hakama short skirt
 hakama pants
-backless pants
-Panties
-Thong
-swim briefs (speedo)
-backless panties
 Fishnets
-garter straps
-Garter belt
-Panties
-Boyshort panties
-Tag group:Panties
-Strapless bottom
-Teddy
-Thighhighs
-Male Underwear
+Skirt, Thighhighs
 Boxers
 Briefs
 Boxer briefs
-Bikini briefs
-Leggings
-Garter
-Socks
-Long Socks
-Stockings
+Skirt, Leggings
+Skirt, Socks
+Skirt, Long Socks
+Skirt, Stockings

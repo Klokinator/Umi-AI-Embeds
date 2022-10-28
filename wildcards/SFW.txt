@@ -4,6 +4,6 @@
 #
 SFW, __CONFIG/Preset Config SFW__
 #
-# This next setting pulls from the Species lists, then assigns extra parameters.
+# This option loads a random SFW female character from available parameters.
 #
-SFW, __CONFIG/Scene Setup__, __CONFIG/Load A Species__, __CONFIG/Clothes Config SFW U__, __CONFIG/Hair Config U__
+SFW, 1girl, solo focus, __REFS/SETUP/Art Styles__, __REFS/SETUP/Camera Angles__, __REFS/BODY/Body Types Female SFW__, __REFS/SETUP/Emotions__,  __REFS/SETUP/Poses General__, {__REFS/CLOTHING/FullbodySFWF__|__REFS/CLOTHING/UpperSFWF__, __REFS/CLOTHING/LowerSFWF__}, {20%__REFS/CLOTHING/ModifierSFWF__, }__REFS/BODY/Hair Lengths__, __REFS/BODY/Hair Styles__, __REFS/BODY/Hair Color Types__

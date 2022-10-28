@@ -1,9 +1,6 @@
 Backless Dress
 Band Uniform
-Bathing Suit
 Bathrobe
-Bikini
-Body Stocking
 Bodysuit
 Buruma
 Business Suit
@@ -54,7 +51,6 @@ Sari Sarong
 Sarong
 Skating Dress
 Ski Suit
-Smock
 Sundress
 school uniform
 sailor dress
@@ -74,31 +70,17 @@ Wedding Dress
 Wet Suit
 armor
 black armor
-armored dress
-bikini armor
 bikesuit
 racing suit
 bodystocking
 bodysuit
 jumpsuit
 short jumpsuit
-leotard
-strapless leotard
 playboy bunny
 swimsuit
 competition swimsuit
 slingshot swimsuit
 school swimsuit
-bikini
-leaf bikini
-string bikini
-micro bikini
-side-tie bikini bottom
-lowleg bikini
-thong bikini
-venus bikini
-sports bikini
-tankini
 criss-cross halter
 robe
 bathrobe
@@ -149,14 +131,3 @@ hanbok
 vietnamese dress
 dress flower
 Bodysuit
-Gimp suit
-bondage outfit
-Latex
-Monoglove
-reverse outfit
-reverse bikini armor
-reverse bunnysuit
-Babydoll
-Bodystocking
-Lace
-Nightgown
