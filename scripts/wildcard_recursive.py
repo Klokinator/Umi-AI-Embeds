@@ -32,7 +32,6 @@ class TagLoader:
     wildcard_location = os.path.join(pathlib.Path(inspect.getfile(lambda: None)).parent.parent, "wildcards")
     loaded_tags = {}
     missing_tags = set()
-    print(f"Path is {wildcard_location}")
     def load_tags(self, filePath):
         filepath_lower = filePath.lower()
         if self.loaded_tags.get(filePath):
@@ -252,8 +251,8 @@ class Script(scripts.Script):
     def ui(self, is_img2img):
         with gr.Group():
             with gr.Row():
-                same_seed = gr.Checkbox(label='Use same prompt for each image', value=False)
-                negative_prompt = gr.Checkbox(label='Generate negative tags?', value=False)
+                same_seed = gr.Checkbox(label='Use same prompt for each image in a batch?', value=False)
+                negative_prompt = gr.Checkbox(label='Allow **negative keywords** from wildcards in Negative Prompts?', value=True)
             option_generator = OptionGenerator(TagLoader())
             options = [
                 gr.Dropdown(label=opt, choices=["RANDOM"] + option_generator.get_option_choices(opt), value="RANDOM")
@@ -270,16 +269,14 @@ class Script(scripts.Script):
         }
         prompt_generator = PromptGenerator(options)
 
-        print(p.negative_prompt)
         for i in range(len(p.all_prompts)):
             random.seed(p.all_seeds[0 if same_seed else i])
             prompt = p.all_prompts[i]
             prompt = prompt_generator.generate_single_prompt(prompt)
             p.all_prompts[i] = prompt
 
-        if same_seed and negative_prompt:
-            p.negative_prompt = prompt_generator.get_negative_tags()
-            print('generated negative prompt', p.negative_prompt)
+        if negative_prompt:
+            p.negative_prompt = p.negative_prompt + prompt_generator.get_negative_tags()
 
         if original_prompt != p.all_prompts[0]:
             p.extra_generation_params["Wildcard prompt"] = original_prompt
