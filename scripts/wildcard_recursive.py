@@ -27,6 +27,17 @@ def parse_tag(tag):
     return tag.replace("__", "")
 
 
+def read_file_lines(file):
+    f_lines = file.read().splitlines()
+    lines = []
+    for line in f_lines:
+        line = line.strip()
+        # Check if we have a line that is not empty or starts with an #
+        if line and not line.startswith('#'):
+            lines.append(line)
+    return lines
+
+
 class TagLoader:
     files = []
     wildcard_location = os.path.join(pathlib.Path(inspect.getfile(lambda: None)).parent.parent, "wildcards")
@@ -40,11 +51,9 @@ class TagLoader:
         file_path = os.path.join(self.wildcard_location, f'{filePath}.txt')
 
         if self.wildcard_location and os.path.isfile(file_path):
-            with open(file_path, encoding="utf8") as f:
+            with open(file_path, encoding="utf8") as file:
                 self.files.append(f"{filePath}.txt")
-                lines = f.read().splitlines()
-                # remove 'commented out' lines
-                self.loaded_tags[filepath_lower] = [item for item in lines if not item.startswith('#')]
+                self.loaded_tags[filepath_lower] = read_file_lines(file)
         else:
             self.missing_tags.add(filePath)
             return []
