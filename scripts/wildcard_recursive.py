@@ -2,6 +2,7 @@ import os
 import random
 import inspect
 import pathlib
+from pathlib import Path
 import re
 import glob
 from random import choices
@@ -15,6 +16,10 @@ from modules.shared import opts, cmd_opts, state
 from modules import scripts, script_callbacks, shared
 from modules.styles import StyleDatabase
 
+wildcard_dir = Path(scripts.basedir()).joinpath('wildcards')
+wildcard_files = ["None"] + [w.relative_to(wildcard_dir).as_posix() for w in list(wildcard_dir.rglob("*.txt")) if w.name != "put wildcards here.txt"]
+
+apply_symbol = '\U0001f4cb'  # 📋
 
 def get_index(items, item):
     try:
@@ -37,7 +42,35 @@ def read_file_lines(file):
             lines.append(line)
     return lines
 
+def on_ui_tabs():
+    # print(wildcard_dir, wildcard_files)
+    with gr.Blocks(analytics_enabled=False) as umi_ai:
+        with gr.Row():
+            with gr.Column(scale=2):
+                with gr.Row():
+                    prompt = gr.Textbox(value="", label="prompt", lines=2)     
 
+            with gr.Column():
+                with gr.Row():    
+                    preset = gr.Dropdown(choices=wildcard_files, value="None", label="preset")
+                    
+                with gr.Row():    
+                    apply = gr.Button(apply_symbol)
+                    apply.click(apply_prompt, inputs=[preset], outputs=[prompt])
+
+    return (umi_ai , "Umi AI", "umi_ai"),
+
+
+def apply_prompt(preset):
+    options = {
+            'selected_options': {}
+    }
+    # tag_loader = TagLoader()
+    # tag_selector = TagSelector(tag_loader, options)
+    # tag_replacer = TagReplacer(tag_selector)
+    prompt_generator = PromptGenerator(options)
+
+    return prompt_generator.generate_single_prompt(f"__{preset.replace('.txt', '')}__")
 class TagLoader:
     files = []
     wildcard_location = os.path.join(pathlib.Path(inspect.getfile(lambda: None)).parent.parent, "wildcards")
@@ -87,9 +120,9 @@ class TagSelector:
 
 
 class TagReplacer:
-    def __init__(self, tag_selector, options):
+    def __init__(self, tag_selector):
         self.tag_selector = tag_selector
-        self.options = options
+        # self.options = options
         self.wildcard_regex = re.compile('__(.*?)__')
 
     def replace_wildcard(self, matches):
@@ -155,31 +188,6 @@ class DynamicPromptReplacer:
         return self.re_combinations.sub(self.replace_combinations, template)
 
 
-class PromptGenerator:
-    def __init__(self, options):
-        self.tag_loader = TagLoader()
-        self.tag_selector = TagSelector(self.tag_loader, options)
-        self.replacers = [TagReplacer(self.tag_selector, options), DynamicPromptReplacer()]
-
-    def use_replacers(self, prompt):
-        for replacer in iter(self.replacers):
-            prompt = replacer.replace(prompt)
-
-        return prompt
-
-    def generate_single_prompt(self, original_prompt):
-        previous_prompt = original_prompt
-        prompt = self.use_replacers(original_prompt)
-        while previous_prompt != prompt:
-            previous_prompt = prompt
-            prompt = self.use_replacers(previous_prompt)
-
-        return prompt
-
-    def generate(self, original_prompt, prompt_count):
-        return [self.generate_single_prompt(original_prompt) for _ in range(prompt_count)]
-
-
 class OptionGenerator:
     def __init__(self, tag_loader):
         self.tag_loader = tag_loader
@@ -193,7 +201,7 @@ class OptionGenerator:
     def parse_options(self, options):
         tag_presets = {}
         for i, tag in enumerate(self.get_configurable_options()):
-            parsed_tag = parse_tag(tag);
+            parsed_tag = parse_tag(tag)
             location = get_index(self.tag_loader.load_tags(parsed_tag), options[i])
             if location is not None:
                 tag_presets[parsed_tag.lower()] = location
@@ -206,7 +214,7 @@ class PromptGenerator:
         self.tag_loader = TagLoader()
         self.tag_selector = TagSelector(self.tag_loader, options)
         self.negative_tag_generator = NegativePromptGenerator()
-        self.replacers = [TagReplacer(self.tag_selector, options), DynamicPromptReplacer(), self.negative_tag_generator]
+        self.replacers = [TagReplacer(self.tag_selector), DynamicPromptReplacer(), self.negative_tag_generator]
 
     def use_replacers(self, prompt):
         for replacer in self.replacers:
@@ -272,10 +280,12 @@ class Script(scripts.Script):
     def process(self, p, same_seed, negative_prompt, *args):
         TagLoader.files.clear()
         original_prompt = p.all_prompts[0]
+        print(args)
         option_generator = OptionGenerator(TagLoader())
         options = {
             'selected_options': option_generator.parse_options(args)
         }
+        print(options)
         prompt_generator = PromptGenerator(options)
 
         for i in range(len(p.all_prompts)):
@@ -290,3 +300,6 @@ class Script(scripts.Script):
         if original_prompt != p.all_prompts[0]:
             p.extra_generation_params["Wildcard prompt"] = original_prompt
             p.extra_generation_params["File includes"] = "\n".join(TagLoader.files)
+
+
+script_callbacks.on_ui_tabs(on_ui_tabs)
