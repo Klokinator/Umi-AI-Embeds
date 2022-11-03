@@ -3,6 +3,7 @@ import random
 import inspect
 import pathlib
 import re
+import time
 import glob
 from random import choices
 
@@ -262,6 +263,7 @@ class Script(scripts.Script):
             with gr.Row():
                 same_seed = gr.Checkbox(label='Use same prompt for each image in a batch?', value=False)
                 negative_prompt = gr.Checkbox(label='Allow **negative keywords** from wildcards in Negative Prompts?', value=True)
+                shared_seed = gr.Checkbox(label="Use image random seed for wildcards?", value=False)
             option_generator = OptionGenerator(TagLoader())
             options = [
                 gr.Dropdown(label=opt, choices=["RANDOM"] + option_generator.get_option_choices(opt), value="RANDOM")
@@ -269,7 +271,7 @@ class Script(scripts.Script):
 
         return [same_seed, negative_prompt] + options
 
-    def process(self, p, same_seed, negative_prompt, *args):
+    def process(self, p, same_seed, negative_prompt, shared_seed, *args):
         TagLoader.files.clear()
         original_prompt = p.all_prompts[0]
         option_generator = OptionGenerator(TagLoader())
@@ -279,7 +281,11 @@ class Script(scripts.Script):
         prompt_generator = PromptGenerator(options)
 
         for i in range(len(p.all_prompts)):
-            random.seed(p.all_seeds[0 if same_seed else i])
+            if (shared_seed):
+                random.seed(p.all_seeds[0 if same_seed else i])
+            else:
+                random.seed(time.time())
+
             prompt = p.all_prompts[i]
             prompt = prompt_generator.generate_single_prompt(prompt)
             p.all_prompts[i] = prompt
