@@ -269,7 +269,7 @@ class Script(scripts.Script):
                 gr.Dropdown(label=opt, choices=["RANDOM"] + option_generator.get_option_choices(opt), value="RANDOM")
                 for opt in option_generator.get_configurable_options()]
 
-        return [same_seed, negative_prompt] + options
+        return [same_seed, negative_prompt, shared_seed] + options
 
     def process(self, p, same_seed, negative_prompt, shared_seed, *args):
         TagLoader.files.clear()
