@@ -263,7 +263,7 @@ class Script(scripts.Script):
             with gr.Row():
                 same_seed = gr.Checkbox(label='Use same prompt for each image in a batch?', value=False)
                 negative_prompt = gr.Checkbox(label='Allow **negative keywords** from wildcards in Negative Prompts?', value=True)
-                shared_seed = gr.Checkbox(label="Use image random seed for wildcards?", value=False)
+                shared_seed = gr.Checkbox(label="Always pick the same random/wildcard options with a static seed?", value=False)
             option_generator = OptionGenerator(TagLoader())
             options = [
                 gr.Dropdown(label=opt, choices=["RANDOM"] + option_generator.get_option_choices(opt), value="RANDOM")
