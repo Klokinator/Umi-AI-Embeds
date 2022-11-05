@@ -125,7 +125,7 @@ Masterpiece, best quality, (style of marvel:1.3), (style of talt lo:1.7)
 Masterpiece, best quality, (marvel:1.2), (style of talt lo:1.7)
 Masterpiece, best quality, (marvel comics:1.3), (style of talt lo:1.7)
 Masterpiece, best quality, (style of farts:1.2)
-Masterpiece, best quality, high detail, by Gaston Bussière, Claude Monet, Artstation
+#Masterpiece, best quality, high detail, by Gaston Bussière, Claude Monet, Artstation
 #Masterpiece, best quality, (style of an 8 bit game:{1.1|1.2|1.3})
 #Masterpiece, best quality, (style of minecraft:{1.1|1.2|1.3|1.4})
 #Masterpiece, best quality, (style of pixel art:{1.1|1.2|1.3|1.4})
