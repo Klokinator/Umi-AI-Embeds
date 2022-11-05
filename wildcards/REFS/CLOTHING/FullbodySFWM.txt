@@ -1,9 +1,4 @@
-Backless Dress
 Band Uniform
-Bathing Suit
-Bathrobe
-Bikini
-Body Stocking
 Bodysuit
 Buruma
 Business Suit
@@ -11,98 +6,45 @@ Caftan
 Casuals
 Cat Suit
 Chador
-Cheerleader Outfit
-China Dress
-Cocktail Dress
-Cowgirl outfit
 Dolman
-Dress
 Fatigues
-Frock
-ghost costume
 gym uniform
 habit uniform
-harem outfit
-Gown
 Habit
 Haik
 Hanbok
 Hauberk
-Hose
 Jumper
 Jupon
 Kameez
-Kimono
 Kittel
 Lab Coat
-Leotard
 Long coat
-maid uniform
-miko uniform
-military uniform
-Muslin
+Butler Uniform
+Military Uniform
 Navy Uniform
-Pajamas
-Paletot
 Parka
 Pinafore
 pilot suit
-Prom Dress
 Robe
-Sari
-Sari Sarong
 Sarong
-Skating Dress
 Ski Suit
 Smock
-Sundress
-school uniform
-sailor dress
-meiji schoolgirl uniform
 suit
 business suit
 pant suit
-skirt suit
 tuxedo
-Tights
-Toga
 Tracksuit
 Trench Coat
-Tutu
 Tuxedo
-Wedding Dress
 Wet Suit
 armor
 black armor
-armored dress
-bikini armor
+full armor
 bikesuit
 racing suit
-bodystocking
 bodysuit
 jumpsuit
-short jumpsuit
-leotard
-strapless leotard
-playboy bunny
-swimsuit
-competition swimsuit
-slingshot swimsuit
-school swimsuit
-bikini
-leaf bikini
-string bikini
-micro bikini
-side-tie bikini bottom
-lowleg bikini
-thong bikini
-venus bikini
-sports bikini
-tankini
-criss-cross halter
-robe
-bathrobe
-open robe
 kesa
 romper
 sarong
@@ -110,7 +52,6 @@ tunic
 unitard
 chinese clothes
 changpao
-china dress (cheongsam/qipao)
 fengguan
 hanfu
 longpao
@@ -121,42 +62,17 @@ fundoshi
 yamakasa
 geta
 hakama
-kimono
 furisode
-layered kimono
-short kimono
-uchikake (wedding kimono)
-yukata
 haori
 happi
 chanchanko
 dotera
 hanten
-kimono skirt
 miko
 nontraditional miko
 sarashi
-Midriff sarashi
-Chest sarashi
-Budget sarashi
-Undone sarashi
 straw cape (mino)
 mino boushi
 tabi
 tasuki
 korean clothes
-hanbok
-vietnamese dress
-dress flower
-Bodysuit
-Gimp suit
-bondage outfit
-Latex
-Monoglove
-reverse outfit
-reverse bikini armor
-reverse bunnysuit
-Babydoll
-Bodystocking
-Lace
-Nightgown

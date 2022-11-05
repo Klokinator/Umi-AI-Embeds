@@ -1,0 +1,901 @@
+{at|on} floor in bedroom
+{at|on} bed in bedroom
+{at|on} table in bedroom
+{at|on} desk in bedroom
+{at|on} chair in bedroom
+{at|on} window in bedroom
+{at|on} carpet in bedroom
+{at|on} rug in bedroom
+{at|on} wood floor in bedroom
+{at|on} tile in bedroom
+{at|on} stone in bedroom
+{at|on} wood in bedroom
+{at|on} brick floor in bedroom
+{at|on} cracked floor in bedroom
+{at|on} checkered floor in bedroom
+{at|on} glowing floor in bedroom
+{at|on} marble floor in bedroom
+{at|on} invisible floor in bedroom
+{at|on} wet floor in bedroom
+{at|on} computer in bedroom
+{against|beside} desk in bedroom
+{against|beside} bed in bedroom
+{against|beside} table in bedroom
+{against|beside} wall in bedroom
+{against|beside} door in bedroom
+{against|beside} window in bedroom
+{against|beside} bookshelf in bedroom
+{against|beside} dresser in bedroom
+{against|beside} drawer in bedroom
+{against|beside} closet in bedroom
+{against|beside} wardrobe in bedroom
+{against|beside} matress in bedroom
+{against|beside} mirror in bedroom
+{against|beside} picture in bedroom
+{against|beside} poster in bedroom
+{against|beside} shelves in bedroom
+{against|beside} curtain in bedroom
+{against|beside} chair in bedroom
+{against|beside} couch in bedroom
+{against|beside} sofa in bedroom
+{against|beside} tv in bedroom
+{against|beside} television in bedroom
+{at|on} sink in bathroom
+{at|on} toilet in bathroom
+{at|on} bathtub in bathroom
+{at|on} rug in bathroom
+{at|on} carpet in bathroom
+{at|on} tile in bathroom
+{at|on} floor in bathroom
+{at|on} window in bathroom
+{at|on} towel rack in bathroom
+{at|on} mirror in bathroom
+{at|on} marble floor in bathroom
+{at|on} door in bathroom
+{against|beside} mirror in bathroom
+{against|beside} sink in bathroom
+{against|beside} toilet in bathroom
+{against|beside} bathtub in bathroom
+{against|beside} towel rack in bathroom
+{against|beside} window in bathroom
+{against|beside} door in bathroom
+{at|on} tile floor in shower
+{at|on} floor in shower
+{at|on} wet tile in shower
+{at|on} wet floor in shower
+{at|on} tiles in shower
+{against|beside} glass in shower
+{against|beside} wall in shower
+{against|beside} glass door in shower
+{against|beside} tile wall in shower
+{against|beside} shower curtain in shower
+{against|beside} shower head in shower
+{at|on} floor in hotel room
+{at|on} bed in hotel room
+{at|on} table in hotel room
+{at|on} desk in hotel room
+{at|on} chair in hotel room
+{at|on} window in hotel room
+{at|on} carpet in hotel room
+{at|on} rug in hotel room
+{at|on} wood floor in hotel room
+{at|on} tile in hotel room
+{at|on} stone in hotel room
+{at|on} wood in hotel room
+{at|on} brick floor in hotel room
+{at|on} cracked floor in hotel room
+{at|on} checkered floor in hotel room
+{at|on} glowing floor in hotel room
+{at|on} marble floor in hotel room
+{at|on} invisible floor in hotel room
+{at|on} wet floor in hotel room
+{against|beside} desk in hotel room
+{against|beside} bed in hotel room
+{against|beside} table in hotel room
+{against|beside} wall in hotel room
+{against|beside} door in hotel room
+{against|beside} window in hotel room
+{against|beside} bookshelf in hotel room
+{against|beside} dresser in hotel room
+{against|beside} drawer in hotel room
+{against|beside} closet in hotel room
+{against|beside} wardrobe in hotel room
+{against|beside} matress in hotel room
+{against|beside} mirror in hotel room
+{against|beside} picture in hotel room
+{against|beside} poster in hotel room
+{against|beside} shelves in hotel room
+{against|beside} curtain in hotel room
+{against|beside} chair in hotel room
+{against|beside} couch in hotel room
+{against|beside} sofa in hotel room
+{against|beside} tv in hotel room
+{against|beside} television in hotel room
+{at|on} mattress in messy room
+{at|on} floor in messy room
+{at|on} bed in messy room
+{at|on} table in messy room
+{at|on} desk in messy room
+{at|on} chair in messy room
+{at|on} window in messy room
+{at|on} carpet in messy room
+{at|on} rug in messy room
+{at|on} wood floor in messy room
+{at|on} tile in messy room
+{at|on} stone in messy room
+{at|on} wood in messy room
+{at|on} book stack in messy room
+{at|on} pile of books in messy room
+{at|on} pile of trash in messy room
+{at|on} trash bag in messy room
+{at|on} clothes on floor in messy room
+{at|on} computer in messy room
+{against|beside} desk in messy room
+{against|beside} desk in messy room
+{against|beside} bed in messy room
+{against|beside} table in messy room
+{against|beside} wall in messy room
+{against|beside} door in messy room
+{against|beside} window in messy room
+{against|beside} bookshelf in messy room
+{against|beside} dresser in messy room
+{against|beside} drawer in messy room
+{against|beside} closet in messy room
+{against|beside} wardrobe in messy room
+{against|beside} matress in messy room
+{against|beside} mirror in messy room
+{against|beside} picture in messy room
+{against|beside} poster in messy room
+{against|beside} shelves in messy room
+{against|beside} curtain in messy room
+{against|beside} chair in messy room
+{against|beside} couch in messy room
+{against|beside} sofa in messy room
+{against|beside} tv in messy room
+{against|beside} television in messy room
+{against|beside} book stack in messy room
+{against|beside} pile of books in messy room
+{against|beside} pile of trash in messy room
+{against|beside} trash bag in messy room
+{against|beside} clothes on floor in messy room
+{at|on} table in dining room
+{at|on} counter in dining room
+{at|on} chair in dining room
+{at|on} floor in dining room
+{at|on} wood floor in dining room
+{at|on} tile floor in dining room
+{at|on} stone floor in dining room
+{at|on} brick floor in dining room
+{against|beside} table in dining room
+{against|beside} chair in dining room
+{against|beside} counter in dining room
+{against|beside} wall in dining room
+{against|beside} window in dining room
+{against|beside} door in dining room
+{at|on} desk in classroom
+{at|on} chair in classroom
+{at|on} lectern in classroom
+{at|on} bulletin board in classroom
+{at|on} chalkboard in classroom
+{at|on} window in classroom
+{at|on} wood floor in classroom
+{at|on} tile floor in classroom
+{at|on} school desk in classroom
+{at|on} school chair in classroom
+{at|on} floor in classroom
+{at|on} door in classroom
+{at|on} book stack in classroom
+{at|on} clock in classroom
+{at|on} doorway in classroom
+{at|on} computer in classroom
+{against|beside} desk in classroom
+{against|beside} chair in classroom
+{against|beside} lectern in classroom
+{against|beside} bulletin board in classroom
+{against|beside} window in classroom
+{against|beside} chalkboard in classroom
+{against|beside} wall in classroom
+{against|beside} door in classroom
+{against|beside} school desk in classroom
+{against|beside} school chair in classroom
+{against|beside} book stack in classroom
+{against|beside} paper stack in classroom
+{against|beside} doorway in classroom
+{at|on} box in clubroom
+{at|on} cardboard box in clubroom
+{at|on} desk in clubroom
+{at|on} chair in clubroom
+{at|on} table in clubroom
+{at|on} window in clubroom
+{at|on} doorway in clubroom
+{at|on} door in clubroom
+{at|on} bookshelf in clubroom
+{at|on} shelves in clubroom
+{at|on} computer in clubroom
+{at|on} bulletin in clubroom
+{at|on} chalkboard in clubroom
+{at|on} wood floor in clubroom
+{at|on} tile floor in clubroom
+{at|on} school desk in clubroom
+{at|on} school chair in clubroom
+{at|on} floor in clubroom
+{at|on} door in clubroom
+{at|on} book stack in clubroom
+{at|on} clock in clubroom
+{at|on} sign in clubroom
+{at|on} poster in clubroom
+{at|on} curtains in clubroom
+{at|on} easel in clubroom
+{at|on} electric fan in clubroom
+{at|on} sculpture in clubroom
+{against|beside} sculpture in clubroom
+{against|beside} electric fan in clubroom
+{against|beside} poster in clubroom
+{against|beside} sign in clubroom
+{against|beside} curtains in clubroom
+{against|beside} easel in clubroom
+{against|beside} book stack in clubroom
+{against|beside} box in clubroom
+{against|beside} cardboard box in clubroom
+{against|beside} desk in clubroom
+{against|beside} chair in clubroom
+{against|beside} lectern in clubroom
+{against|beside} bulletin board in clubroom
+{against|beside} window in clubroom
+{against|beside} chalkboard in clubroom
+{against|beside} wall in clubroom
+{against|beside} door in clubroom
+{against|beside} school desk in clubroom
+{against|beside} school chair in clubroom
+{against|beside} book stack in clubroom
+{against|beside} paper stack in clubroom
+{against|beside} doorway in clubroom
+{against|beside} bookshelf
+{at|on} locker in changing room
+{at|on} laundry basket in changing room
+{at|on} towel in changing room
+{at|on} basket in changing room
+{at|on} clothes hanger in changing room
+{at|on} shelf in changing room
+{at|on} bench in changing room
+{at|on} doorway in changing room
+{at|on} door in changing room
+{at|on} window in changing room
+{at|on} wood floor in changing room
+{at|on} tile floor in changing room
+{at|on} curtains in changing room
+{against|beside} laundry basket in changing room
+{against|beside} basket in changing room
+{against|beside} bench in changing room
+{against|beside} locker in changing room
+{against|beside} sign in changing room
+{against|beside} window in changing room
+{against|beside} wall in changing room
+{against|beside} door in changing room
+{against|beside} doorway in changing room
+{at|on} bed in prison cell
+{at|on} toilet in prison cell
+{at|on} sink in prison cell
+{at|on} door in prison cell
+{at|on} doorway in prison cell
+{at|on} bars in prison cell
+{at|on} shackles in prison cell
+{at|on} stone floor in prison cell
+{at|on} wood floor in prison cell
+{at|on} wet floor in prison cell
+{at|on} chair in prison cell
+{at|on} desk in prison cell
+{at|on} bench in prison cell
+{at|on} table in prison cell
+{at|on} window in prison cell
+{at|on} floor in prison cell
+{against|beside} table in prison cell
+{against|beside} window in prison cell
+{against|beside} wall in prison cell
+{against|beside} stone wall in prison cell
+{against|beside} brick wall in prison cell
+{against|beside} bars in prison cell
+{against|beside} bed in prison cell
+{against|beside} bench in prison cell
+{against|beside} desk in prison cell
+{against|beside} chair in prison cell
+{against|beside} door in prison cell
+{against|beside} doorway in prison cell
+{against|beside} sink in prison cell
+{against|beside} toilet in prison cell
+{at|on} bed in dungeon
+{at|on} toilet in dungeon
+{at|on} sink in dungeon
+{at|on} door in dungeon
+{at|on} doorway in dungeon
+{at|on} bars in dungeon
+{at|on} shackles in dungeon
+{at|on} stone floor in dungeon
+{at|on} wood floor in dungeon
+{at|on} wet floor in dungeon
+{at|on} chair in dungeon
+{at|on} desk in dungeon
+{at|on} bench in dungeon
+{at|on} table in dungeon
+{at|on} window in dungeon
+{at|on} floor in dungeon
+{against|beside} table in dungeon
+{against|beside} window in dungeon
+{against|beside} wall in dungeon
+{against|beside} stone wall in dungeon
+{against|beside} brick wall in dungeon
+{against|beside} bars in dungeon
+{against|beside} bed in dungeon
+{against|beside} bench in dungeon
+{against|beside} desk in dungeon
+{against|beside} chair in dungeon
+{against|beside} door in dungeon
+{against|beside} doorway in dungeon
+{against|beside} sink in dungeon
+{against|beside} toilet in dungeon
+{at|on} locker in dressing room
+{at|on} laundry basket in dressing room
+{at|on} towel in dressing room
+{at|on} basket in dressing room
+{at|on} clothes hanger in dressing room
+{at|on} shelf in dressing room
+{at|on} bench in dressing room
+{at|on} doorway in dressing room
+{at|on} door in dressing room
+{at|on} window in dressing room
+{at|on} wood floor in dressing room
+{at|on} tile floor in dressing room
+{at|on} curtains in dressing room
+{against|beside} laundry basket in dressing room
+{against|beside} basket in dressing room
+{against|beside} bench in dressing room
+{against|beside} locker in dressing room
+{against|beside} sign in dressing room
+{against|beside} window in dressing room
+{against|beside} wall in dressing room
+{against|beside} door in dressing room
+{against|beside} doorway in dressing room
+{at|on} locker in fitting room
+{at|on} laundry basket in fitting room
+{at|on} towel in fitting room
+{at|on} basket in fitting room
+{at|on} clothes hanger in fitting room
+{at|on} shelf in fitting room
+{at|on} bench in fitting room
+{at|on} doorway in fitting room
+{at|on} door in fitting room
+{at|on} window in fitting room
+{at|on} wood floor in fitting room
+{at|on} tile floor in fitting room
+{at|on} curtains in fitting room
+{against|beside} laundry basket in fitting room
+{against|beside} basket in fitting room
+{against|beside} bench in fitting room
+{against|beside} locker in fitting room
+{against|beside} sign in fitting room
+{against|beside} window in fitting room
+{against|beside} wall in fitting room
+{against|beside} door in fitting room
+{against|beside} doorway in fitting room
+{at|on} floor at pool
+{at|on} tiles at pool
+{at|on} tile floor at pool
+{at|on} diving board at pool
+{at|on} poolside at pool
+{at|on} pool ladder at pool
+{at|on} innertube in pool
+{at|on} wet floor at pool
+{at|on} shower at pool
+{against|beside} wall at pool
+{against|beside} tile wall at pool
+{against|beside} innertube at pool
+{against|beside} diving board at pool
+{against|beside} pool ladder at pool
+{against|beside} shower at pool
+{at|on} microphone on stage
+{at|on} stage lights on stage
+{at|on} instrument on stage
+{at|on} drum on stage
+{at|on} bass guitar on stage
+{at|on} electric guitar on stage
+{at|on} spotlight on stage
+{at|on} screen on stage
+{at|on} microphone stand on stage
+{at|on} curtains on stage
+{at|on} truss on stage
+{against|beside} microphone stand on stage
+{against|beside} spotlight on stage
+{against|beside} screen on stage
+{against|beside} instrument on stage
+{against|beside} microphone on stage
+{against|beside} stage lights on stage
+{against|beside} truss on stage
+{at|on} table in cafeteria
+{at|on} chair in cafeteria
+{at|on} bench in cafeteria
+{at|on} counter in cafeteria
+{at|on} window in cafeteria
+{at|on} door in cafeteria
+{at|on} doorway in cafeteria
+{at|on} vending machine in cafeteria
+{at|on} soda fountain in cafeteria
+{at|on} microwave in cafeteria
+{at|on} trash can in cafeteria
+{at|on} recycle bin in cafeteria
+{at|on} poster in cafeteria
+{at|on} floor in cafeteria
+{at|on} tiles in cafeteria
+{at|on} tile floor in cafeteria
+{at|on} brick floor in cafeteria
+{at|on} wood floor in cafeteria 
+{against|beside} table in cafeteria
+{against|beside} chair in cafeteria
+{against|beside} bench in cafeteria
+{against|beside} counter in cafeteria
+{against|beside} window in cafeteria
+{against|beside} door in cafeteria
+{against|beside} doorway in cafeteria
+{against|beside} vending machine in cafeteria
+{against|beside} soda fountain in cafeteria
+{against|beside} microwave in cafeteria
+{against|beside} trash can in cafeteria
+{against|beside} recycle bin in cafeteria
+{against|beside} poster in cafeteria
+{against|beside} floor in cafeteria
+{against|beside} wall in cafeteria
+{at|on} table in workshop
+{at|on} chair in workshop
+{at|on} furnace in workshop
+{at|on} anvil in workshop
+{at|on} tools in workshop
+{at|on} cupboard in workshop
+{at|on} workbench in workshop
+{at|on} shelf in workshop
+{at|on} window in workshop
+{at|on} scale in workshop
+{at|on} wooden table in workshop
+{at|on} wooden chair in workshop
+{at|on} metal chair in workshop
+{at|on} metal table in workshop
+{at|on} machine in workshop
+{at|on} toolbox in workshop
+{at|on} stool in workshop
+{at|on} drawer in workshop
+{at|on} drill press in workshop
+{at|on} press in workshop
+{at|on} trash can in workshop
+{at|on} oxygen tank in workshop
+{at|on} fireplace in workshop
+{at|on} saw in workshop
+{at|on} wheel in workshop
+{at|on} car in workshop
+{at|on} cart in workshop
+{at|on} tank in workshop
+{at|on} airplane in workshop
+{at|on} helicopter in workshop
+{at|on} turret in workshop
+{at|on} crane (machine) in workshop
+{at|on} ammunition in workshop
+{at|on} machinery in workshop
+{at|on} torpedo in workshop
+{at|on} submarine in workshop
+{at|on} wood in workshop
+{at|on} computer in workshop
+{at|on} calender (object) in workshop
+{at|on} ladder in workshop
+{at|on} android in workshop
+{at|on} refrigerator in workshop
+{at|on} door in workshop
+{at|on} doorway in workshop
+{at|on} metal door in workshop
+{at|on} wood door in workshop
+{at|on} floor in workshop
+{at|on} wood floor in workshop
+{at|on} wet floor in workshop
+{at|on} metal floor in workshop
+{at|on} brick floor in workshop
+{at|on} tile floor in workshop
+{at|on} scaffolding in workshop
+{against|beside} table in workshop
+{against|beside} chair in workshop
+{against|beside} furnace in workshop
+{against|beside} anvil in workshop
+{against|beside} tools in workshop
+{against|beside} cupboard in workshop
+{against|beside} workbench in workshop
+{against|beside} shelf in workshop
+{against|beside} window in workshop
+{against|beside} scale in workshop
+{against|beside} wooden table in workshop
+{against|beside} wooden chair in workshop
+{against|beside} metal chair in workshop
+{against|beside} metal table in workshop
+{against|beside} machine in workshop
+{against|beside} toolbox in workshop
+{against|beside} stool in workshop
+{against|beside} drawer in workshop
+{against|beside} drill press in workshop
+{against|beside} press in workshop
+{against|beside} trash can in workshop
+{against|beside} oxygen tank in workshop
+{against|beside} fireplace in workshop
+{against|beside} saw in workshop
+{against|beside} wheel in workshop
+{against|beside} car in workshop
+{against|beside} cart in workshop
+{against|beside} tank in workshop
+{against|beside} airplane in workshop
+{against|beside} helicopter in workshop
+{against|beside} turret in workshop
+{against|beside} crane (machine) in workshop
+{against|beside} ammunition in workshop
+{against|beside} machinery in workshop
+{against|beside} torpedo in workshop
+{against|beside} submarine in workshop
+{against|beside} wood in workshop
+{against|beside} computer in workshop
+{against|beside} calender (object) in workshop
+{against|beside} ladder in workshop
+{against|beside} android in workshop
+{against|beside} refrigerator in workshop
+{against|beside} door in workshop
+{against|beside} doorway in workshop
+{against|beside} metal door in workshop
+{against|beside} wood door in workshop
+{against|beside} scaffolding in workshop
+{at|on} rock in cave
+{at|on} stone in cave
+{at|on} crystal in cave
+{at|on} minecart in cave
+{at|on} waterfall in cave
+{at|on} stalactite in cave
+{at|on} skull in cave
+{at|on} bones in cave
+{at|on} mushroom in cave
+{at|on} railroad tracks in cave
+{at|on} spider web in cave
+{at|on} statue in cave
+{at|on} sculpture in cave
+{at|on} snow in cave
+{at|on} river in cave
+{at|on} egg in cave
+{at|on} moss in cave
+{at|on} plants in cave
+{at|on} gold in cave
+{at|on} boat in cave
+{at|on} mineshaft in cave
+{at|on} pool of liquid in cave
+{at|on} grass in cave
+{at|on} flower in cave
+{at|on} roots in cave
+{at|on} ice in cave
+{at|on} sandstone in cave
+{at|on} bridge in cave
+{at|on} path in cave
+{at|on} pillar in cave
+{at|on} tree in cave
+{at|on} hole in cave
+{at|on} floor in cave
+{at|on} wet floor in cave
+{at|on} stone floor in cave
+{at|on} mud floor in cave
+{at|on} dirt floor in cave
+{at|on} crystal floor in cave
+{at|on} sandy floor in cave
+{against|beside} rock in cave
+{against|beside} stone in cave
+{against|beside} crystal in cave
+{against|beside} minecart in cave
+{against|beside} waterfall in cave
+{against|beside} stalactite in cave
+{against|beside} skull in cave
+{against|beside} bones in cave
+{against|beside} mushroom in cave
+{against|beside} railroad tracks in cave
+{against|beside} spider web in cave
+{against|beside} statue in cave
+{against|beside} sculpture in cave
+{against|beside} snow in cave
+{against|beside} river in cave
+{against|beside} egg in cave
+{against|beside} moss in cave
+{against|beside} plants in cave
+{against|beside} gold in cave
+{against|beside} boat in cave
+{against|beside} mineshaft in cave
+{against|beside} pool of liquid in cave
+{against|beside} grass in cave
+{against|beside} flower in cave
+{against|beside} roots in cave
+{against|beside} ice in cave
+{against|beside} sandstone in cave
+{against|beside} bridge in cave
+{against|beside} path in cave
+{against|beside} pillar in cave
+{against|beside} tree in cave
+{against|beside} hole in cave
+{against|beside} wall in cave
+{at|on}weapon rack in armory
+{at|on}ammunition box in armory
+{at|on}ammo box in armory
+{at|on}shelf in armory
+{at|on}table in armory
+{at|on}chair in armory
+{at|on}cabinet in armory
+{at|on}window in armory
+{at|on}door in armory
+{at|on}doorway in armory
+{at|on}barrel in armory
+{at|on}armor in armory
+{at|on}lamp in armory
+{at|on}sack in armory
+{at|on}shield in armory
+{at|on}hammer in armory
+{at|on}sword in armory
+{at|on}helmet in armory
+{at|on}carpet in armory
+{at|on}rug in armory
+{at|on}floor in armory
+{at|on}wood floor in armory
+{at|on}metal floor in armory
+{at|on}tile floor in armory
+{at|on}concrete floor in armory
+{at|on}stone floor in armory
+{at|on}stairs in armory
+{against|beside} stairs in armory
+{against|beside} weapon rack in armory
+{against|beside} ammunition box in armory
+{against|beside} ammo box in armory
+{against|beside} shelf in armory
+{against|beside} table in armory
+{against|beside} chair in armory
+{against|beside} cabinet in armory
+{against|beside} window in armory
+{against|beside} door in armory
+{against|beside} doorway in armory
+{against|beside} barrel in armory
+{against|beside} armor in armory
+{against|beside} lamp in armory
+{against|beside} sack in armory
+{against|beside} shield in armory
+{against|beside} hammer in armory
+{against|beside} sword in armory
+{against|beside} helmet in armory
+{against|beside} wood wall in armory
+{against|beside} concrete wall in armory
+{against|beside} stone wall in armory
+{against|beside} brick wall in armory
+{against|beside} tile wall in armory
+{against|beside} metal wall in armory
+{at|on} vaulting horses in gym storeroom
+{at|on} mats in gym storeroom
+{at|on} hurdles in gym storeroom
+{at|on} traffic cones in gym storeroom
+{at|on} olleyballs in gym storeroom
+{at|on} basketballs in gym storeroom
+{at|on} soccerballs in gym storeroom
+{at|on} tennis racket in gym storeroom
+{at|on} tennis balls in gym storeroom
+{at|on} hockey sticks in gym storeroom
+{at|on} hockey masks in gym storeroom
+{at|on} boxes in gym storeroom
+{at|on} cardboard boxes in gym storeroom
+{at|on} barbells in gym storeroom
+{at|on} dumbbells in gym storeroom
+{at|on} water bottles in gym storeroom
+{at|on} weights in gym storeroom
+{at|on} door in gym storeroom
+{at|on} doorway in gym storeroom
+{at|on} window in gym storeroom
+{at|on} floor in gym storeroom
+{at|on} wood floor in gym storeroom
+{at|on} metal floor in gym storeroom
+{at|on} tile floor in gym storeroom
+{at|on} concrete floor in gym storeroom
+{at|on} stone floor in gym storeroom
+{against|beside} wood wall in gym storeroom
+{against|beside} concrete wall in gym storeroom
+{against|beside} stone wall in gym storeroom
+{against|beside} brick wall in gym storeroom
+{against|beside} tile wall in gym storeroom
+{against|beside} metal wall in gym storeroom
+{against|beside} door in gym storeroom
+{against|beside} doorway in gym storeroom
+{against|beside} window in gym storeroom
+{against|beside} vaulting horses in gym storeroom
+{against|beside} mats in gym storeroom
+{against|beside} hurdles in gym storeroom
+{against|beside} traffic cones in gym storeroom
+{against|beside} volleyballs in gym storeroom
+{against|beside} basketballs in gym storeroom
+{against|beside} soccerballs in gym storeroom
+{against|beside} tennis racket in gym storeroom
+{against|beside} tennis balls in gym storeroom
+{against|beside} hockey sticks in gym storeroom
+{against|beside} hockey masks in gym storeroom
+{against|beside} boxes in gym storeroom
+{against|beside} cardboard boxes in gym storeroom
+{against|beside} barbells in gym storeroom
+{against|beside} dumbbells in gym storeroom
+{against|beside} water bottles in gym storeroom
+{against|beside} weights in gym storeroom
+{at|on} vaulting horses in gym  
+{at|on} mats in gym  
+{at|on} hurdles in gym  
+{at|on} traffic cones in gym  
+{at|on} olleyballs in gym  
+{at|on} basketballs in gym  
+{at|on} soccerballs in gym  
+{at|on} tennis racket in gym  
+{at|on} tennis balls in gym  
+{at|on} hockey sticks in gym  
+{at|on} hockey masks in gym  
+{at|on} boxes in gym  
+{at|on} cardboard boxes in gym  
+{at|on} barbells in gym  
+{at|on} dumbbells in gym  
+{at|on} water bottles in gym  
+{at|on} weights in gym  
+{at|on} door in gym  
+{at|on} doorway in gym  
+{at|on} window in gym  
+{at|on} floor in gym  
+{at|on} wood floor in gym  
+{at|on} metal floor in gym  
+{at|on} tile floor in gym  
+{at|on} concrete floor in gym  
+{at|on} stone floor in gym
+{at|on} volleyball net in gym 
+{at|on} basketball hoop in gym 
+{at|on} tennis net in gym 
+{at|on} exercise machine in gym 
+{at|on} treadmill in gym 
+{at|on} bleachers in gym 
+{at|on} bench in gym 
+{at|on} exercise bike in gym 
+{at|on} mirror in gym 
+{at|on} exercise ball in gym 
+{against|beside} wood wall in gym  
+{against|beside} concrete wall in gym  
+{against|beside} stone wall in gym  
+{against|beside} brick wall in gym  
+{against|beside} tile wall in gym  
+{against|beside} metal wall in gym  
+{against|beside} door in gym  
+{against|beside} doorway in gym  
+{against|beside} window in gym  
+{against|beside} vaulting horses in gym  
+{against|beside} mats in gym  
+{against|beside} hurdles in gym  
+{against|beside} traffic cones in gym  
+{against|beside} volleyballs in gym  
+{against|beside} basketballs in gym  
+{against|beside} soccerballs in gym  
+{against|beside} tennis racket in gym  
+{against|beside} tennis balls in gym  
+{against|beside} hockey sticks in gym  
+{against|beside} hockey masks in gym  
+{against|beside} boxes in gym  
+{against|beside} cardboard boxes in gym  
+{against|beside} barbells in gym  
+{against|beside} dumbbells in gym  
+{against|beside} water bottles in gym  
+{against|beside} weights in gym  
+{against|beside} volleyball net in gym 
+{against|beside} basketball hoop in gym 
+{against|beside} tennis net in gym 
+{against|beside} exercise machine in gym 
+{against|beside} treadmill in gym 
+{against|beside} bleachers in gym 
+{against|beside} bench in gym 
+{against|beside} exercise bike in gym 
+{against|beside} mirror in gym 
+{against|beside} exercise ball in gym 
+{at|on} ice on glacier
+{at|on} snow on glacier
+{at|on} water on glacier
+{at|on} cracked floor on glacier
+{at|on} tent on glacier
+{at|on} campfire on glacier
+{at|on} waterfall on glacier
+{at|on} mountain on glacier
+{at|on} crack on glacier
+{at|on} hole on glacier
+{against|beside} ice on glacier
+{against|beside} snow on glacier
+{against|beside} water on glacier
+{against|beside} cracked floor on glacier
+{against|beside} tent on glacier
+{against|beside} campfire on glacier
+{against|beside} waterfall on glacier
+{against|beside} mountain on glacier
+{against|beside} crack on glacier
+{against|beside} hole on glacier
+{at|on} trash can in alley
+{at|on} dumpster in alley
+{at|on} trash bag in alley
+{at|on} boxes in alley
+{at|on} cardboard boxes in alley
+{at|on} railing in alley
+{at|on} air conditioner in alley
+{at|on} cable in alley
+{at|on} pipe in alley
+{at|on} industrial pipe in alley
+{at|on} power lines in alley
+{at|on} stairs in alley
+{at|on} metal stairs in alley
+{at|on} wood stairs in alley
+{at|on} brick stairs in alley
+{at|on} concrete stairs in alley
+{at|on} stone stairs in alley
+{at|on} bench in alley
+{at|on} chair in alley
+{at|on} table in alley
+{at|on} couch in alley
+{at|on} vending machine in alley
+{at|on} payphone in alley
+{at|on} floor in alley
+{at|on} wood floor in alley
+{at|on} metal floor in alley
+{at|on} tile floor in alley
+{at|on} concrete floor in alley
+{at|on} stone floor in alley
+{at|on} cracked floor in alley
+{at|on} wet floor in alley
+{at|on} wet wood floor in alley
+{at|on} wet metal floor in alley
+{at|on} wet tile floor in alley
+{at|on} wet concrete floor in alley
+{at|on} wet stone floor in alley
+{at|on} wet cracked floor in alley
+{at|on} sidewalk in alley
+{at|on} window in alley
+{at|on} door in alley
+{at|on} wood door in alley
+{at|on} metal door in alley
+{against|beside} trash can in alley
+{against|beside} dumpster in alley
+{against|beside} trash bag in alley
+{against|beside} boxes in alley
+{against|beside} cardboard boxes in alley
+{against|beside} railing in alley
+{against|beside} air conditioner in alley
+{against|beside} cable in alley
+{against|beside} pipe in alley
+{against|beside} industrial pipe in alley
+{against|beside} power lines in alley
+{against|beside} stairs in alley
+{against|beside} metal stairs in alley
+{against|beside} wood stairs in alley
+{against|beside} brick stairs in alley
+{against|beside} concrete stairs in alley
+{against|beside} stone stairs in alley
+{against|beside} bench in alley
+{against|beside} chair in alley
+{against|beside} table in alley
+{against|beside} couch in alley
+{against|beside} vending machine in alley
+{against|beside} payphone in alley
+{against|beside} window in alley
+{against|beside} door in alley
+{against|beside} wood door in alley
+{against|beside} metal door in alley
+{against|beside} wood wall in alley
+{against|beside} concrete wall in alley
+{against|beside} stone wall in alley
+{against|beside} brick wall in alley
+{against|beside} tile wall in alley
+{against|beside} metal wall in alley
+{against|beside} graffiti wood wall in alley
+{against|beside} graffiti concrete wall in alley
+{against|beside} graffiti stone wall in alley
+{against|beside} graffiti brick wall in alley
+{against|beside} graffiti tile wall in alley
+{against|beside} graffiti metal wall in alley
+{against|beside} wet wood wall in alley
+{against|beside} wet concrete wall in alley
+{against|beside} wet stone wall in alley
+{against|beside} wet brick wall in alley
+{against|beside} wet tile wall in alley
+{against|beside} wet metal wall in alley
+{against|beside} chain-link fence in alley

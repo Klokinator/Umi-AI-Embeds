@@ -10,3 +10,5 @@ __PRESETS/NSFW/Oneshot H-Manga__
 __PRESETS/NSFW/Superior Slimegirls__
 # Raving Robogirls in varying levels of BDSM, with universal types and the original 4chan version. Prefers DDIM at 50 steps over Euler, but otherwise works well.
 __PRESETS/NSFW/Raving Robogirls__
+# Specialized NSFW Species that generally just generate extremely sexy if not outright nude.
+__PRESETS/NSFW/Specialized Species__
