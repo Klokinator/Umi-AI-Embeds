@@ -6,6 +6,7 @@ import re
 import time
 import glob
 from random import choices
+import yaml
 
 import modules.scripts as scripts
 import modules.images as images
@@ -25,7 +26,7 @@ def get_index(items, item):
 
 
 def parse_tag(tag):
-    return tag.replace("__", "")
+    return tag.replace("__", "").replace('<', '').replace('>', '')
 
 
 def read_file_lines(file):
@@ -49,16 +50,30 @@ class TagLoader:
         if self.loaded_tags.get(filePath):
             return self.loaded_tags.get(filePath)
 
-        file_path = os.path.join(self.wildcard_location, f'{filePath}.txt')
+        txt_file_path = os.path.join(self.wildcard_location, f'{filePath}.txt')
+        yaml_file_path = os.path.join(self.wildcard_location, f'{filePath}.yaml')
 
-        if self.wildcard_location and os.path.isfile(file_path):
-            with open(file_path, encoding="utf8") as file:
+        if self.wildcard_location and os.path.isfile(txt_file_path):
+            with open(txt_file_path, encoding="utf8") as file:
                 self.files.append(f"{filePath}.txt")
                 self.loaded_tags[filepath_lower] = read_file_lines(file)
-        else:
-            self.missing_tags.add(filePath)
-            return []
+        
+        if self.wildcard_location and os.path.isfile(yaml_file_path):
+            with open(yaml_file_path, encoding="utf8") as file:
+                self.files.append(f"{filePath}.yaml")
+                try:
+                    data = yaml.safe_load(file)
+                    output = {}
+                    for item in data:
+                       output[item] = {x for i,x in enumerate(data[item]['Tags'])}
+                    self.loaded_tags[filepath_lower] = output
+                    print(self.loaded_tags[filepath_lower])
+                except yaml.YAMLError as exc:
+                    print(exc)
 
+        if not os.path.isfile(yaml_file_path) and not os.path.isfile(txt_file_path):
+            self.missing_tags.add(filePath)
+        
         return self.loaded_tags.get(filepath_lower) if self.loaded_tags.get(filepath_lower) else []
 
 
@@ -73,13 +88,46 @@ class TagSelector:
             return tags[self.selected_options.get(parsed_tag.lower())]
         return choices(tags)[0] if len(tags) > 0 else ""
 
-    def select(self, tag):
+    def get_tag_group_choice(self, parsed_tag, groups, tags):
+        # print('selected_options', self.selected_options)
+        # print('groups', groups)
+        # print('parsed_tag', parsed_tag)
+        neg_groups = [x for x in groups if x.startswith('--')]
+        neg_groups_set = {x.replace('--', '') for x in neg_groups}
+        any_groups = [{y for i,y in enumerate(x.split('|'))} for x in groups if '|' in x]
+        pos_groups = [x for x in groups if x not in neg_groups and '|' not in x]
+        pos_groups_set = {x for x in pos_groups}
+        # print('pos_groups', pos_groups_set)
+        # print('negative_groups', neg_groups_set)
+        # print('any_groups', any_groups)
+        candidates = []
+        for tag in tags:
+            tag_set = tags[tag]
+            if len(list(pos_groups_set & tag_set)) != len(pos_groups_set):
+                continue
+            if len(list(neg_groups_set & tag_set)) > 0:
+                continue
+            if len(any_groups) > 0:
+                any_groups_found = 0
+                for any_group in any_groups:
+                    if len(list(any_group & tag_set)) == 0:
+                        break
+                    any_groups_found += 1
+                if len(any_groups) != any_groups_found:
+                    continue
+            candidates.append(tag)
+        return choices(candidates)[0] if len(candidates) > 0 else ""
+
+
+    def select(self, tag, groups=None):
         self.previously_selected_tags.setdefault(tag, 0)
 
         if self.previously_selected_tags.get(tag) < 100:
             self.previously_selected_tags[tag] += 1
             parsed_tag = parse_tag(tag)
             tags = self.tag_loader.load_tags(parsed_tag)
+            if groups and len(groups) > 0:
+                return self.get_tag_group_choice(parsed_tag, groups, tags)
             if len(tags) > 0:
                 return self.get_tag_choice(parsed_tag, tags)
             return tag
@@ -91,13 +139,18 @@ class TagReplacer:
     def __init__(self, tag_selector, options):
         self.tag_selector = tag_selector
         self.options = options
-        self.wildcard_regex = re.compile('__(.*?)__')
+        self.wildcard_regex = re.compile('[_<]_?(.*?)_?[_>]')
+        self.opts_regexp = re.compile('(?<=\[)(.*?)(?=\])')
 
     def replace_wildcard(self, matches):
         if matches is None or len(matches.groups()) == 0:
             return ""
 
         match = matches.groups()[0]
+        match_and_opts = match.split(':')
+        if (len(match_and_opts) == 2):
+            return self.tag_selector.select(match_and_opts[0], self.opts_regexp.findall(match_and_opts[1]))
+
         return self.tag_selector.select(match)
 
     def replace_wildcard_recursive(self, prompt):
