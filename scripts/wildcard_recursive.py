@@ -67,7 +67,7 @@ class TagLoader:
                     for item in data:
                        output[item] = {x for i,x in enumerate(data[item]['Tags'])}
                     self.loaded_tags[filepath_lower] = output
-                    print(self.loaded_tags[filepath_lower])
+                    #print(self.loaded_tags[filepath_lower])
                 except yaml.YAMLError as exc:
                     print(exc)
 
@@ -185,20 +185,56 @@ class DynamicPromptReplacer:
             return split_variant[1]
         return variant
 
+    def parse_range(self, range_str, num_variants):
+        if range_str is None:
+            return None
+
+        parts = range_str.split("-")
+        if len(parts) == 1:
+            low = high = min(int(parts[0]), num_variants)
+        elif len(parts) == 2:
+            low = int(parts[0]) if parts[0] else 0
+            high = min(int(parts[1]), num_variants) if parts[1] else num_variants
+        else:
+            raise Exception(f"Unexpected range {range_str}")
+
+        return min(low, high), max(low, high)
+
     def replace_combinations(self, match):
         if match is None or len(match.groups()) == 0:
             return ""
 
-        variants = [s.strip() for s in match.groups()[0].split("|")]
+        combinations_str = match.groups()[0]
+
+        variants = [s.strip() for s in combinations_str.split("|")]
         weights = [self.get_variant_weight(var) for var in variants]
         variants = [self.get_variant(var) for var in variants]
+
+        splits = variants[0].split("$$")
+        quantity = splits.pop(0) if len(splits) > 1 else str(1)
+        variants[0] = splits[0]
+
+        low_range, high_range = self.parse_range(quantity, len(variants))
+
+        quantity = random.randint(low_range, high_range)
 
         summed = sum(weights)
         zero_weights = weights.count(0)
         weights = list(map(lambda x: (100 - summed) / zero_weights if x == 0 else x, weights))
+
         try:
-            picked = choices(variants, weights)[0]
-            return picked
+            #print(f"choosing {quantity} tag from:\n{variants}")
+            picked = []
+            for x in range(quantity):
+                choice = random.choices(variants, weights)[0]
+                picked.append(choice)
+
+                index = variants.index(choice)
+                variants.pop(index)
+                weights.pop(index)
+
+            #print(f"Picked:\n{' , '.join(picked)}\n")
+            return " , ".join(picked)
         except ValueError as e:
             return ""
 
@@ -209,31 +245,6 @@ class DynamicPromptReplacer:
         return self.re_combinations.sub(self.replace_combinations, template)
 
 
-class PromptGenerator:
-    def __init__(self, options):
-        self.tag_loader = TagLoader()
-        self.tag_selector = TagSelector(self.tag_loader, options)
-        self.replacers = [TagReplacer(self.tag_selector, options), DynamicPromptReplacer()]
-
-    def use_replacers(self, prompt):
-        for replacer in iter(self.replacers):
-            prompt = replacer.replace(prompt)
-
-        return prompt
-
-    def generate_single_prompt(self, original_prompt):
-        previous_prompt = original_prompt
-        prompt = self.use_replacers(original_prompt)
-        while previous_prompt != prompt:
-            previous_prompt = prompt
-            prompt = self.use_replacers(previous_prompt)
-
-        return prompt
-
-    def generate(self, original_prompt, prompt_count):
-        return [self.generate_single_prompt(original_prompt) for _ in range(prompt_count)]
-
-
 class OptionGenerator:
     def __init__(self, tag_loader):
         self.tag_loader = tag_loader
@@ -241,7 +252,7 @@ class OptionGenerator:
     def get_configurable_options(self):
         return self.tag_loader.load_tags('configuration')
 
-    def get_option_choices(self, tag):
+    def get_option_choices(self, tag):\
         return self.tag_loader.load_tags(parse_tag(tag))
 
     def parse_options(self, options):
@@ -260,12 +271,13 @@ class PromptGenerator:
         self.tag_loader = TagLoader()
         self.tag_selector = TagSelector(self.tag_loader, options)
         self.negative_tag_generator = NegativePromptGenerator()
-        self.replacers = [TagReplacer(self.tag_selector, options), DynamicPromptReplacer(), self.negative_tag_generator]
+        self.replacers = [DynamicPromptReplacer(), TagReplacer(self.tag_selector, options), self.negative_tag_generator]
 
     def use_replacers(self, prompt):
         for replacer in self.replacers:
             prompt = replacer.replace(prompt)
 
+        
         return prompt
 
     def generate_single_prompt(self, original_prompt):
@@ -334,6 +346,7 @@ class Script(scripts.Script):
         prompt_generator = PromptGenerator(options)
 
         for i in range(len(p.all_prompts)):
+            #print(f"----------------------\nPrompt #{i}")
             if (shared_seed):
                 random.seed(p.all_seeds[0 if same_seed else i])
             else:
@@ -342,6 +355,7 @@ class Script(scripts.Script):
             prompt = p.all_prompts[i]
             prompt = prompt_generator.generate_single_prompt(prompt)
             p.all_prompts[i] = prompt
+            #print(f"Prompt:\n{prompt}\n")
 
         if negative_prompt:
             p.negative_prompt = p.negative_prompt + prompt_generator.get_negative_tags()
