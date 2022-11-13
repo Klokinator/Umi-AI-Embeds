@@ -65,7 +65,7 @@ class TagLoader:
                     data = yaml.safe_load(file)
                     output = {}
                     for item in data:
-                       output[item] = {x for i,x in enumerate(data[item]['Tags'])}
+                       output[item] = {x.lower() for i,x in enumerate(data[item]['Tags'])}
                     self.loaded_tags[filepath_lower] = output
                     print(self.loaded_tags[filepath_lower])
                 except yaml.YAMLError as exc:
@@ -92,10 +92,10 @@ class TagSelector:
         # print('selected_options', self.selected_options)
         # print('groups', groups)
         # print('parsed_tag', parsed_tag)
-        neg_groups = [x for x in groups if x.startswith('--')]
+        neg_groups = [x.lower() for x in groups if x.startswith('--')]
         neg_groups_set = {x.replace('--', '') for x in neg_groups}
-        any_groups = [{y for i,y in enumerate(x.split('|'))} for x in groups if '|' in x]
-        pos_groups = [x for x in groups if x not in neg_groups and '|' not in x]
+        any_groups = [{y for i,y in enumerate(x.lower().split('|'))} for x in groups if '|' in x]
+        pos_groups = [x.lower() for x in groups if x not in neg_groups and '|' not in x]
         pos_groups_set = {x for x in pos_groups}
         # print('pos_groups', pos_groups_set)
         # print('negative_groups', neg_groups_set)
