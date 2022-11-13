@@ -65,7 +65,7 @@ class TagLoader:
                     data = yaml.safe_load(file)
                     output = {}
                     for item in data:
-                       output[item] = {x for i,x in enumerate(data[item]['Tags'])}
+                       output[item] = {x.lower() for i,x in enumerate(data[item]['Tags'])}
                     self.loaded_tags[filepath_lower] = output
                     #print(self.loaded_tags[filepath_lower])
                 except yaml.YAMLError as exc:
@@ -89,17 +89,17 @@ class TagSelector:
         return choices(tags)[0] if len(tags) > 0 else ""
 
     def get_tag_group_choice(self, parsed_tag, groups, tags):
-        # print('selected_options', self.selected_options)
-        # print('groups', groups)
-        # print('parsed_tag', parsed_tag)
-        neg_groups = [x for x in groups if x.startswith('--')]
+        print('selected_options', self.selected_options)
+        print('groups', groups)
+        print('parsed_tag', parsed_tag)
+        neg_groups = [x.lower() for x in groups if x.startswith('--')]
         neg_groups_set = {x.replace('--', '') for x in neg_groups}
-        any_groups = [{y for i,y in enumerate(x.split('|'))} for x in groups if '|' in x]
-        pos_groups = [x for x in groups if x not in neg_groups and '|' not in x]
+        any_groups = [{y for i,y in enumerate(x.lower().split('|'))} for x in groups if '|' in x]
+        pos_groups = [x.lower() for x in groups if x not in neg_groups and '|' not in x]
         pos_groups_set = {x for x in pos_groups}
-        # print('pos_groups', pos_groups_set)
-        # print('negative_groups', neg_groups_set)
-        # print('any_groups', any_groups)
+        print('pos_groups', pos_groups_set)
+        print('negative_groups', neg_groups_set)
+        print('any_groups', any_groups)
         candidates = []
         for tag in tags:
             tag_set = tags[tag]
@@ -326,6 +326,7 @@ class Script(scripts.Script):
     def ui(self, is_img2img):
         with gr.Group():
             with gr.Row():
+                enabled = gr.Checkbox(label="UmiAI enabled?", value=True)
                 same_seed = gr.Checkbox(label='Use same prompt for each image in a batch?', value=False)
                 negative_prompt = gr.Checkbox(label='Allow **negative keywords** from wildcards in Negative Prompts?', value=True)
                 shared_seed = gr.Checkbox(label="Always pick the same random/wildcard options with a static seed?", value=False)
@@ -334,9 +335,11 @@ class Script(scripts.Script):
                 gr.Dropdown(label=opt, choices=["RANDOM"] + option_generator.get_option_choices(opt), value="RANDOM")
                 for opt in option_generator.get_configurable_options()]
 
-        return [same_seed, negative_prompt, shared_seed] + options
+        return [enabled, same_seed, negative_prompt, shared_seed] + options
 
-    def process(self, p, same_seed, negative_prompt, shared_seed, *args):
+    def process(self, p, enabled, same_seed, negative_prompt, shared_seed, *args):
+        if not enabled:
+            return
         TagLoader.files.clear()
         original_prompt = p.all_prompts[0]
         option_generator = OptionGenerator(TagLoader())
@@ -362,4 +365,4 @@ class Script(scripts.Script):
 
         if original_prompt != p.all_prompts[0]:
             p.extra_generation_params["Wildcard prompt"] = original_prompt
-            p.extra_generation_params["File includes"] = "\n".join(TagLoader.files)
+            p.extra_generation_params["File includes"] = "|".join(TagLoader.files) ## test if it fixes importing
