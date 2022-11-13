@@ -23,6 +23,7 @@ Installing Umi is easier than ever. It has been simplified into a 3-step process
 **Step 1: Determine if your PC meets the requirements to run AI generation.**
 Is your GPU sufficiently powerful enough to run AI generation? [Download and run Speccy](https://www.ccleaner.com/speccy) and [post your PC specs in the Umi AI Discord](https://discord.gg/9K7j7DTfG2).
 ![https://discord.gg/9K7j7DTfG2](https://i.imgur.com/VY9WtjT.png)
+
 Assuming your PC meets the requirements...
 
 **Step 2: Run the WebUI auto-installer.**
