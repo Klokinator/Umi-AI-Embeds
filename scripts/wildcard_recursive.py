@@ -41,7 +41,7 @@ def read_file_lines(file):
             lines.append(line)
     return lines
 
-
+# Wildcards
 class TagLoader:
     files = []
     wildcard_location = os.path.join(pathlib.Path(inspect.getfile(lambda: None)).parent.parent, "wildcards")
@@ -78,7 +78,7 @@ class TagLoader:
         
         return self.loaded_tags.get(filepath_lower) if self.loaded_tags.get(filepath_lower) else []
 
-
+# <yaml:[tag]> notation
 class TagSelector:
     def __init__(self, tag_loader, options):
         self.tag_loader = tag_loader
@@ -91,17 +91,17 @@ class TagSelector:
         return choices(tags)[0] if len(tags) > 0 else ""
 
     def get_tag_group_choice(self, parsed_tag, groups, tags):
-        print('selected_options', self.selected_options)
-        print('groups', groups)
-        print('parsed_tag', parsed_tag)
+        #print('selected_options', self.selected_options)
+        #print('groups', groups)
+        #print('parsed_tag', parsed_tag)
         neg_groups = [x.lower() for x in groups if x.startswith('--')]
         neg_groups_set = {x.replace('--', '') for x in neg_groups}
         any_groups = [{y for i,y in enumerate(x.lower().split('|'))} for x in groups if '|' in x]
         pos_groups = [x.lower() for x in groups if x not in neg_groups and '|' not in x]
         pos_groups_set = {x for x in pos_groups}
-        print('pos_groups', pos_groups_set)
-        print('negative_groups', neg_groups_set)
-        print('any_groups', any_groups)
+        #print('pos_groups', pos_groups_set)
+        #print('negative_groups', neg_groups_set)
+        #print('any_groups', any_groups)
         candidates = []
         for tag in tags:
             tag_set = tags[tag]
@@ -166,7 +166,7 @@ class TagReplacer:
     def replace(self, prompt):
         return self.replace_wildcard_recursive(prompt)
 
-
+# handle {1$$this | that} notation
 class DynamicPromptReplacer:
     def __init__(self):
         self.re_combinations = re.compile(r"\{([^{}]*)}")
@@ -225,7 +225,7 @@ class DynamicPromptReplacer:
         weights = list(map(lambda x: (100 - summed) / zero_weights if x == 0 else x, weights))
 
         try:
-            #print(f"choosing {quantity} tag from:\n{variants}")
+            #print(f"choosing {quantity} tag from:\n{' , '.join(variants)}")
             picked = []
             for x in range(quantity):
                 choice = random.choices(variants, weights)[0]
@@ -307,7 +307,7 @@ class NegativePromptGenerator:
 
     def strip_negative_tags(self, tags):
         matches = re.findall('\*\*.*?\*\*', tags)
-        if matches and len(self.negative_tag) == 0:
+        if matches:
             for match in matches:
                 self.negative_tag.add(match.replace("**", ""))
                 tags = tags.replace(match, "")
@@ -319,6 +319,7 @@ class NegativePromptGenerator:
     def get_negative_tags(self):
         return " ".join(self.negative_tag)
 
+# @@settings@@ notation
 class SettingsGenerator:
     def __init__(self):
         self.re_setting_tags = re.compile(r"@@(.*?)@@")
@@ -372,35 +373,56 @@ class Script(scripts.Script):
                 same_seed = gr.Checkbox(label='Use same prompt for each image in a batch?', value=False)
                 negative_prompt = gr.Checkbox(label='Allow **negative keywords** from wildcards in Negative Prompts?', value=True)
                 shared_seed = gr.Checkbox(label="Always pick the same random/wildcard options with a static seed?", value=False)
+
             option_generator = OptionGenerator(TagLoader())
             options = [
                 gr.Dropdown(label=opt, choices=["RANDOM"] + option_generator.get_option_choices(opt), value="RANDOM")
                 for opt in option_generator.get_configurable_options()]
 
         return [enabled, same_seed, negative_prompt, shared_seed] + options
+        
 
     def process(self, p, enabled, same_seed, negative_prompt, shared_seed, *args):
         if not enabled:
             return
+
+        debug = False
+
+        if debug: print(f'\nModel: {p.sampler_index}, Seed: {int(p.seed)}, Batch Count: {p.n_iter}, Batch Size: {p.batch_size}, CFG: {p.cfg_scale}, Steps: {p.steps}\nOriginal Prompt: "{p.prompt}"\n')
+
         TagLoader.files.clear()
         original_prompt = p.all_prompts[0]
+        
         option_generator = OptionGenerator(TagLoader())
         options = {
             'selected_options': option_generator.parse_options(args)
         }
         prompt_generator = PromptGenerator(options)
 
-        for i in range(len(p.all_prompts)):
-            #print(f"----------------------\nPrompt #{i}")
-            if (shared_seed):
-                random.seed(p.all_seeds[0 if same_seed else i])
-            else:
-                random.seed(time.time())
+        for cur_count in range(p.n_iter): #Batch count
+            for cur_batch in range(p.batch_size): #Batch Size
 
-            prompt = p.all_prompts[i]
-            prompt = prompt_generator.generate_single_prompt(prompt)
-            p.all_prompts[i] = prompt
-            #print(f"Prompt:\n{prompt}\n")
+                index = p.batch_size*cur_count + cur_batch
+
+                # pick same wildcard for a given seed
+                if (shared_seed):
+                    random.seed(p.all_seeds[p.batch_size*cur_count if same_seed else index])
+                    if debug: print(f"{f' Batch #{cur_count} ':=^30}")
+                else:
+                    random.seed(time.time())
+                    if debug: print(f"{f' Prompt #{index} ':=^30}")
+
+                prompt = p.all_prompts[index]
+                prompt = prompt_generator.generate_single_prompt(prompt)
+                p.all_prompts[index] = prompt
+
+                if debug: print(f'Prompt: "{prompt}"\n')
+                
+                # same prompt per batch
+                if (same_seed):
+                    for index in range(index, index+p.batch_size):
+                        p.all_prompts[index] = prompt
+                    break
 
         def find_sampler_index(sampler_list, value):
             for index, elem in enumerate(sampler_list):
@@ -408,7 +430,7 @@ class Script(scripts.Script):
                     return index
 
         att_override = prompt_generator.get_setting_overrides()
-        print(att_override)
+        #print(att_override)
         for att in att_override.keys():
             if not att.startswith("__"):
                 if att == 'sampler':
@@ -425,8 +447,13 @@ class Script(scripts.Script):
                 setattr(p,att,att_override[att])
 
         if negative_prompt:
-            p.negative_prompt = p.negative_prompt + prompt_generator.get_negative_tags()
+            additional_negative = prompt_generator.get_negative_tags()
+            if debug: print(f'Original Negatives: "{p.negative_prompt}"\nAdditional Negative: "{additional_negative}"\n')
+            p.negative_prompt = p.negative_prompt + additional_negative
+            
 
         if original_prompt != p.all_prompts[0]:
             p.extra_generation_params["Wildcard prompt"] = original_prompt
             p.extra_generation_params["File includes"] = "|".join(TagLoader.files) ## test if it fixes importing
+        
+        
