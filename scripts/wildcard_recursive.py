@@ -17,6 +17,8 @@ from modules.shared import opts, cmd_opts, state
 from modules import scripts, script_callbacks, shared
 from modules.styles import StyleDatabase
 
+from modules.sd_samplers import samplers, samplers_for_img2img
+
 
 def get_index(items, item):
     try:
@@ -271,13 +273,13 @@ class PromptGenerator:
         self.tag_loader = TagLoader()
         self.tag_selector = TagSelector(self.tag_loader, options)
         self.negative_tag_generator = NegativePromptGenerator()
-        self.replacers = [DynamicPromptReplacer(), TagReplacer(self.tag_selector, options), self.negative_tag_generator]
+        self.settings_generator = SettingsGenerator()
+        self.replacers = [self.settings_generator, DynamicPromptReplacer(), TagReplacer(self.tag_selector, options), self.negative_tag_generator]
 
     def use_replacers(self, prompt):
         for replacer in self.replacers:
             prompt = replacer.replace(prompt)
 
-        
         return prompt
 
     def generate_single_prompt(self, original_prompt):
@@ -295,10 +297,12 @@ class PromptGenerator:
     def get_negative_tags(self):
         return self.negative_tag_generator.get_negative_tags()
 
+    def get_setting_overrides(self):
+        return self.settings_generator.get_setting_overrides()
+
 
 class NegativePromptGenerator:
     def __init__(self):
-        self.re_combinations = re.compile(r"\{([^{}]*)}")
         self.negative_tag = set()
 
     def strip_negative_tags(self, tags):
@@ -315,8 +319,45 @@ class NegativePromptGenerator:
     def get_negative_tags(self):
         return " ".join(self.negative_tag)
 
+class SettingsGenerator:
+    def __init__(self):
+        self.re_setting_tags = re.compile(r"@@(.*?)@@")
+        self.setting_overrides = {}
+        self.type_mapping = {
+            'cfg_scale': float,
+            'sampler': str,
+            'steps': int,
+        }
+
+    def strip_setting_tags(self, prompt):
+        matches = self.re_setting_tags.findall(prompt)
+        if matches:
+            for match in matches:
+                for assignment in match.split("|"):
+                    key_raw, value = assignment.split("=")
+                    if not value:
+                        print(f"Invalid setting {assignment}, settings should assign a value")
+                        continue
+                    key_found = False
+                    for key in self.type_mapping.keys():
+                        if key.startswith(key_raw):
+                            self.setting_overrides[key] = self.type_mapping[key](value)
+                            key_found = True
+                            break
+                    if not key_found:
+                        print(f"Unknown setting {key_raw}, setting should be the starting part of: {', '.join(self.type_mapping.keys())}")
+                prompt = prompt.replace('@@' + match + '@@', "")
+        return prompt
+    
+    def replace(self, prompt):
+        return self.strip_setting_tags(prompt)
+    
+    def get_setting_overrides(self):
+        return self.setting_overrides
 
 class Script(scripts.Script):
+    is_txt2img = False
+
     def title(self):
         return "Prompt generator"
 
@@ -324,6 +365,7 @@ class Script(scripts.Script):
         return scripts.AlwaysVisible
 
     def ui(self, is_img2img):
+        self.is_txt2img = is_img2img == False
         with gr.Group():
             with gr.Row():
                 enabled = gr.Checkbox(label="UmiAI enabled?", value=True)
@@ -359,6 +401,28 @@ class Script(scripts.Script):
             prompt = prompt_generator.generate_single_prompt(prompt)
             p.all_prompts[i] = prompt
             #print(f"Prompt:\n{prompt}\n")
+
+        def find_sampler_index(sampler_list, value):
+            for index, elem in enumerate(sampler_list):
+                if elem[0] == value or value in elem[2]:
+                    return index
+
+        att_override = prompt_generator.get_setting_overrides()
+        print(att_override)
+        for att in att_override.keys():
+            if not att.startswith("__"):
+                if att == 'sampler':
+                    sampler_name = att_override[att]
+                    if self.is_txt2img:
+                        sampler_index = find_sampler_index(samplers, sampler_name)
+                    else:
+                        sampler_index = find_sampler_index(samplers_for_img2img, sampler_name)
+                    if (sampler_index != None):
+                        setattr(p, 'sampler_index', sampler_index)
+                    else:
+                        print(f"Sampler {sampler_name} not found in prompt {p.all_prompts[0]}")
+                    continue
+                setattr(p,att,att_override[att])
 
         if negative_prompt:
             p.negative_prompt = p.negative_prompt + prompt_generator.get_negative_tags()
