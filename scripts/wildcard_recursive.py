@@ -132,28 +132,32 @@ class TagSelector:
                 return self.get_tag_group_choice(parsed_tag, groups, tags)
             if len(tags) > 0:
                 return self.get_tag_choice(parsed_tag, tags)
-            return tag
+            return False
         print(f'loaded tag more than 100 times {tag}')
-        return ""
+        return False
 
 
 class TagReplacer:
     def __init__(self, tag_selector, options):
         self.tag_selector = tag_selector
         self.options = options
-        self.wildcard_regex = re.compile('[_<]_?(.*?)_?[_>]')
+        self.wildcard_regex = re.compile('((__|<)(.*?)(__|>))')
         self.opts_regexp = re.compile('(?<=\[)(.*?)(?=\])')
 
     def replace_wildcard(self, matches):
         if matches is None or len(matches.groups()) == 0:
             return ""
 
-        match = matches.groups()[0]
+        match = matches.groups()[2]
         match_and_opts = match.split(':')
         if (len(match_and_opts) == 2):
-            return self.tag_selector.select(match_and_opts[0], self.opts_regexp.findall(match_and_opts[1]))
+            selected_tags = self.tag_selector.select(match_and_opts[0], self.opts_regexp.findall(match_and_opts[1]))
+        else: 
+            selected_tags = self.tag_selector.select(match)
 
-        return self.tag_selector.select(match)
+        if selected_tags:
+            return selected_tags
+        return matches[0]
 
     def replace_wildcard_recursive(self, prompt):
         p = self.wildcard_regex.sub(self.replace_wildcard, prompt)
