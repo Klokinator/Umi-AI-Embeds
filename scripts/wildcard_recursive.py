@@ -41,25 +41,29 @@ def read_file_lines(file):
             lines.append(line)
     return lines
 
+
 # Wildcards
 class TagLoader:
     files = []
-    wildcard_location = os.path.join(pathlib.Path(inspect.getfile(lambda: None)).parent.parent, "wildcards")
+    wildcard_location = os.path.join(
+        pathlib.Path(inspect.getfile(lambda: None)).parent.parent, "wildcards")
     loaded_tags = {}
     missing_tags = set()
+
     def load_tags(self, filePath):
         filepath_lower = filePath.lower()
         if self.loaded_tags.get(filePath):
             return self.loaded_tags.get(filePath)
 
         txt_file_path = os.path.join(self.wildcard_location, f'{filePath}.txt')
-        yaml_file_path = os.path.join(self.wildcard_location, f'{filePath}.yaml')
+        yaml_file_path = os.path.join(self.wildcard_location,
+                                      f'{filePath}.yaml')
 
         if self.wildcard_location and os.path.isfile(txt_file_path):
             with open(txt_file_path, encoding="utf8") as file:
                 self.files.append(f"{filePath}.txt")
                 self.loaded_tags[filepath_lower] = read_file_lines(file)
-        
+
         if self.wildcard_location and os.path.isfile(yaml_file_path):
             with open(yaml_file_path, encoding="utf8") as file:
                 self.files.append(f"{filePath}.yaml")
@@ -67,19 +71,26 @@ class TagLoader:
                     data = yaml.safe_load(file)
                     output = {}
                     for item in data:
-                       output[item] = {x.lower().strip() for i,x in enumerate(data[item]['Tags'])}
+                        output[item] = {
+                            x.lower().strip()
+                            for i, x in enumerate(data[item]['Tags'])
+                        }
                     self.loaded_tags[filepath_lower] = output
                     #print(self.loaded_tags[filepath_lower])
                 except yaml.YAMLError as exc:
                     print(exc)
 
-        if not os.path.isfile(yaml_file_path) and not os.path.isfile(txt_file_path):
+        if not os.path.isfile(yaml_file_path) and not os.path.isfile(
+                txt_file_path):
             self.missing_tags.add(filePath)
-        
-        return self.loaded_tags.get(filepath_lower) if self.loaded_tags.get(filepath_lower) else []
+
+        return self.loaded_tags.get(filepath_lower) if self.loaded_tags.get(
+            filepath_lower) else []
+
 
 # <yaml:[tag]> notation
 class TagSelector:
+
     def __init__(self, tag_loader, options):
         self.tag_loader = tag_loader
         self.previously_selected_tags = {}
@@ -97,8 +108,13 @@ class TagSelector:
         #print('parsed_tag', parsed_tag)
         neg_groups = [x.strip().lower() for x in groups if x.startswith('--')]
         neg_groups_set = {x.replace('--', '') for x in neg_groups}
-        any_groups = [{y.strip() for i,y in enumerate(x.lower().split('|'))} for x in groups if '|' in x]
-        pos_groups = [x.strip().lower() for x in groups if x not in neg_groups and '|' not in x]
+        any_groups = [{y.strip()
+                       for i, y in enumerate(x.lower().split('|'))}
+                      for x in groups if '|' in x]
+        pos_groups = [
+            x.strip().lower() for x in groups
+            if x not in neg_groups and '|' not in x
+        ]
         pos_groups_set = {x for x in pos_groups}
         #print('pos_groups', pos_groups_set)
         #print('negative_groups', neg_groups_set)
@@ -120,11 +136,15 @@ class TagSelector:
                     continue
             candidates.append(tag)
         if len(candidates) > 0:
-            if self.verbose: print(f'UmiAI: Found {len(candidates)} candidates for "{parsed_tag}" with tags: {groups}, first 10: {candidates[:10]}')
+            if self.verbose:
+                print(
+                    f'UmiAI: Found {len(candidates)} candidates for "{parsed_tag}" with tags: {groups}, first 10: {candidates[:10]}'
+                )
             return choices(candidates)[0]
-        print(f'UmiAI: No tag candidates found for: "{parsed_tag}" with tags: {groups}')
+        print(
+            f'UmiAI: No tag candidates found for: "{parsed_tag}" with tags: {groups}'
+        )
         return ""
-
 
     def select(self, tag, groups=None):
         self.previously_selected_tags.setdefault(tag, 0)
@@ -138,13 +158,16 @@ class TagSelector:
             if len(tags) > 0:
                 return self.get_tag_choice(parsed_tag, tags)
             else:
-                print(f'UmiAI: No tags found in wildcard file "{parsed_tag}" or file does not exist')
+                print(
+                    f'UmiAI: No tags found in wildcard file "{parsed_tag}" or file does not exist'
+                )
             return False
         print(f'loaded tag more than 100 times {parsed_tag}')
         return False
 
 
 class TagReplacer:
+
     def __init__(self, tag_selector, options):
         self.tag_selector = tag_selector
         self.options = options
@@ -158,8 +181,9 @@ class TagReplacer:
         match = matches.groups()[2]
         match_and_opts = match.split(':')
         if (len(match_and_opts) == 2):
-            selected_tags = self.tag_selector.select(match_and_opts[0], self.opts_regexp.findall(match_and_opts[1]))
-        else: 
+            selected_tags = self.tag_selector.select(
+                match_and_opts[0], self.opts_regexp.findall(match_and_opts[1]))
+        else:
             selected_tags = self.tag_selector.select(match)
 
         if selected_tags:
@@ -177,8 +201,10 @@ class TagReplacer:
     def replace(self, prompt):
         return self.replace_wildcard_recursive(prompt)
 
+
 # handle {1$$this | that} notation
 class DynamicPromptReplacer:
+
     def __init__(self):
         self.re_combinations = re.compile(r"\{([^{}]*)}")
 
@@ -207,7 +233,8 @@ class DynamicPromptReplacer:
             low = high = min(int(parts[0]), num_variants)
         elif len(parts) == 2:
             low = int(parts[0]) if parts[0] else 0
-            high = min(int(parts[1]), num_variants) if parts[1] else num_variants
+            high = min(int(parts[1]),
+                       num_variants) if parts[1] else num_variants
         else:
             raise Exception(f"Unexpected range {range_str}")
 
@@ -233,7 +260,9 @@ class DynamicPromptReplacer:
 
         summed = sum(weights)
         zero_weights = weights.count(0)
-        weights = list(map(lambda x: (100 - summed) / zero_weights if x == 0 else x, weights))
+        weights = list(
+            map(lambda x: (100 - summed) / zero_weights
+                if x == 0 else x, weights))
 
         try:
             #print(f"choosing {quantity} tag from:\n{' , '.join(variants)}")
@@ -259,6 +288,7 @@ class DynamicPromptReplacer:
 
 
 class OptionGenerator:
+
     def __init__(self, tag_loader):
         self.tag_loader = tag_loader
 
@@ -272,7 +302,8 @@ class OptionGenerator:
         tag_presets = {}
         for i, tag in enumerate(self.get_configurable_options()):
             parsed_tag = parse_tag(tag)
-            location = get_index(self.tag_loader.load_tags(parsed_tag), options[i])
+            location = get_index(self.tag_loader.load_tags(parsed_tag),
+                                 options[i])
             if location is not None:
                 tag_presets[parsed_tag.lower()] = location
 
@@ -280,12 +311,18 @@ class OptionGenerator:
 
 
 class PromptGenerator:
+
     def __init__(self, options):
         self.tag_loader = TagLoader()
         self.tag_selector = TagSelector(self.tag_loader, options)
         self.negative_tag_generator = NegativePromptGenerator()
         self.settings_generator = SettingsGenerator()
-        self.replacers = [self.settings_generator, DynamicPromptReplacer(), TagReplacer(self.tag_selector, options), self.negative_tag_generator]
+        self.replacers = [
+            self.settings_generator,
+            DynamicPromptReplacer(),
+            TagReplacer(self.tag_selector, options),
+            self.negative_tag_generator
+        ]
 
     def use_replacers(self, prompt):
         for replacer in self.replacers:
@@ -310,6 +347,7 @@ class PromptGenerator:
 
 
 class NegativePromptGenerator:
+
     def __init__(self):
         self.negative_tag = set()
 
@@ -327,8 +365,10 @@ class NegativePromptGenerator:
     def get_negative_tags(self):
         return " ".join(self.negative_tag)
 
+
 # @@settings@@ notation
 class SettingsGenerator:
+
     def __init__(self):
         self.re_setting_tags = re.compile(r"@@(.*?)@@")
         self.setting_overrides = {}
@@ -345,24 +385,30 @@ class SettingsGenerator:
                 for assignment in match.split("|"):
                     key_raw, value = assignment.split("=")
                     if not value:
-                        print(f"Invalid setting {assignment}, settings should assign a value")
+                        print(
+                            f"Invalid setting {assignment}, settings should assign a value"
+                        )
                         continue
                     key_found = False
                     for key in self.type_mapping.keys():
                         if key.startswith(key_raw):
-                            self.setting_overrides[key] = self.type_mapping[key](value)
+                            self.setting_overrides[key] = self.type_mapping[
+                                key](value)
                             key_found = True
                             break
                     if not key_found:
-                        print(f"Unknown setting {key_raw}, setting should be the starting part of: {', '.join(self.type_mapping.keys())}")
+                        print(
+                            f"Unknown setting {key_raw}, setting should be the starting part of: {', '.join(self.type_mapping.keys())}"
+                        )
                 prompt = prompt.replace('@@' + match + '@@', "")
         return prompt
-    
+
     def replace(self, prompt):
         return self.strip_setting_tags(prompt)
-    
+
     def get_setting_overrides(self):
         return self.setting_overrides
+
 
 class Script(scripts.Script):
     is_txt2img = False
@@ -379,29 +425,40 @@ class Script(scripts.Script):
             with gr.Row():
                 enabled = gr.Checkbox(label="UmiAI enabled", value=True)
                 verbose = gr.Checkbox(label="Verbose logging", value=True)
-                same_seed = gr.Checkbox(label='Same prompt in batch', value=False)
-                negative_prompt = gr.Checkbox(label='**negative keywords**', value=True)
-                shared_seed = gr.Checkbox(label="Static wildcards", value=False)
+                same_seed = gr.Checkbox(label='Same prompt in batch',
+                                        value=False)
+                negative_prompt = gr.Checkbox(label='**negative keywords**',
+                                              value=True)
+                shared_seed = gr.Checkbox(label="Static wildcards",
+                                          value=False)
 
             option_generator = OptionGenerator(TagLoader())
             options = [
-                gr.Dropdown(label=opt, choices=["RANDOM"] + option_generator.get_option_choices(opt), value="RANDOM")
-                for opt in option_generator.get_configurable_options()]
+                gr.Dropdown(label=opt,
+                            choices=["RANDOM"] +
+                            option_generator.get_option_choices(opt),
+                            value="RANDOM")
+                for opt in option_generator.get_configurable_options()
+            ]
 
-        return [enabled, verbose, same_seed, negative_prompt, shared_seed] + options
-        
+        return [enabled, verbose, same_seed, negative_prompt, shared_seed
+                ] + options
 
-    def process(self, p, enabled, verbose, same_seed, negative_prompt, shared_seed, *args):
+    def process(self, p, enabled, verbose, same_seed, negative_prompt,
+                shared_seed, *args):
         if not enabled:
             return
 
         debug = False
 
-        if debug: print(f'\nModel: {p.sampler_index}, Seed: {int(p.seed)}, Batch Count: {p.n_iter}, Batch Size: {p.batch_size}, CFG: {p.cfg_scale}, Steps: {p.steps}\nOriginal Prompt: "{p.prompt}"\n')
+        if debug:
+            print(
+                f'\nModel: {p.sampler_index}, Seed: {int(p.seed)}, Batch Count: {p.n_iter}, Batch Size: {p.batch_size}, CFG: {p.cfg_scale}, Steps: {p.steps}\nOriginal Prompt: "{p.prompt}"\n'
+            )
 
         TagLoader.files.clear()
         original_prompt = p.all_prompts[0]
-        
+
         option_generator = OptionGenerator(TagLoader())
         options = {
             'selected_options': option_generator.parse_options(args),
@@ -409,14 +466,15 @@ class Script(scripts.Script):
         }
         prompt_generator = PromptGenerator(options)
 
-        for cur_count in range(p.n_iter): #Batch count
-            for cur_batch in range(p.batch_size): #Batch Size
+        for cur_count in range(p.n_iter):  #Batch count
+            for cur_batch in range(p.batch_size):  #Batch Size
 
-                index = p.batch_size*cur_count + cur_batch
+                index = p.batch_size * cur_count + cur_batch
 
                 # pick same wildcard for a given seed
                 if (shared_seed):
-                    random.seed(p.all_seeds[p.batch_size*cur_count if same_seed else index])
+                    random.seed(p.all_seeds[p.batch_size *
+                                            cur_count if same_seed else index])
                     if debug: print(f"{f' Batch #{cur_count} ':=^30}")
                 else:
                     random.seed(time.time())
@@ -427,10 +485,10 @@ class Script(scripts.Script):
                 p.all_prompts[index] = prompt
 
                 if debug: print(f'Prompt: "{prompt}"\n')
-                
+
                 # same prompt per batch
                 if (same_seed):
-                    for index in range(index, index+p.batch_size):
+                    for index in range(index, index + p.batch_size):
                         p.all_prompts[index] = prompt
                     break
 
@@ -446,24 +504,30 @@ class Script(scripts.Script):
                 if att == 'sampler':
                     sampler_name = att_override[att]
                     if self.is_txt2img:
-                        sampler_index = find_sampler_index(samplers, sampler_name)
+                        sampler_index = find_sampler_index(
+                            samplers, sampler_name)
                     else:
-                        sampler_index = find_sampler_index(samplers_for_img2img, sampler_name)
+                        sampler_index = find_sampler_index(
+                            samplers_for_img2img, sampler_name)
                     if (sampler_index != None):
                         setattr(p, 'sampler_index', sampler_index)
                     else:
-                        print(f"Sampler {sampler_name} not found in prompt {p.all_prompts[0]}")
+                        print(
+                            f"Sampler {sampler_name} not found in prompt {p.all_prompts[0]}"
+                        )
                     continue
-                setattr(p,att,att_override[att])
+                setattr(p, att, att_override[att])
 
         if negative_prompt:
             additional_negative = prompt_generator.get_negative_tags()
-            if debug: print(f'Original Negatives: "{p.negative_prompt}"\nAdditional Negative: "{additional_negative}"\n')
+            if debug:
+                print(
+                    f'Original Negatives: "{p.negative_prompt}"\nAdditional Negative: "{additional_negative}"\n'
+                )
             p.negative_prompt = p.negative_prompt + additional_negative
-            
 
         if original_prompt != p.all_prompts[0]:
             p.extra_generation_params["Wildcard prompt"] = original_prompt
-            if verbose: p.extra_generation_params["File includes"] = "|".join(TagLoader.files)
-        
-        
+            if verbose:
+                p.extra_generation_params["File includes"] = "|".join(
+                    TagLoader.files)

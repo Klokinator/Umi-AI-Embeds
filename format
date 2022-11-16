@@ -1,0 +1,4 @@
+#/usr/bin/env bash
+yapf --in-place **/*.py
+git add **/*.py
+git commit -m "Format code"
