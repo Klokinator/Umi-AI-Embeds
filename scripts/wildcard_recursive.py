@@ -118,7 +118,11 @@ class TagSelector:
                 if len(any_groups) != any_groups_found:
                     continue
             candidates.append(tag)
-        return choices(candidates)[0] if len(candidates) > 0 else ""
+        if len(candidates) > 0:
+            print(f'UmiAI: Found {len(candidates)} candidates for "{parsed_tag}" with tags: {groups}')
+            return choices(candidates)[0]
+        print(f'UmiAI: No tag candidates found for: "{parsed_tag}" with tags: {groups}')
+        return ""
 
 
     def select(self, tag, groups=None):
@@ -132,6 +136,8 @@ class TagSelector:
                 return self.get_tag_group_choice(parsed_tag, groups, tags)
             if len(tags) > 0:
                 return self.get_tag_choice(parsed_tag, tags)
+            else:
+                print(f'UmiAI: No tags found in wildcard file "{tag}" or file does not exist')
             return False
         print(f'loaded tag more than 100 times {tag}')
         return False
