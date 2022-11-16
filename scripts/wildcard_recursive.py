@@ -28,7 +28,7 @@ def get_index(items, item):
 
 
 def parse_tag(tag):
-    return tag.replace("__", "").replace('<', '').replace('>', '')
+    return tag.replace("__", "").replace('<', '').replace('>', '').strip()
 
 
 def read_file_lines(file):
@@ -67,7 +67,7 @@ class TagLoader:
                     data = yaml.safe_load(file)
                     output = {}
                     for item in data:
-                       output[item] = {x.lower() for i,x in enumerate(data[item]['Tags'])}
+                       output[item] = {x.lower().strip() for i,x in enumerate(data[item]['Tags'])}
                     self.loaded_tags[filepath_lower] = output
                     #print(self.loaded_tags[filepath_lower])
                 except yaml.YAMLError as exc:
@@ -95,10 +95,10 @@ class TagSelector:
         #print('selected_options', self.selected_options)
         #print('groups', groups)
         #print('parsed_tag', parsed_tag)
-        neg_groups = [x.lower() for x in groups if x.startswith('--')]
+        neg_groups = [x.strip().lower() for x in groups if x.startswith('--')]
         neg_groups_set = {x.replace('--', '') for x in neg_groups}
-        any_groups = [{y for i,y in enumerate(x.lower().split('|'))} for x in groups if '|' in x]
-        pos_groups = [x.lower() for x in groups if x not in neg_groups and '|' not in x]
+        any_groups = [{y.strip() for i,y in enumerate(x.lower().split('|'))} for x in groups if '|' in x]
+        pos_groups = [x.strip().lower() for x in groups if x not in neg_groups and '|' not in x]
         pos_groups_set = {x for x in pos_groups}
         #print('pos_groups', pos_groups_set)
         #print('negative_groups', neg_groups_set)
@@ -138,9 +138,9 @@ class TagSelector:
             if len(tags) > 0:
                 return self.get_tag_choice(parsed_tag, tags)
             else:
-                print(f'UmiAI: No tags found in wildcard file "{tag}" or file does not exist')
+                print(f'UmiAI: No tags found in wildcard file "{parsed_tag}" or file does not exist')
             return False
-        print(f'loaded tag more than 100 times {tag}')
+        print(f'loaded tag more than 100 times {parsed_tag}')
         return False
 
 
@@ -265,13 +265,13 @@ class OptionGenerator:
     def get_configurable_options(self):
         return self.tag_loader.load_tags('configuration')
 
-    def get_option_choices(self, tag):\
+    def get_option_choices(self, tag):
         return self.tag_loader.load_tags(parse_tag(tag))
 
     def parse_options(self, options):
         tag_presets = {}
         for i, tag in enumerate(self.get_configurable_options()):
-            parsed_tag = parse_tag(tag);
+            parsed_tag = parse_tag(tag)
             location = get_index(self.tag_loader.load_tags(parsed_tag), options[i])
             if location is not None:
                 tag_presets[parsed_tag.lower()] = location
