@@ -84,6 +84,7 @@ class TagSelector:
         self.tag_loader = tag_loader
         self.previously_selected_tags = {}
         self.selected_options = dict(options).get('selected_options', {})
+        self.verbose = dict(options).get('verbose', False)
 
     def get_tag_choice(self, parsed_tag, tags):
         if self.selected_options.get(parsed_tag.lower()) is not None:
@@ -119,7 +120,7 @@ class TagSelector:
                     continue
             candidates.append(tag)
         if len(candidates) > 0:
-            print(f'UmiAI: Found {len(candidates)} candidates for "{parsed_tag}" with tags: {groups}')
+            if self.verbose: print(f'UmiAI: Found {len(candidates)} candidates for "{parsed_tag}" with tags: {groups}, first 10: {candidates[:10]}')
             return choices(candidates)[0]
         print(f'UmiAI: No tag candidates found for: "{parsed_tag}" with tags: {groups}')
         return ""
@@ -301,9 +302,6 @@ class PromptGenerator:
 
         return prompt
 
-    def generate(self, original_prompt, prompt_count):
-        return [self.generate_single_prompt(original_prompt) for _ in range(prompt_count)]
-
     def get_negative_tags(self):
         return self.negative_tag_generator.get_negative_tags()
 
@@ -379,20 +377,21 @@ class Script(scripts.Script):
         self.is_txt2img = is_img2img == False
         with gr.Group():
             with gr.Row():
-                enabled = gr.Checkbox(label="UmiAI enabled?", value=True)
-                same_seed = gr.Checkbox(label='Use same prompt for each image in a batch?', value=False)
-                negative_prompt = gr.Checkbox(label='Allow **negative keywords** from wildcards in Negative Prompts?', value=True)
-                shared_seed = gr.Checkbox(label="Always pick the same random/wildcard options with a static seed?", value=False)
+                enabled = gr.Checkbox(label="UmiAI enabled", value=True)
+                verbose = gr.Checkbox(label="Verbose logging", value=True)
+                same_seed = gr.Checkbox(label='Same prompt in batch', value=False)
+                negative_prompt = gr.Checkbox(label='**negative keywords**', value=True)
+                shared_seed = gr.Checkbox(label="Static wildcards", value=False)
 
             option_generator = OptionGenerator(TagLoader())
             options = [
                 gr.Dropdown(label=opt, choices=["RANDOM"] + option_generator.get_option_choices(opt), value="RANDOM")
                 for opt in option_generator.get_configurable_options()]
 
-        return [enabled, same_seed, negative_prompt, shared_seed] + options
+        return [enabled, verbose, same_seed, negative_prompt, shared_seed] + options
         
 
-    def process(self, p, enabled, same_seed, negative_prompt, shared_seed, *args):
+    def process(self, p, enabled, verbose, same_seed, negative_prompt, shared_seed, *args):
         if not enabled:
             return
 
@@ -405,7 +404,8 @@ class Script(scripts.Script):
         
         option_generator = OptionGenerator(TagLoader())
         options = {
-            'selected_options': option_generator.parse_options(args)
+            'selected_options': option_generator.parse_options(args),
+            'verbose': verbose,
         }
         prompt_generator = PromptGenerator(options)
 
@@ -464,6 +464,6 @@ class Script(scripts.Script):
 
         if original_prompt != p.all_prompts[0]:
             p.extra_generation_params["Wildcard prompt"] = original_prompt
-            p.extra_generation_params["File includes"] = "|".join(TagLoader.files) ## test if it fixes importing
+            if verbose: p.extra_generation_params["File includes"] = "|".join(TagLoader.files)
         
         
