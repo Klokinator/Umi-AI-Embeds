@@ -1,0 +1,114 @@
+- AnyRating
+- Streamer
+- Unisex
+
+- HighSFW
+- MedSFW
+- LowSFW
+- LowNSFW
+- MedNSFW
+- HighNSFW
+
+- Accu-rating
+- Random
+
+- Modest
+- Sexy
+- Borderline
+- Revealing
+- Erotic
+
+- Cloth
+- Lace
+- Transparent
+- Nylon
+- Spandex
+- Rubber
+- Latex
+- Wool
+- Heavy Clothing
+- Metal
+- Chainmail
+
+- Light Armor
+- Medium Armor
+- Heavy Armor
+- Full Armor
+- Skimpy Armor
+- Boobplate
+
+- Winterwear
+- Form-Fitting
+- Skintight
+
+- Themed
+- Musical
+- Ceremonial
+- Beachwear
+- Athletic
+
+- Casual
+- Informal
+- Formal
+- Professional
+- Functional
+- Occupation
+- Business
+
+- Daywear
+- Eveningwear
+- Nightwear
+
+- Military
+- Ancient Military
+- Modern Military
+- Future Military
+- Mechanical
+
+- Western
+- Eastern
+- Asian
+- African
+
+- English
+- British
+- Roman
+- French
+- Japanese
+- Indian
+- Chinese
+- Muslim
+- Turkish
+
+- Magical
+- Religious
+- Clerical
+- Christian
+- Islamic
+- Hindu
+- Buddhist
+
+- Tradwife
+- Cat Ears
+- Bunny Ears
+- Headwear
+- Apron
+- Jacket
+- Coat
+- Cape
+- Short Dress
+- Long Dress
+- Short Skirt
+- Long Skirt
+- Short Sleeves
+- Long Sleeves
+- Gloves
+- Side Slit
+- Pelvic Curtain
+- Sweatpants
+- Leggings
+
+- 1pc (Leotards, unitards, swimsuits, etc)
+- 2pc (Swimsuits and lingerie)
+- Athleisure (Tracksuits)
+- Bodysuit (Skintight sexy outfits)
