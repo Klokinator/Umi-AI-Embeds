@@ -451,10 +451,9 @@ class Script(scripts.Script):
 
         debug = False
 
-        if debug:
-            print(
-                f'\nModel: {p.sampler_index}, Seed: {int(p.seed)}, Batch Count: {p.n_iter}, Batch Size: {p.batch_size}, CFG: {p.cfg_scale}, Steps: {p.steps}\nOriginal Prompt: "{p.prompt}"\n'
-            )
+        if debug: print(f'\nModel: {p.sampler_name}, Seed: {int(p.seed)}, Batch Count: {p.n_iter}, Batch Size: {p.batch_size}, CFG: {p.cfg_scale}, Steps: {p.steps}\nOriginal Prompt: "{p.prompt}"\nOriginal Negatives: "{p.negative_prompt}"\n')
+        original_prompt = p.all_prompts[0]
+        original_negative = p.all_negative_prompts[0]
 
         TagLoader.files.clear()
         original_prompt = p.all_prompts[0]
@@ -473,18 +472,24 @@ class Script(scripts.Script):
 
                 # pick same wildcard for a given seed
                 if (shared_seed):
-                    random.seed(p.all_seeds[p.batch_size *
-                                            cur_count if same_seed else index])
-                    if debug: print(f"{f' Batch #{cur_count} ':=^30}")
+                    random.seed(p.all_seeds[p.batch_size *cur_count if same_seed else index])
                 else:
                     random.seed(time.time())
-                    if debug: print(f"{f' Prompt #{index} ':=^30}")
+                
+                if debug: print(f'{"Batch #"+str(cur_count) if same_seed else "Prompt #"+str(index):=^30}')
 
-                prompt = p.all_prompts[index]
-                prompt = prompt_generator.generate_single_prompt(prompt)
+                prompt_generator.negative_tag_generator.negative_tag = set()
+
+                prompt = prompt_generator.generate_single_prompt(original_prompt)
                 p.all_prompts[index] = prompt
 
-                if debug: print(f'Prompt: "{prompt}"\n')
+                if debug: print(f'Prompt: "{prompt}"')
+
+                negative = original_negative
+                if negative_prompt:
+                    negative += prompt_generator.get_negative_tags()
+                    p.all_negative_prompts[index] = negative
+                    if debug: print(f'Negative: "{negative}\n"')
 
                 # same prompt per batch
                 if (same_seed):
@@ -517,14 +522,6 @@ class Script(scripts.Script):
                         )
                     continue
                 setattr(p, att, att_override[att])
-
-        if negative_prompt:
-            additional_negative = prompt_generator.get_negative_tags()
-            if debug:
-                print(
-                    f'Original Negatives: "{p.negative_prompt}"\nAdditional Negative: "{additional_negative}"\n'
-                )
-            p.negative_prompt = p.negative_prompt + additional_negative
 
         if original_prompt != p.all_prompts[0]:
             p.extra_generation_params["Wildcard prompt"] = original_prompt
