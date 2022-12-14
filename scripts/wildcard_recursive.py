@@ -113,12 +113,12 @@ class TagSelector:
                       for x in groups if '|' in x]
         pos_groups = [
             x.strip().lower() for x in groups
-            if x not in neg_groups and '|' not in x
+            if not x.startswith('--') and '|' not in x
         ]
         pos_groups_set = {x for x in pos_groups}
-        #print('pos_groups', pos_groups_set)
-        #print('negative_groups', neg_groups_set)
-        #print('any_groups', any_groups)
+        # print('pos_groups', pos_groups_set)
+        # print('negative_groups', neg_groups_set)
+        # print('any_groups', any_groups)
         candidates = []
         for tag in tags:
             tag_set = tags[tag]
