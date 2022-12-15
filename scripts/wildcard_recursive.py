@@ -20,6 +20,8 @@ from modules.styles import StyleDatabase
 from modules.sd_samplers import samplers, samplers_for_img2img
 
 
+ALL_KEY = 'all yaml files'
+
 def get_index(items, item):
     try:
         return items.index(item)
@@ -51,7 +53,6 @@ class TagLoader:
     missing_tags = set()
 
     def load_tags(self, filePath):
-        filepath_lower = filePath.lower()
         if self.loaded_tags.get(filePath):
             return self.loaded_tags.get(filePath)
 
@@ -59,10 +60,32 @@ class TagLoader:
         yaml_file_path = os.path.join(self.wildcard_location,
                                       f'{filePath}.yaml')
 
+        if (filePath == ALL_KEY):
+            key = ALL_KEY
+        else:
+            key = filePath.lower()
+
         if self.wildcard_location and os.path.isfile(txt_file_path):
             with open(txt_file_path, encoding="utf8") as file:
                 self.files.append(f"{filePath}.txt")
-                self.loaded_tags[filepath_lower] = read_file_lines(file)
+                self.loaded_tags[key] = read_file_lines(file)
+
+        if key is ALL_KEY and self.wildcard_location:
+            files = glob.glob(os.path.join(self.wildcard_location, '*.yaml'), recursive=True)
+            output = {}
+            for file in files:
+                with open(file, encoding="utf8") as file:
+                    self.files.append(f"{filePath}.yaml")
+                    try:
+                        data = yaml.safe_load(file)
+                        for item in data:
+                            output[item] = {
+                                x.lower().strip()
+                                for i, x in enumerate(data[item]['Tags'])
+                            }
+                    except yaml.YAMLError as exc:
+                        print(exc)
+            self.loaded_tags[key] = output
 
         if self.wildcard_location and os.path.isfile(yaml_file_path):
             with open(yaml_file_path, encoding="utf8") as file:
@@ -75,8 +98,7 @@ class TagLoader:
                             x.lower().strip()
                             for i, x in enumerate(data[item]['Tags'])
                         }
-                    self.loaded_tags[filepath_lower] = output
-                    #print(self.loaded_tags[filepath_lower])
+                    self.loaded_tags[key] = output
                 except yaml.YAMLError as exc:
                     print(exc)
 
@@ -84,8 +106,8 @@ class TagLoader:
                 txt_file_path):
             self.missing_tags.add(filePath)
 
-        return self.loaded_tags.get(filepath_lower) if self.loaded_tags.get(
-            filepath_lower) else []
+        return self.loaded_tags.get(key) if self.loaded_tags.get(
+            key) else []
 
 
 # <yaml:[tag]> notation
@@ -184,7 +206,11 @@ class TagReplacer:
             selected_tags = self.tag_selector.select(
                 match_and_opts[0], self.opts_regexp.findall(match_and_opts[1]))
         else:
-            selected_tags = self.tag_selector.select(match)
+            global_opts = self.opts_regexp.findall(match)
+            if len(global_opts) > 0:
+                selected_tags = self.tag_selector.select(ALL_KEY, global_opts)
+            else:
+                selected_tags = self.tag_selector.select(match)
 
         if selected_tags:
             return selected_tags
