@@ -479,7 +479,7 @@ class Script(scripts.Script):
         return [enabled, verbose, cache_files, same_seed, negative_prompt, shared_seed
                 ] + options
 
-    def process(self, p, enabled, verbose, same_seed, negative_prompt,
+    def process(self, p, enabled, verbose, cache_files, same_seed, negative_prompt,
                 shared_seed, *args):
         if not enabled:
             return
@@ -500,6 +500,7 @@ class Script(scripts.Script):
         options = {
             'selected_options': option_generator.parse_options(args),
             'verbose': verbose,
+            'cache_files': cache_files,
         }
         prompt_generator = PromptGenerator(options)
 
