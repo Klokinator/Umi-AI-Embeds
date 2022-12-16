@@ -71,7 +71,7 @@ class TagLoader:
                 self.loaded_tags[key] = read_file_lines(file)
 
         if key is ALL_KEY and self.wildcard_location:
-            files = glob.glob(os.path.join(self.wildcard_location, '*.yaml'), recursive=True)
+            files = glob.glob(os.path.join(self.wildcard_location, '**/*.yaml'), recursive=True)
             output = {}
             for file in files:
                 with open(file, encoding="utf8") as file:
