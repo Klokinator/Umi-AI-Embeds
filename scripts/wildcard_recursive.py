@@ -52,22 +52,22 @@ class TagLoader:
     loaded_tags = {}
     missing_tags = set()
 
-    def load_tags(self, filePath):
-        if self.loaded_tags.get(filePath):
-            return self.loaded_tags.get(filePath)
+    def load_tags(self, file_path, verbose=False, cache_files=True):
+        if cache_files and self.loaded_tags.get(file_path):
+            return self.loaded_tags.get(file_path)
 
-        txt_file_path = os.path.join(self.wildcard_location, f'{filePath}.txt')
+        txt_file_path = os.path.join(self.wildcard_location, f'{file_path}.txt')
         yaml_file_path = os.path.join(self.wildcard_location,
-                                      f'{filePath}.yaml')
+                                      f'{file_path}.yaml')
 
-        if (filePath == ALL_KEY):
+        if (file_path == ALL_KEY):
             key = ALL_KEY
         else:
-            key = filePath.lower()
+            key = file_path.lower()
 
         if self.wildcard_location and os.path.isfile(txt_file_path):
             with open(txt_file_path, encoding="utf8") as file:
-                self.files.append(f"{filePath}.txt")
+                self.files.append(f"{file_path}.txt")
                 self.loaded_tags[key] = read_file_lines(file)
 
         if key is ALL_KEY and self.wildcard_location:
@@ -75,10 +75,12 @@ class TagLoader:
             output = {}
             for file in files:
                 with open(file, encoding="utf8") as file:
-                    self.files.append(f"{filePath}.yaml")
+                    self.files.append(f"{file_path}.yaml")
                     try:
                         data = yaml.safe_load(file)
                         for item in data:
+                            if (hasattr(output, item) and verbose):
+                                print(f"Duplicate key {item} in {file}")
                             output[item] = {
                                 x.lower().strip()
                                 for i, x in enumerate(data[item]['Tags'])
@@ -89,7 +91,7 @@ class TagLoader:
 
         if self.wildcard_location and os.path.isfile(yaml_file_path):
             with open(yaml_file_path, encoding="utf8") as file:
-                self.files.append(f"{filePath}.yaml")
+                self.files.append(f"{file_path}.yaml")
                 try:
                     data = yaml.safe_load(file)
                     output = {}
@@ -104,7 +106,7 @@ class TagLoader:
 
         if not os.path.isfile(yaml_file_path) and not os.path.isfile(
                 txt_file_path):
-            self.missing_tags.add(filePath)
+            self.missing_tags.add(file_path)
 
         return self.loaded_tags.get(key) if self.loaded_tags.get(
             key) else []
@@ -118,6 +120,7 @@ class TagSelector:
         self.previously_selected_tags = {}
         self.selected_options = dict(options).get('selected_options', {})
         self.verbose = dict(options).get('verbose', False)
+        self.cache_files = dict(options).get('cache_files', True)
 
     def get_tag_choice(self, parsed_tag, tags):
         if self.selected_options.get(parsed_tag.lower()) is not None:
@@ -174,7 +177,7 @@ class TagSelector:
         if self.previously_selected_tags.get(tag) < 100:
             self.previously_selected_tags[tag] += 1
             parsed_tag = parse_tag(tag)
-            tags = self.tag_loader.load_tags(parsed_tag)
+            tags = self.tag_loader.load_tags(parsed_tag, self.verbose, self.cache_files)
             if groups and len(groups) > 0:
                 return self.get_tag_group_choice(parsed_tag, groups, tags)
             if len(tags) > 0:
@@ -349,6 +352,7 @@ class PromptGenerator:
             TagReplacer(self.tag_selector, options),
             self.negative_tag_generator
         ]
+        self.verbose = dict(options).get('verbose', False)
 
     def use_replacers(self, prompt):
         for replacer in self.replacers:
@@ -358,10 +362,14 @@ class PromptGenerator:
 
     def generate_single_prompt(self, original_prompt):
         previous_prompt = original_prompt
+        start = time.time()
         prompt = self.use_replacers(original_prompt)
         while previous_prompt != prompt:
             previous_prompt = prompt
             prompt = self.use_replacers(prompt)
+        end = time.time()
+        if self.verbose:
+            print(f"Prompt generated in {end - start} seconds")
 
         return prompt
 
@@ -451,6 +459,7 @@ class Script(scripts.Script):
             with gr.Row():
                 enabled = gr.Checkbox(label="UmiAI enabled", value=True)
                 verbose = gr.Checkbox(label="Verbose logging", value=True)
+                cache_files = gr.Checkbox(label="Cache files", value=True)
                 same_seed = gr.Checkbox(label='Same prompt in batch',
                                         value=False)
                 negative_prompt = gr.Checkbox(label='**negative keywords**',
@@ -467,7 +476,7 @@ class Script(scripts.Script):
                 for opt in option_generator.get_configurable_options()
             ]
 
-        return [enabled, verbose, same_seed, negative_prompt, shared_seed
+        return [enabled, verbose, cache_files, same_seed, negative_prompt, shared_seed
                 ] + options
 
     def process(self, p, enabled, verbose, same_seed, negative_prompt,
