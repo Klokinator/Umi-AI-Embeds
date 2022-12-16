@@ -1,0 +1,884 @@
+Skinny Female:
+ Tags:
+  - Body Attribute
+  - Female
+  - Body Mass
+Skinny Male:
+ Tags:
+  - Body Attribute
+  - Male
+  - Body Mass
+Average Body:
+ Tags:
+  - Body Attribute
+  - Unisex
+  - Body Mass
+Average Body, Athletic:
+ Tags:
+  - Body Attribute
+  - Unisex
+  - Body Mass
+Athletic, Abs:
+ Tags:
+  - Body Attribute
+  - Unisex
+  - Body Mass
+Muscular Female, Abs:
+ Tags:
+  - Body Attribute
+  - Female
+  - Body Mass
+Muscular Male, Abs:
+ Tags:
+  - Body Attribute
+  - Male
+  - Body Mass
+Very Muscular Body, Huge Muscles:
+ Tags:
+  - Body Attribute
+  - Unisex
+  - Body Mass
+1Boy, Shota, Aged Down:
+ Tags:
+  - Body Attribute
+  - Male
+  - Age
+  - Young
+1Boy, Shota, Teenager:
+ Tags:
+  - Body Attribute
+  - Male
+  - Age
+  - Teen
+1Boy, Teenager, Mature male:
+ Tags:
+  - Body Attribute
+  - Male
+  - Age
+  - Adult
+1Boy, Mature male, Adult:
+ Tags:
+  - Body Attribute
+  - Male
+  - Age
+  - Adult
+1Boy, Mature male, Adult, Old:
+ Tags:
+  - Body Attribute
+  - Male
+  - Age
+  - Old
+1Girl, Loli, Aged Down:
+ Tags:
+  - Body Attribute
+  - Female
+  - Age
+  - Young
+1Girl, Loli, Teenager:
+ Tags:
+  - Body Attribute
+  - Female
+  - Age
+  - Young
+1Girl, Teenager, Mature:
+ Tags:
+  - Body Attribute
+  - Female
+  - Age
+  - Adult
+1Girl, Mature female, Adult:
+ Tags:
+  - Body Attribute
+  - Female
+  - Age
+  - Adult
+1Girl, Mature female, Old:
+ Tags:
+  - Body Attribute
+  - Female
+  - Age
+  - Old
+1Girl, Mature female, Adult, Grandmother, (Old:1.3):
+ Tags:
+  - Body Attribute
+  - Female
+  - Age
+  - Old
+White Skin, Pale Skin:
+ Tags:
+  - Body Attribute
+  - Skin Color
+Pale White Skin:
+ Tags:
+  - Body Attribute
+  - Skin Color
+Holographic Skin:
+ Tags:
+  - Body Attribute
+  - Skin Color
+Caucasian:
+ Tags:
+  - Body Attribute
+  - Skin Color
+Black Skin, Dark-skinned:
+ Tags:
+  - Body Attribute
+  - Skin Color
+Brown Skin, Dark-skinned:
+ Tags:
+  - Body Attribute
+  - Skin Color
+Dark Black Skin, Dark-skinned:
+ Tags:
+  - Body Attribute
+  - Skin Color
+Dark Red Skin, Dark Red Body, Demon Red Skin:
+ Tags:
+  - Body Attribute
+  - Skin Color
+Blue Skin, Blue Body, Genie Blue Skin:
+ Tags:
+  - Body Attribute
+  - Skin Color
+Green Skin, Goblin, Goblin Skin:
+ Tags:
+  - Body Attribute
+  - Skin Color
+Pixie Cut:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Undercut:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Bob Cut:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Flipped Hair:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Cornrows:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Dreadlocks:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Hime Cut:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Bow-shaped Hair:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Braid:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Braided Bangs:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Front Braid:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Side Braid:
+ Tags:
+  - Body Attribute
+  - Hair Style
+French Braid:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Crown Braid:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Single Braid:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Multiple Braids:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Twin Braids:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Low Twin Braids:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Tri Braids:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Quad Braids:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Hair Bun:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Braided Bun:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Single Hair Bun:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Double Bun:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Doughnut Hair Bun:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Heart Hair Bun:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Triple Bun:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Cone Hair Bun:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Hair Rings:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Half Updo:
+ Tags:
+  - Body Attribute
+  - Hair Style
+One Side Up:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Two Side Up:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Low-braided Long Hair:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Low-tied Long Hair:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Mizura:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Multi-tied Hair:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Nihongami:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Ponytail:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Folded Ponytail:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Front Ponytail:
+ Tags:
+  - Body Attribute
+  - Hair Style
+High Ponytail:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Short Ponytail:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Side Ponytail:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Split Ponytail:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Topknot:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Twintails:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Low Twintails:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Short Twintails:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Uneven Twintails:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Tri Tails:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Quad Tails:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Quin Tails:
+ Tags:
+  - Body Attribute
+  - Hair Style
+Very Short Hair:
+ Tags:
+  - Body Attribute
+  - Hair Length
+Short Hair:
+ Tags:
+  - Body Attribute
+  - Hair Length
+Medium Hair:
+ Tags:
+  - Body Attribute
+  - Hair Length
+Long Hair:
+ Tags:
+  - Body Attribute
+  - Hair Length
+Very Long Hair:
+ Tags:
+  - Body Attribute
+  - Hair Length
+Absurdly Long Hair:
+ Tags:
+  - Body Attribute
+  - Hair Length
+Big Hair:
+ Tags:
+  - Body Attribute
+  - Hair Length
+Single-color Hair:
+ Tags:
+  - Body Attribute
+  - Hair Color Types
+Translucent Hair:
+ Tags:
+  - Body Attribute
+  - Hair Color Types
+Rainbow Hair:
+ Tags:
+  - Body Attribute
+  - Hair Color Types
+Multicolored Hair, <[Hair Color]>, <[Hair Color]>:
+ Tags:
+  - Body Attribute
+  - Hair Color Types
+Colored Inner Hair, <[Hair Color]>, <[Hair Color]>:
+ Tags:
+  - Body Attribute
+  - Hair Color Types
+Gradient Hair, <[Hair Color]>, <[Hair Color]>:
+ Tags:
+  - Body Attribute
+  - Hair Color Types
+Split-color Hair, <[Hair Color]>, <[Hair Color]>:
+ Tags:
+  - Body Attribute
+  - Hair Color Types
+Streaked Hair, <[Hair Color]>, <[Hair Color]>:
+ Tags:
+  - Body Attribute
+  - Hair Color Types
+Two-tone Hair, <[Hair Color]>, <[Hair Color]>:
+ Tags:
+  - Body Attribute
+  - Hair Color Types
+Colored Hair Tips, <[Hair Color]>, <[Hair Color]>:
+ Tags:
+  - Body Attribute
+  - Hair Color Types
+Red Hair:
+ Tags:
+  - Body Attribute
+  - Hair Color
+Orange Hair:
+ Tags:
+  - Body Attribute
+  - Hair Color
+Light Green Hair:
+ Tags:
+  - Body Attribute
+  - Hair Color
+Green Hair:
+ Tags:
+  - Body Attribute
+  - Hair Color
+Dark Green Hair:
+ Tags:
+  - Body Attribute
+  - Hair Color
+Light Blue Hair:
+ Tags:
+  - Body Attribute
+  - Hair Color
+Blue Hair:
+ Tags:
+  - Body Attribute
+  - Hair Color
+Dark Blue Hair:
+ Tags:
+  - Body Attribute
+  - Hair Color
+Purple Hair:
+ Tags:
+  - Body Attribute
+  - Hair Color
+Light Purple Hair:
+ Tags:
+  - Body Attribute
+  - Hair Color
+Aqua Hair:
+ Tags:
+  - Body Attribute
+  - Hair Color
+Pink Hair:
+ Tags:
+  - Body Attribute
+  - Hair Color
+Black Hair:
+ Tags:
+  - Body Attribute
+  - Hair Color
+Blonde Hair:
+ Tags:
+  - Body Attribute
+  - Hair Color
+Light Brown Hair:
+ Tags:
+  - Body Attribute
+  - Hair Color
+Brown Hair:
+ Tags:
+  - Body Attribute
+  - Hair Color
+Grey Hair:
+ Tags:
+  - Body Attribute
+  - Hair Color
+White Hair:
+ Tags:
+  - Body Attribute
+  - Hair Color
+Pointy Ears:
+ Tags:
+  - Body Attribute
+  - Demi Ears
+Elf Ears:
+ Tags:
+  - Body Attribute
+  - Demi Ears
+Demon Ears:
+ Tags:
+  - Body Attribute
+  - Demi Ears
+Cute Pupils:
+ Tags:
+  - Body Attribute
+  - Eye Type
+Pretty Pupils:
+ Tags:
+  - Body Attribute
+  - Eye Type
+Sparkly Pupils:
+ Tags:
+  - Body Attribute
+  - Eye Type
+Cross-shaped Pupils:
+ Tags:
+  - Body Attribute
+  - Eye Type
+Heart-shaped Pupils:
+ Tags:
+  - Body Attribute
+  - Eye Type
+Star-shaped Pupils:
+ Tags:
+  - Body Attribute
+  - Eye Type
+Diamond-shaped Pupils:
+ Tags:
+  - Body Attribute
+  - Eye Type
+X-shaped Pupils:
+ Tags:
+  - Body Attribute
+  - Eye Type
+Symbol-shaped Pupils:
+ Tags:
+  - Body Attribute
+  - Eye Type
+Sparkling Eyes:
+ Tags:
+  - Body Attribute
+  - Eye Type
+Pupiless Eyes:
+ Tags:
+  - Body Attribute
+  - Eye Type
+Hollow Eyes:
+ Tags:
+  - Body Attribute
+  - Eye Type
+Vacant Eyes:
+ Tags:
+  - Body Attribute
+  - Eye Type
+Glowing Eyes:
+ Tags:
+  - Body Attribute
+  - Eye Type
+White Eyes:
+ Tags:
+  - Body Attribute
+  - Eye Color
+Red Eyes:
+ Tags:
+  - Body Attribute
+  - Eye Color
+Green Eyes:
+ Tags:
+  - Body Attribute
+  - Eye Color
+Blue Eyes:
+ Tags:
+  - Body Attribute
+  - Eye Color
+Black Eyes:
+ Tags:
+  - Body Attribute
+  - Eye Color
+Yellow Eyes:
+ Tags:
+  - Body Attribute
+  - Eye Color
+Brown Eyes:
+ Tags:
+  - Body Attribute
+  - Eye Color
+Purple Eyes:
+ Tags:
+  - Body Attribute
+  - Eye Color
+Pink Eyes:
+ Tags:
+  - Body Attribute
+  - Eye Color
+Aqua Eyes:
+ Tags:
+  - Body Attribute
+  - Eye Color
+Orange Eyes:
+ Tags:
+  - Body Attribute
+  - Eye Color
+Freckles:
+ Tags:
+  - Body Attribute
+  - Facial Decorations
+Many Freckles:
+ Tags:
+  - Body Attribute
+  - Facial Decorations
+Lots of Freckles:
+ Tags:
+  - Body Attribute
+  - Facial Decorations
+Small Beauty Mark:
+ Tags:
+  - Body Attribute
+  - Facial Decorations
+Medium Beauty Mark:
+ Tags:
+  - Body Attribute
+  - Facial Decorations
+Large Beauty Mark:
+ Tags:
+  - Body Attribute
+  - Facial Decorations
+Facial Scar:
+ Tags:
+  - Body Attribute
+  - Facial Decorations
+Eye Scar:
+ Tags:
+  - Body Attribute
+  - Facial Decorations
+Mouth Scar:
+ Tags:
+  - Body Attribute
+  - Facial Decorations
+Cheek Scar:
+ Tags:
+  - Body Attribute
+  - Facial Decorations
+Neck Scar:
+ Tags:
+  - Body Attribute
+  - Facial Decorations
+Bandaid On Face:
+ Tags:
+  - Body Attribute
+  - Facial Decorations
+Facial Tattoo:
+ Tags:
+  - Body Attribute
+  - Facial Decorations
+  - Tattoo
+Whisker Markings:
+ Tags:
+  - Body Attribute
+  - Facial Decorations
+  - Animal Theme
+__Colors__ Tattoos:
+ Tags:
+  - Body Attribute
+  - Tattoos
+Demonic Tattoos:
+ Tags:
+  - Body Attribute
+  - Tattoos
+  - Demons
+Heart Tattoos:
+ Tags:
+  - Body Attribute
+  - Tattoos
+Angelic Tattoos:
+ Tags:
+  - Body Attribute
+  - Tattoos
+  - Angels
+Cute Tattoos:
+ Tags:
+  - Body Attribute
+  - Tattoos
+Evil Tattoos:
+ Tags:
+  - Body Attribute
+  - Tattoos
+Dragon Tattoos:
+ Tags:
+  - Body Attribute
+  - Tattoos
+  - Creature
+Fire Tattoos:
+ Tags:
+  - Body Attribute
+  - Tattoos
+Space Tattoos:
+ Tags:
+  - Body Attribute
+  - Tattoos
+Cross Tattoo:
+ Tags:
+  - Body Attribute
+  - Tattoos
+  - Religious
+Tribal Tattoos:
+ Tags:
+  - Body Attribute
+  - Tattoos
+Full Body Tattoos:
+ Tags:
+  - Body Attribute
+  - Tattoos
+Maori Tattoos:
+ Tags:
+  - Body Attribute
+  - Tattoos
+Haida Tattoos:
+ Tags:
+  - Body Attribute
+  - Tattoos
+Samoan Tattoos:
+ Tags:
+  - Body Attribute
+  - Tattoos
+Japanese Tattoos:
+ Tags:
+  - Body Attribute
+  - Tattoos
+  - Eastern
+Chinese Tattoos:
+ Tags:
+  - Body Attribute
+  - Tattoos
+  - Eastern
+Celtic Tattoos:
+ Tags:
+  - Body Attribute
+  - Tattoos
+  - Western
+Norse Tattoos:
+ Tags:
+  - Body Attribute
+  - Tattoos
+  - Western
+Tramp Stamp:
+ Tags:
+  - Body Attribute
+  - Tattoos
+  - Western
+Breast Tattoos:
+ Tags:
+  - Body Attribute
+  - Tattoos
+  - Western
+Chest Tattoo:
+ Tags:
+  - Body Attribute
+  - Tattoos
+Pubic Tattoo:
+ Tags:
+  - Body Attribute
+  - Tattoos
+Barcode Tattoo:
+ Tags:
+  - Body Attribute
+  - Tattoos
+Teardrop Tattoo:
+ Tags:
+  - Body Attribute
+  - Tattoos
+Forehead Tattoo:
+ Tags:
+  - Body Attribute
+  - Tattoos
+Slave Tattoo:
+ Tags:
+  - Body Attribute
+  - Tattoos
+Skull Tattoo:
+ Tags:
+  - Body Attribute
+  - Tattoos
+Rose Tattoo:
+ Tags:
+  - Body Attribute
+  - Tattoos
+Spiderweb Tattoo:
+ Tags:
+  - Body Attribute
+  - Tattoos
+'Flat Chest, Small Breasts**, Medium Breasts, Large Breasts, Big Breasts, Huge Breasts, Gigantic Breasts**':
+ Tags:
+  - Body Attribute
+  - Breast Size
+  - Small
+'Small Breasts**, Medium Breasts, Large Breasts, Big Breasts, Huge Breasts, Gigantic Breasts**':
+ Tags:
+  - Body Attribute
+  - Breast Size
+  - Small
+'Medium Breasts**, Flat Chest, Big Breasts, Huge Breasts, Gigantic Breasts**':
+ Tags:
+  - Body Attribute
+  - Breast Size
+  - Average
+'Average Breasts**, Flat Chest, Big Breasts, Huge Breasts, Gigantic Breasts**':
+ Tags:
+  - Body Attribute
+  - Breast Size
+  - Average
+'Large Breasts**, Flat Chest, Small Breasts, Huge Breasts, Gigantic Breasts**':
+ Tags:
+  - Body Attribute
+  - Breast Size
+  - Large
+'Big Breasts**, Flat Chest, Small Breasts, Medium Breasts, Gigantic Breasts**':
+ Tags:
+  - Body Attribute
+  - Breast Size
+  - Large
+'Huge Breasts**, Flat Chest, Small Breasts, Medium Breasts, Gigantic Breasts**':
+ Tags:
+  - Body Attribute
+  - Breast Size
+  - Giant
+'Gigantic Breasts**, Flat Chest, Small Breasts, Medium Breasts, Large Breasts, Big Breasts**':
+ Tags:
+  - Body Attribute
+  - Breast Size
+  - Giant
+'No Penis**, Micro Penis, Tiny Penis, Small Penis, Penis, Average Penis, Big Penis, Large Penis, Gigantic Penis, Enormous Penis**':
+ Tags:
+  - Body Attribute
+  - Penis Size
+  - Small
+'Micro Penis**, No Penis, Small Penis, Penis, Average Penis, Big Penis, Large Penis, Gigantic Penis, Enormous Penis**':
+ Tags:
+  - Body Attribute
+  - Penis Size
+  - Small
+'Tiny Penis**, No Penis, Penis, Average Penis, Big Penis, Large Penis, Gigantic Penis, Enormous Penis**':
+ Tags:
+  - Body Attribute
+  - Penis Size
+  - Small
+'Small Penis**, No Penis, Micro Penis, Average Penis, Big Penis, Large Penis, Gigantic Penis, Enormous Penis**':
+ Tags:
+  - Body Attribute
+  - Penis Size
+  - Small
+'Penis**, No Penis, Micro Penis, Tiny Penis, Big Penis, Large Penis, Gigantic Penis, Enormous Penis**':
+ Tags:
+  - Body Attribute
+  - Penis Size
+  - Average
+'Average Penis**, No Penis, Micro Penis, Tiny Penis, Small Penis, Large Penis, Gigantic Penis, Enormous Penis**':
+ Tags:
+  - Body Attribute
+  - Penis Size
+  - Average
+'Big Penis**, No Penis, Micro Penis, Tiny Penis, Small Penis, Penis, Gigantic Penis, Enormous Penis**':
+ Tags:
+  - Body Attribute
+  - Penis Size
+  - Large
+'Large Penis**, No Penis, Micro Penis, Tiny Penis, Small Penis, Penis, Average Penis, Big Penis**':
+ Tags:
+  - Body Attribute
+  - Penis Size
+  - Large
+'Gigantic Penis**, No Penis, Micro Penis, Tiny Penis, Small Penis, Penis, Average Penis, Big Penis**':
+ Tags:
+  - Body Attribute
+  - Penis Size
+  - Giant
+'Enormous Penis**, No Penis, Micro Penis, Tiny Penis, Small Penis, Penis, Average Penis, Big Penis**':
+ Tags:
+  - Body Attribute
+  - Penis Size
+  - Giant

@@ -1,0 +1,265 @@
+Gender and Rating:
+ - Unisex
+ - Female
+ - Male
+ - Futanari
+ - Femboy
+ - Accu-Rating
+ - Random
+ - Streamer
+ - SFW
+ - NSFW
+ - HighSFW
+ - MedSFW
+ - LowSFW
+ - LowNSFW
+ - MedNSFW
+ - HighNSFW
+ - Form-Fitting
+ - Skintight
+ - Transparent
+ - Open Front
+ - Cleavage Cutout
+ - Cleavage
+ - Deep-V
+ - Sideboob
+ - Underboob
+ - Breasts Hanging
+ - Exposed Upper
+ - Exposed Lower
+ - Visible Belly
+ - Meta
+ - Camera Angle
+ - Emotions
+ - Positive
+ - Neutral
+ - Negative
+ - Pose
+ - Location
+Body Tags:
+ - Body Attribute
+ - Age
+ - Young
+ - Adult
+ - Old
+ - Body Mass
+ - Skin Color
+ - Hair Style
+ - Hair Length
+ - Hair Color Types
+ - Hair Color
+ - Demi Ears
+ - Eye Type
+ - Eye Color
+ - Facial Decorations
+ - Tattoos
+ - Breast Size
+ - Penis Size
+ - Small
+ - Average
+ - Large
+ - Giant
+Formality:
+ - Daywear
+ - Eveningwear
+ - Nightwear
+ - Modest
+ - Sexywear
+ - Erotic
+ - Swimwear
+ - Sports
+ - Athleisure
+ - Casual
+ - Informal
+ - Formal
+ - Professional
+ - Functional
+ - Occupation
+ - Business
+ - Winterwear
+Body Slot:
+ - Fullbody
+ - Halo
+ - Head Top
+ - Head Sides
+ - Forehead
+ - Ears
+ - Earrings
+ - Eyewear
+ - Mouthwear
+ - Small Helms
+ - Full Helms
+ - Neckwear
+ - Back Slot
+ - Shoulders
+ - Arms
+ - Elbows
+ - Wrists
+ - Hands
+ - Breasts
+ - Belly
+ - Torso
+ - Chestplate
+ - Upper Body
+ - Tails
+ - Lower Body
+ - Waist
+ - Underwear
+ - Legs
+ - Kneepads
+ - Feet
+Upper Body:
+ - Animal Ears
+ - Horns
+ - Headwear
+ - Hat
+ - Top Helmet
+ - Half Helmet
+ - Full Helmet
+ - Glasses
+ - Goggles
+ - Blindfold
+ - Choker
+ - Necktie
+ - Scarf
+ - Cape
+ - Wings
+ - Gloves
+ - Armband
+ - Bra
+ - Nipplewear
+ - Halter Top
+ - Corset
+ - Apron
+ - Shirt
+ - Blouse
+ - Jacket
+ - Coat
+ - Hoodie
+ - Sleeveless
+ - Short Sleeves
+ - Long Sleeves
+ - Short Dress
+ - Long Dress
+Lower Body:
+ - Panties
+ - Boxer Briefs
+ - Shorts
+ - Short Skirt
+ - Long Skirt
+ - Side Slit
+ - Pelvic Curtain
+ - Jeans
+ - Slacks
+ - Sweatpants
+ - Poofy Pants
+ - Leggings
+ - Garters
+ - Kneesocks
+ - Long Socks
+ - Short Socks
+ - Shoes
+ - Boots
+ - High Heels
+ - Other Shoes
+ - Jewelry
+ - Accessory
+ - Modifier
+Materials and Modifiers:
+ - Cloth
+ - Lace
+ - Nylon
+ - Strings
+ - Frills
+ - Spandex
+ - Rubber
+ - Latex
+ - Wool
+ - Heavy Clothing
+ - Metal
+ - Spikes
+ - Leather
+ - Suspenders
+ - Micro Size
+ - Animal Theme
+ - Creature
+World Region:
+ - Western
+ - Eastern
+ - Asian
+ - African
+ - English
+ - British
+ - Roman
+ - French
+ - Japanese
+ - Indian
+ - Chinese
+ - Vietnamese
+ - Korean
+ - Muslim
+ - Turkish
+ - Spanish
+Armor Coverage:
+ - Military
+ - Ancient Military
+ - Modern Military
+ - Future Military
+ - Mechanical
+ - Chainmail
+ - Light Armor
+ - Medium Armor
+ - Heavy Armor
+ - Skimpy Armor
+ - Boobplate
+Theming:
+ - 1pc
+ - 2pc
+ - Themed
+ - Bodysuit
+ - Robes
+ - Tradwife
+ - Ballgown
+ - Musical
+ - Ceremonial
+ - Beachwear
+ - Athletic
+ - Magical
+ - Religious
+ - Clerical
+ - Christian
+ - Islamic
+ - Hindu
+ - Buddhist
+Preset Tags:
+ - Sex Prompt
+ - Fellatio
+ - Straddling
+ - Missionary
+ - BDSM
+ - Doujinshi
+ - RandGirl
+ - RandGuy
+ - Franchise
+ - Cryoverse
+ - Fire Emblem
+ - Fun Prompts
+ - Species
+ - Demihuman
+ - Angels
+ - Demons
+ - Monsters
+ - Vampires
+ - Catkin
+ - Frogkin
+ - Slimekin
+ - Dragonkin
+ - Fairies
+ - Nymphs
+ - Dryads
+ - Centaurs
+ - Dwarves
+ - Dolls
+ - Robots
+ - Golems
+ - Crocodiles

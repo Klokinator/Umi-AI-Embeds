@@ -1,4 +1,4 @@
-Welcome! This is v1 of the first public release of the Umi AI Character Creator/Generator!
+Welcome! This is v0.2 of the first public release of the Umi AI Character Creator/Generator!
 
 Calling this an AI technically isn't correct. It's actually a Wildcard system filled with hundreds, and eventually thousands, of possible options that can all combine in an infinite number of ways. In much the same way as there are mods for Skyrim, Umi AI is a mod for the WebUI AI system.
 
