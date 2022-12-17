@@ -1,0 +1,6 @@
+loli, aged_down, __REFS/BODY/Size Breasts__, __REFS/BODY/Body Mass F__
+loli, teenager, __REFS/BODY/Size Breasts__, __REFS/BODY/Body Mass F__
+teenager, mature, __REFS/BODY/Size Breasts__, __REFS/BODY/Body Mass F__
+mature female, adult, __REFS/BODY/Size Breasts__, __REFS/BODY/Body Mass F__
+mature female, old, __REFS/BODY/Size Breasts__, __REFS/BODY/Body Mass F__
+mature female, adult, (old:1.3), __REFS/BODY/Size Breasts__, __REFS/BODY/Body Mass F__

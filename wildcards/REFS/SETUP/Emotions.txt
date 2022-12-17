@@ -1,0 +1,22 @@
+Amused, {Laughing|giggling|happy, open mouth}
+Amused, {Laughing|giggling|happy, open mouth}
+Amused, {Laughing|giggling|happy, open mouth}
+Excited, {Open mouth|Gasping|Wide eyes|Huge smile}
+Excited, {Open mouth|Gasping|Wide eyes|Huge smile}
+Excited, {Open mouth|Gasping|Wide eyes|Huge smile}
+Happy, {Smile|Big smile|Huge smile|Upturned eyes}
+Happy, {Smile|Big smile|Huge smile|Upturned eyes}
+Happy, {Smile|Big smile|Huge smile|Upturned eyes}
+Calm, {Easygoing expression|Slight smile|Distant expression}
+Bored, {Narrowed eyes|Half-closed eyes|Blank stare|Ringed eyes|Expressionless|Tired eyes}
+Anxious, {Nervous expression|Averting eyes|Trembling|Shaking|Crying with eyes open}
+Disgust, {Loathing|Narrowed eyes|Sneer}
+Disgust, {Loathing|Narrowed eyes|Sneer}
+Embarrassed, {Blush|Full blush|Tears|Full-face blush, constricted pupils, ear blush}
+Embarrassed, {Blush|Full blush|Tears|Full-face blush, constricted pupils, ear blush}
+Sad, {Slight tears|Tears|Sobbing|Sobbing, tears streaming}
+Afraid, {Terrified|Constricted pupils|Trembling, shaking}
+Angry, {Wide-open eyes|Narrowed Eyes|Open mouth, screaming, blush, wide open eyes}
+Angry, {Wide-open eyes|Narrowed Eyes|Open mouth, screaming, blush, wide open eyes}
+Angry, {Wide-open eyes|Narrowed Eyes|Open mouth, screaming, blush, wide open eyes}
+#Ahegao, open mouth, saliva, tongue

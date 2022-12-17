@@ -1,0 +1,17 @@
+# To load this file, call __SFW__ from your prompts menu. This will select from a variety of SFW character, clothing, and preset options. To do the opposite, call the __NSFW__ instead.
+
+# This first option loads presets from the NSFW folder.
+
+SFW, __CONFIG/Preset Config SFW__
+
+# This option specially loads from the Specialized SFW Species! These are presets that generate semi-random.
+
+SFW, __PRESETS/SFW/Specialized Species__
+
+# This option loads a random SFW female character from available parameters.
+
+SFW, 1girl, solo focus, __REFS/SETUP/Art Styles__, __REFS/SETUP/Camera Angles__, __REFS/BODY/Body Types Female SFW__, __REFS/SETUP/Emotions__,  __REFS/SETUP/Poses General__, {__REFS/CLOTHING/FullbodySFWF__|__REFS/CLOTHING/UpperSFWF__, __REFS/CLOTHING/LowerSFWF__}, {20%__REFS/CLOTHING/ModifierSFWF__, }__REFS/BODY/Hair Lengths__, __REFS/BODY/Hair Styles__, __REFS/BODY/Hair Color Types__
+SFW, 1girl, solo focus, __REFS/SETUP/Art Styles__, __REFS/SETUP/Camera Angles__, __REFS/BODY/Body Types Female SFW__, __REFS/SETUP/Emotions__,  __REFS/SETUP/Poses General__, {__REFS/CLOTHING/FullbodySFWF__|__REFS/CLOTHING/UpperSFWF__, __REFS/CLOTHING/LowerSFWF__}, {20%__REFS/CLOTHING/ModifierSFWF__, }__REFS/BODY/Hair Lengths__, __REFS/BODY/Hair Styles__, __REFS/BODY/Hair Color Types__
+SFW, 1girl, solo focus, __REFS/SETUP/Art Styles__, __REFS/SETUP/Camera Angles__, __REFS/BODY/Body Types Female SFW__, __REFS/SETUP/Emotions__,  __REFS/SETUP/Poses General__, {__REFS/CLOTHING/FullbodySFWF__|__REFS/CLOTHING/UpperSFWF__, __REFS/CLOTHING/LowerSFWF__}, {20%__REFS/CLOTHING/ModifierSFWF__, }__REFS/BODY/Hair Lengths__, __REFS/BODY/Hair Styles__, __REFS/BODY/Hair Color Types__
+SFW, 1girl, solo focus, __REFS/SETUP/Art Styles__, __REFS/SETUP/Camera Angles__, __REFS/BODY/Body Types Female SFW__, __REFS/SETUP/Emotions__,  __REFS/SETUP/Poses General__, {__REFS/CLOTHING/FullbodySFWF__|__REFS/CLOTHING/UpperSFWF__, __REFS/CLOTHING/LowerSFWF__}, {20%__REFS/CLOTHING/ModifierSFWF__, }__REFS/BODY/Hair Lengths__, __REFS/BODY/Hair Styles__, __REFS/BODY/Hair Color Types__
+SFW, 1girl, solo focus, __REFS/SETUP/Art Styles__, __REFS/SETUP/Camera Angles__, __REFS/BODY/Body Types Female SFW__, __REFS/SETUP/Emotions__,  __REFS/SETUP/Poses General__, {__REFS/CLOTHING/FullbodySFWF__|__REFS/CLOTHING/UpperSFWF__, __REFS/CLOTHING/LowerSFWF__}, {20%__REFS/CLOTHING/ModifierSFWF__, }__REFS/BODY/Hair Lengths__, __REFS/BODY/Hair Styles__, __REFS/BODY/Hair Color Types__

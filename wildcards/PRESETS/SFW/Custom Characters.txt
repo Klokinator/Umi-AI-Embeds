@@ -1,0 +1,16 @@
+# This document will allow you to build custom characters with various parameters and pull them when running random presets. Place your character's tags here and include wildcards as needed, and your character will show up in the pools. You can get very specific here!
+
+
+# First character is Louise from Fire Emblem.
+#(Louise (fire emblem):1.3), persona art style, 1girl, armor, caucasian, purple eyes, (very long hair, single braid, side braid, blonde hair), (white and purple clothing) with (white gloves) with (purple cape) and (tall white thigh boots)
+
+
+# Louise again, but this time with more random clothing options
+(Louise (fire emblem):1.3), (Masterpiece), (best quality), (Absurd Res), (high resolution), intricate, beautiful lighting, 1girl, caucasian, purple eyes, (very long hair, single braid, side braid, blonde hair), (white gloves) with (purple cape:1.2) and (tall white thigh boots:1.2), ({SFW, __REFS/CLOTHING/UpperSFWU__, __REFS/CLOTHING/LowerSFWU__|SFW, __REFS/CLOTHING/FullbodySFWU__}:1.3)
+
+
+# A neat girl generator
+(Solo Focus:1.3), (masterpiece:1.3), best quality, lineart, hyper extreme detailed, (upper body:1.3), detailed face, bright playful eyes, detailed pupils, (realistic:0.3), 1girl, female, fantasy
+
+# A REALLY bizarre Umi Face generator; the screwed up formatting is what makes it work. Change nothing!
+(Solo Focus:1.3), (masterpiece:1.3), best quality, lineart, hyper extreme detailed, (full body: 1,3|upper body :1.3), detailed face, bright playful eyes, detailed pupils, (realistic:0.3), good hands, 1girl, female, fantasy

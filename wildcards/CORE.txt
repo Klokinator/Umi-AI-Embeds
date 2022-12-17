@@ -1,0 +1,16 @@
+# To load this file, call __CORE__ from your prompts menu. This will call up either a SFW or NSFW prompt. If you just want to see what the engine can do and don't care whether you get SFW or NSFW content, this is the way to go.
+
+# This option loads presets from the NSFW folder.
+NSFW, __CONFIG/Preset Config NSFW__
+
+# This option loads a random NSFW female character from available parameters.
+NSFW, 1girl, solo focus, __REFS/SETUP/Art Styles__, __REFS/SETUP/Camera Angles__, __REFS/BODY/Body Types Female NSFW__, __REFS/SETUP/Emotions__,  __REFS/SETUP/Poses General__, {__REFS/CLOTHING/FullbodyNSFWF__|__REFS/CLOTHING/UpperNSFWF__, __REFS/CLOTHING/LowerNSFWF__}, {20%__REFS/CLOTHING/ModifierNSFWF__, }__REFS/BODY/Hair Lengths__, __REFS/BODY/Hair Styles__, __REFS/BODY/Hair Color Types__
+
+# This option loads presets from the SFW folder.
+SFW, __CONFIG/Preset Config SFW__
+
+# This option loads a random SFW female character from available parameters.
+SFW, 1girl, solo focus, __REFS/SETUP/Art Styles__, __REFS/SETUP/Camera Angles__, __REFS/BODY/Body Types Female SFW__, __REFS/SETUP/Emotions__,  __REFS/SETUP/Poses General__, {__REFS/CLOTHING/FullbodySFWF__|__REFS/CLOTHING/UpperSFWF__, __REFS/CLOTHING/LowerSFWF__}, {20%__REFS/CLOTHING/ModifierSFWF__, }__REFS/BODY/Hair Lengths__, __REFS/BODY/Hair Styles__, __REFS/BODY/Hair Color Types__
+
+# This option specially loads from the Specialized SFW Species! These are presets that generate semi-random.
+SFW, __PRESETS/SFW/Specialized Species__

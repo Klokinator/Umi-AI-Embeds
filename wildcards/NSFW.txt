@@ -1,0 +1,9 @@
+# To load this file, call __NSFW__ from your prompts menu. This will select from a variety of NSFW character, clothing, and preset options. To do the opposite, call the __SFW__ instead.
+#
+# This first option loads presets from the NSFW folder.
+#
+NSFW, __CONFIG/Preset Config NSFW__
+#
+# This option loads a random NSFW female character from available parameters.
+#
+NSFW, 1girl, solo focus, __REFS/SETUP/Art Styles__, __REFS/SETUP/Camera Angles__, __REFS/BODY/Body Types Female NSFW__, __REFS/SETUP/Emotions__,  __REFS/SETUP/Poses General__, {__REFS/CLOTHING/FullbodyNSFWF__|__REFS/CLOTHING/UpperNSFWF__, __REFS/CLOTHING/LowerNSFWF__}, {20%__REFS/CLOTHING/ModifierNSFWF__, }__REFS/BODY/Hair Lengths__, __REFS/BODY/Hair Styles__, __REFS/BODY/Hair Color Types__

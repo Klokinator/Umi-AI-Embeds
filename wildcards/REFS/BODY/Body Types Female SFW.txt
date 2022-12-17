@@ -1,0 +1,4 @@
+teenager, mature, {small|medium|large} Breasts, __REFS/BODY/Body Mass F__
+mature female, adult, {small|medium|large} Breasts, __REFS/BODY/Body Mass F__
+mature female, old, {small|medium|large} Breasts, __REFS/BODY/Body Mass F__
+mature female, adult, (old:1.3), {small|medium|large} Breasts, __REFS/BODY/Body Mass F__

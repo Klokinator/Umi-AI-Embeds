@@ -1,0 +1,4 @@
+# This prompt prefers the custom AI model detailed here: NovelAI 80% + TrinArt 2 115k 20% Weighted Sum https://boards.4chan.org/h/thread/6918936#p6918979
+# Download that model from this link: (2.6GBs) https://anonfiles.com/q546ZaC7yd/Super_Face_Model_ckpt
+#
+(detailed face and __Colors__ eyes:1.4), (detailed lips:1.4), lineart, (realistic:0.4), {__REFS/CLOTHING/FullbodySFWU__|__REFS/CLOTHING/FullbodyNSFWU__}, 1girl, __REFS/BODY/Body Mass F__, __REFS/BODY/Size Breasts__, __REFS/SETUP/Emotions__, __CONFIG/Hair Config U__, {30%__REFS/CLOTHING/Misc-Gloves__, |}{30%__REFS/CLOTHING/Misc-Earrings__, |}{20%__REFS/CLOTHING/Headwear__|20%__REFS/BODY/Horns__|20%__REFS/BODY/Animal Ears__|}

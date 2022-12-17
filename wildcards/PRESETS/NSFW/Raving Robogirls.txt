@@ -1,0 +1,22 @@
+# This prompt was originally posted on the 4chan waifu diffusion board. I have taken it and updated it to fit the universal engine a bit better, as well as included a version that I thought best fit the tone of what the OP was going for.
+#
+# This is the original version: https://i.imgur.com/UBrMmav.jpeg
+# Note that this one really prefers to use DDIM at 50 steps, though it seems to look alright with Euler at 30 steps.
+#
+(cross-section cybernetic uterus on the side), cyberpunk, masterpiece, best quality, skimpy (photorealistic:1.1) (3d:0.4), (robot girl:1.3) 1girl with animal ears and white streaked_hair on back, navel, spread legs, pussy juice, scream, cable object insertion, prosthesis, (robot joints:1.1), pale white skin, evangelion style, detailed, intricate, super detailed, overly detailed
+# Negative prompt: lowres, bad anatomy, bad legs, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg, artifacts, signature, watermark, username, blurry, bad feet, artist name, bad anatomy, bad hands, bad body, bad proportions, worst quality, low quality, anime, stand, spread legs, sit, spread arms
+# Steps: 50, Sampler: DDIM, CFG scale: 12, Size: 1024x1280, Denoising strength: 0.69, Eta: 0.3, First pass size: 512x576
+#
+#
+# Next we have my updated version, which I think looks better and is more BDSM-y, what with the usage of wire bindings. https://i.imgur.com/LhUeeEE.png
+#
+cyberpunk, masterpiece, best quality, skimpy (photorealistic:1.1) (3d:0.4), (robot girl:1.3) 1girl with animal ears and white pigtails on back, navel, spread legs, pussy juice, screaming, ahegao, cable object insertion, prosthesis, (robot joints:1.1), pale white skin, evangelion style, detailed, intricate, super detailed, overly detailed, box tie wire, wire bondage
+# Negative prompt: lowres, bad anatomy, bad legs, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg, artifacts, signature, watermark, username, blurry, bad feet, artist name, bad anatomy, bad hands, bad body, bad proportions, worst quality, low quality, anime, stand, spread legs, sit, spread arms
+# Steps: 50, Sampler: DDIM, CFG scale: 12, Size: 768x768, Denoising strength: 0.69, Clip skip: 2, ENSD: 31337, First pass size: 256x256
+#
+#
+# Finally, we have the universal prompt with universal hair colors and emotions. https://i.imgur.com/ELmPHen.png
+#
+cyberpunk, masterpiece, best quality, skimpy (photorealistic:1.1) (3d:0.4), (robot girl:1.3) 1girl with ({50%animal ears and |}__REFS/BODY/Hair Lengths__, __REFS/BODY/Hair Styles__, __REFS/BODY/Hair Color Types__ on back), navel, spread legs, pussy juice, (__REFS/SETUP/Emotions__), cable object insertion, prosthesis, (robot joints:1.1), pale white skin, evangelion style, detailed, intricate, super detailed, overly detailed, box tie wire, wire bondage
+# Negative prompt: lowres, bad anatomy, bad legs, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg, artifacts, signature, watermark, username, blurry, bad feet, artist name, bad anatomy, bad hands, bad body, bad proportions, worst quality, low quality, anime, stand, spread legs, sit, spread arms
+# Steps: 50, Sampler: DDIM, CFG scale: 12, Size: 768x768, Denoising strength: 0.69, Clip skip: 2, ENSD: 31337, First pass size: 256x256

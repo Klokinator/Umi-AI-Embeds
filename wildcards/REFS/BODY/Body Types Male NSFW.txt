@@ -1,0 +1,5 @@
+1boy, shota, aged_down, __REFS/BODY/Body Mass M__
+1boy, shota, teenager, __REFS/BODY/Body Mass M__
+1boy, teenager, mature male, __REFS/BODY/Body Mass M__
+1boy, mature male, adult, __REFS/BODY/Body Mass M__
+1boy, mature male, adult, old, __REFS/BODY/Body Mass M__

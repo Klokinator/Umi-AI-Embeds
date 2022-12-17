@@ -1,0 +1,10 @@
+pov, looking at viewer
+pov, looking away
+from side, looking at viewer
+from side, looking away
+#from behind, looking at viewer
+#from behind, looking away
+from below, looking at viewer
+from below, looking away
+dutch angle, looking at viewer
+dutch angle, looking away

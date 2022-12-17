@@ -1,0 +1,14 @@
+# Makes sex doll girls.
+__PRESETS/NSFW/Doll Girls NSFW__
+# A preset that generates girls giving fellatio with a variety of expressions.
+__PRESETS/NSFW/Cocksucking Cunts__
+# A preset that generates girls straddling cock like its their day job. (No judgment!)
+__REFS/SETUP/Art Styles__, __REFS/SETUP/Emotions__, __REFS/SETUP/Location__, __PRESETS/NSFW/Straddling Sluts__
+# Based off this prompt on 4chan https://boards.4chan.org/h/thread/6921069#p6921237 and https://i.imgur.com/UVDApop.png
+__PRESETS/NSFW/Oneshot H-Manga__
+# Creates a sexy slimegirl! Can come in multiple colors too!
+__PRESETS/NSFW/Superior Slimegirls__
+# Raving Robogirls in varying levels of BDSM, with universal types and the original 4chan version. Prefers DDIM at 50 steps over Euler, but otherwise works well.
+__PRESETS/NSFW/Raving Robogirls__
+# Specialized NSFW Species that generally just generate extremely sexy if not outright nude.
+__PRESETS/NSFW/Specialized Species__

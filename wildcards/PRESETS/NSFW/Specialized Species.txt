@@ -1,0 +1,23 @@
+# NSFW Water nymph girl
+NSFW, nipples, pussy, 1girl, solo focus, Masterpiece, best quality, (bright playful eyes, detailed pupils:1.1), Spirit girl, blue skin, (water nymph:1.2), Elemental Body, liquid skin, spirit, spirit body, gaseous form, water magic, water aura, glowing magical tattoos**, clothing, armor, giant breasts, large breasts, small breasts, flat chest, loli**
+
+# NSFW Fire elemental girl
+Masterpiece, best quality, perfect face and eyes, detailed eyes, perfect eyes, NSFW, nipples, 1girl, {standing|on knees|kneeling}, solo focus, monster girl, fiery body, (dark red skin:1.2), molten skin, molten rock, orange tattoos, (full body tattoo:1.3), (glowing tattoos:1.3), (fire:1.4)**, clothing, armor, giant breasts, large breasts, small breasts, flat chest, loli, gigantic breasts, massive breasts**
+
+# NSFW Forest Dryad by Klok
+NSFW, 1girl, solo focus, Masterpiece, best quality, highly detailed eyes, watery eyes, innocent eyes, (style of poison ivy:1.2), __REFS/SETUP/Camera Angles__, __REFS/SETUP/Poses General__, (plant dryad:1.5), (nymph:1.2), (plant:1.1), monster girl, (vines on body:1.2), leaves, (green skin:1.5), flowers on body, (plant body:1.5), standing, sun, leaf clothes, long hair, plant hair, flower crown, vines, nipples, plant clothing, flower trim, {small|medium|large|gigantic} breasts, __REFS/SETUP/Emotions__
+
+# NSFW Forest Dryad by Nebula
+Masterpiece, best quality, detailed face and eyes, (1girl, ({flower|plant|tree|leaf} dryad:1.5), __REFS/BODY/Hair Colors__, {plant|vine|leaf|flower} clothes, plant hair, {small|medium|large} breasts, {plants|vines|leaf|flower} on body,), __REFS/SETUP/Poses General__, white background, __REFS/SETUP/Camera Angles__, __REFS/SETUP/Emotions__, NSFW, nipples, pussy
+
+# NSFW Mushroom Dryad Variant by Klok
+Masterpiece, best quality, detailed face and eyes, (1girl, (mushroom dryad:1.5), __REFS/BODY/Hair Colors__, {plant|vine|leaf|flower} clothes, mushroom hair, {small|medium|large} breasts, mushrooms on body), __REFS/SETUP/Poses General__, __REFS/SETUP/Camera Angles__, __REFS/SETUP/Emotions__, NSFW, nipples, pussy, mushroom hat
+
+# NSFW Girl in a glowing forest
+Masterpiece, best quality, detailed face and eyes, radiant light, god rays, blue sunbeam, (style of glowing blue light:1.5), blue light rays, 1girl, ({forest|flower|plant|tree|leaf} dryad:1.4), {plant|vine|leaf|flower} clothes, {small|medium|large} breasts, __REFS/SETUP/Poses General__, __REFS/SETUP/Camera Angles__, __REFS/SETUP/Emotions__, NSFW, nipples, pussy
+
+# Forest girl in the Ori art style...
+Masterpiece, best quality, detailed face and eyes, radiant light, god rays, blue sunbeam, (style of ori and the blind forest:1.3), blue light rays, 1girl, ({forest|flower|plant|tree|leaf} dryad:1.3), {plant|vine|leaf|flower} clothes, {small|medium|large} breasts, __REFS/SETUP/Poses General__, __REFS/SETUP/Camera Angles__, __REFS/SETUP/Emotions__, NSFW, nipples, pussy
+
+# Centaur Girls. These best generate at CFG 9-12 scale, 768x768 or some other square size. They only have a 60-70% chance of generating correctly and are otherwise a bit buggy.
+NFSW, masterpiece, best quality, 1girl, (horse ears:1.33), (horse centaur:1.66), (merged at the waist:1.33),  (body fur:1.33) __REFS/BODY/Hair Colors__, __REFS/BODY/Hair Lengths__, __REFS/BODY/Hair Styles__, average body, large breasts**, (horse head:2.2), (horse:2.2), (furry:0.25), long neck, multiple characters, toes, more than 2 hands, more than two arms, malformed feet, malformed high heels, bulge, different heels, mutated, animal ears, (spider arms), malformed arms, malformed hands, head out of frame,(multiple views:1.3)**

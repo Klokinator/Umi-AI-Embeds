@@ -1,0 +1,28 @@
+#This is sex-doll type of preset that aims for girls with pale skin and sexy bodies. Taken off 4chan.
+#
+lineart, (realistic:0.4), (glowing pink eyes:1.2), (detailed lips:1.2), 1girl, female, (dark red Doll joints:1.17), (puppet:1.2), (marionette:1.2), (Pale white skin:1.2) __REFS/BODY/Body Types Female NSFW__, {__CONFIG/Clothes Config SFW U__|__CONFIG/Clothes Config NSFW U__}
+#
+#
+# Sex dolls, but with extremely skimpy clothing, like so: https://i.imgur.com/iyOYeoo.png
+#
+lineart, (realistic:0.4), (glowing pink eyes:1.2), (detailed lips:1.2), 1girl, female, (dark red Doll joints:1.17), (puppet:1.2), (marionette:1.2), (Pale white skin:1.2) __REFS/BODY/Body Types Female NSFW__, bikini armor with open front, revealing clothes
+#
+#
+# Makes sex dolls that have strings hanging all over their bodies, like so: https://i.imgur.com/QX3sn1h.png
+#
+lineart, (realistic:0.4), (glowing pink eyes:1.2), (detailed lips:1.2), 1girl, female, (dark red Doll joints:1.17), (puppet:1.2), (marionette:1.2), (Pale white skin:1.2) (nipples, Cupless string bra:1.2), (pussy:1.2) (crotchless string thong:1.3), visible pussy, metal choker
+#
+#
+# A ribbon bondage variant that really binds the skin like so, one of my favorites: https://i.imgur.com/qQdk7F5.png
+#
+lineart, (realistic:0.4), (glowing pink eyes:1.2), (detailed lips:1.2), 1girl, female, (dark red Doll joints:1.17), (puppet:1.2), (marionette:1.2), (Pale white skin:1.2) completely naked, (nipples, pussy:1.2), (ribbon bondage:1.2), breast bondage, leg bondage, arm bondage, squishing, ribbon choker
+#
+#
+# Creates sex dolls that take the form of either maids in maid outfits, or wearing negligees. Small variety, but potent: https://i.imgur.com/D7zDv7i.png
+#
+lineart, (realistic:0.4), (glowing pink eyes:1.2), (detailed lips:1.2), 1girl, female, (dark red Doll joints:1.17), (puppet:1.2), (marionette:1.2), (Pale white skin:1.2) (nipples, pussy:1.2), {skimpy negligee, cat ears|lace negligee, cat ears|slave negligee, cat ears|see-thru negligee|sexy maid outfit, maid headdress|skimpy maid outfit, frills, maid headdress|maid outfit with open front, maid headdress|slave maid outfit, maid headdress|lace maid outfit, maid headdress}, ribbon choker
+#
+#
+# This is a specialized Doll prompt that generates creepy gothic dolls with high accuracy. These dolls should not have any genitals.
+#
+{(hollow eyes:1.2)|(glowing red eyes:1.2)}, (detailed lips:1.2), female, (Doll joints:1.17), (puppet:1.2), (marionette:1.2), (Pale white skin:1.2) __REFS/BODY/Body Types Female NSFW__, {__CONFIG/Clothes Config SFW U__|__CONFIG/Clothes Config NSFW U__}, __CONFIG/Clothes Extra Config__**, (nipples)****, (pussy)****, (penis)**

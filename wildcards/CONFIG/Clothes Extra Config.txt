@@ -1,0 +1,2 @@
+#This config sets a 50% chance for any of the optional clothing doodads to appear on a character.
+{50%__REFS/CLOTHING/Misc-Earrings__, |}{50%__REFS/CLOTHING/Misc-Glasses__, |}{50%__REFS/CLOTHING/Misc-Gloves__, |}{50%__REFS/CLOTHING/Misc-Neckwear__, |}{50%__REFS/CLOTHING/Misc-Shoes__, |25%Barefoot, |25%}{50%__REFS/CLOTHING/Misc-Tattoos__|}

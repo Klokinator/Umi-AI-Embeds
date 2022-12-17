@@ -1,0 +1,28 @@
+Baseball Cap
+Beach Hat
+Beret
+Blindfold
+College Hat
+Cowboy Hat
+Cowgirl Hat
+Crown
+Forehead Protector
+Hair Bow
+Hair Ribbon
+Hairband
+Headband
+Headdress
+Maid Headdress
+Mini Hat
+Nun Shawl
+Paddy Hat
+Rice Farmer Hat
+Santa Hat
+Sorcerer Hat
+Sweatband
+Tiara
+Top Hat
+Trillby
+Victorian Hat
+Witch Hat
+Wizard Hat

@@ -1,0 +1,113 @@
+# A basic template for randomized characters
+#__REFS/SETUP/Art Styles__, __REFS/SETUP/Camera Angles__, 1girl, solo focus, __REFS/SETUP/Location__, __REFS/SETUP/Emotions__,  __REFS/SETUP/Poses General__, __Colors__ Eyes, {small|medium|large} breasts, {10%abs|10%muscular, abs|}, {__REFS/CLOTHING/FullbodySFWF__|__REFS/CLOTHING/UpperSFWF__, __REFS/CLOTHING/LowerSFWF__}, __REFS/CLOTHING/ModifierSFW__, __REFS/BODY/Hair Lengths__, __REFS/BODY/Hair Styles__, __REFS/BODY/Hair Color Types__
+
+# These are Seraph Angels. They wear robes and have a spellcaster's aura.
+masterpiece, best quality, bright playful eyes, detailed pupils, god rays, sunbeam, {inside a church|outside a church|standing in a field of flowers|kneeling in a field of flowers}, smiling, big smile, 1girl, solo focus, (Angel:1.2), halo, aura, magic, __Colors__ Eyes, ({Dark|Light} Skinned Female:1.2), Long Religious Robes, Latin Cross, (__CONFIG/Hair Config U__:0.8)
+masterpiece, best quality, perfect face and eyes, detailed pupils, god rays, sunbeam, {inside a church|outside a church|standing in a field of flowers|kneeling in a field of flowers}, (1boy:1.2), masculine, mature male, solo focus, (Angel:1.2), halo, aura, magic, __Colors__ Eyes, ({Dark|Light} Skinned Male:1.2), Long Religious Robes, Latin Cross, (Short Hair, __REFS/BODY/Hair Color Types__:0.8){40%, muscular, abs|}**, loli, female, shota, child**
+
+
+# These are Cherub Angels. They wear holy armor and are excellent in battle.
+masterpiece, best quality, god rays, sunbeam, 1girl, solo focus, standing, from front, (Angel Wings:1.2), golden halo, aura, {35%__Colors__ Eyes|}, angry, determined, narrowed eyes, ({Dark|Light} Skinned Female:1.2), (full armor:1.3), steel, (winged helmet:1.2), chausses, gauntlets, Latin Cross, (__CONFIG/Hair Config U__:0.8)**, boobplate, fabric clothing, simple clothing, robes**
+masterpiece, best quality, god rays, sunbeam, 1boy, solo focus, standing, from front, (Angel Wings:1.2), golden halo, aura, {35%__Colors__ Eyes|}, angry, determined, narrowed eyes, ({Dark|Light} Skinned Male:1.2), (full armor:1.3), steel, (winged helmet:1.2), chausses, gauntlets, Latin Cross, (__CONFIG/Hair Config U__:0.8)**, boobplate, fabric clothing, simple clothing, robes**
+
+# These are AUTOMATON CHERUB ANGELS, PART OF THE GREATEST BATTLE FORCE EVER TO EXIST UNDER THE DIVINE GOD EMPEROR!
+masterpiece, best quality, (theme of black and __Colors__:1.3), god rays, sunbeam, 1boy, solo focus, standing, looking at viewer, detailed armor, faceless, (Angel Wings:1.2), glowing halo above head, aura, (full armor:1.3), (full helmet:1.2), chausses, gauntlets, Latin Cross, a warrior angel standing amidst the clouds**, multiple boys, multiple girls, multiple views, (boobplate:1.4), fabric clothing, simple clothing, robes**
+
+
+#These are catgirls and catboys. They are not furry/anthro.
+1girl, solo focus, __REFS/SETUP/Art Styles__, __REFS/SETUP/Camera Angles__, __REFS/SETUP/Location__, __REFS/SETUP/Emotions__,  __REFS/SETUP/Poses General__, Cat girl, Cat ears, __Colors__ Cat Eyes, {50%Collar with bell, |} __REFS/BODY/Body Types Female SFW__, {__REFS/CLOTHING/FullbodySFWF__|__REFS/CLOTHING/UpperSFWF__, __REFS/CLOTHING/LowerSFWF__}, __REFS/CLOTHING/ModifierSFW__, __REFS/BODY/Hair Lengths__, __REFS/BODY/Hair Styles__, __REFS/BODY/Hair Color Types__
+1boy, solo focus, __REFS/SETUP/Art Styles__, __REFS/SETUP/Camera Angles__, __REFS/SETUP/Location__, __REFS/SETUP/Emotions__,  __REFS/SETUP/Poses General__, Cat boy, Cat ears, __Colors__ Cat Eyes, {50%Collar with bell, |} __REFS/BODY/Body Types Male SFW__, {__REFS/CLOTHING/FullbodySFWM__|__REFS/CLOTHING/UpperSFWM__, __REFS/CLOTHING/LowerSFWM__}, short hair, __REFS/BODY/Hair Color Types__
+
+# Tiger Catgirls! Mostly SFW.
+(masterpiece, best quality, perfect eyes, beautiful face and eyes:1.2), sunbeam, god rays, light particles, SFW, 1girl, solo focus, inside the jungle, from front, {standing|kneeling}, claw pose, evil smile, fangs, navel, (mature woman:1.3), __REFS/BODY/Hair Styles__, __REFS/BODY/Hair Lengths__, orange hair, {50%hair between eyes|}, tiger girl, tiger ears, tiger bra, (pelvic curtain, tiger loincloth:1.2), tiger elbow gloves, tiger thighhighs, whisker markings, orange choker, {50%neck bow|collar}**, nipples, pussy, tail, shoes**
+
+# Leopard Catgirls! Mostly SFW.
+(masterpiece, best quality, perfect eyes, beautiful face and eyes:1.2), sunbeam, god rays, light particles, SFW, 1girl, solo focus, in the jungle, from front, {standing|kneeling}, claw pose, angry, blush, fangs, navel, (mature woman:1.3), __REFS/BODY/Hair Styles__, __REFS/BODY/Hair Lengths__, orange hair, {50%hair between eyes|}, leopard girl, leopard ears, leopard print bra, (pelvic curtain, leopard print loincloth:1.2), leopard print elbow gloves, leopard print thighhighs, whisker markings, orange choker**, nipples, pussy, tail, shoes**
+
+# Black Panther Catgirls! Mostly SFW.
+(masterpiece, best quality, perfect eyes, beautiful face and eyes:1.2), darkness, shadows, SFW, 1girl, solo focus, inside the jungle, from front, {standing|kneeling}, claw pose, evil smile, fangs, navel, (mature woman:1.3), __REFS/BODY/Hair Styles__, __REFS/BODY/Hair Lengths__, black hair, {50%hair between eyes|}, panther girl, panther ears, black  bra, (pelvic curtain, black loincloth:1.2), black elbow gloves, black thighhighs, black whisker markings, black lace choker, (dark cape and hood:1.1)**, nipples, pussy, tail, shoes**
+
+# Snow Panther Catgirls! Mostly SFW.
+(masterpiece, best quality, perfect eyes, beautiful face and eyes:1.2), sunbeam, god rays, light particles, SFW, 1girl, solo focus, at the snowy arctic, from front, {standing|kneeling}, claw pose, embarrassed, blush, fangs, navel, (mature woman:1.3), __REFS/BODY/Hair Styles__, __REFS/BODY/Hair Lengths__, white hair, {50%hair between eyes|}, cat girl, cat ears, white fur bra, (pelvic curtain, white loincloth:1.2), white fur elbow gloves, white fur thighhighs, whisker markings, white choker, (fur trim:1.1), (white cape:1.1)**, nipples, pussy, tail, shoes**
+
+# Lion Catgirls! Mostly SFW.
+(masterpiece, best quality, perfect eyes, beautiful face and eyes:1.2), sunbeam, god rays, light particles, SFW, 1girl, solo focus, in the grassy sahara, from front, {standing|kneeling}, claw pose, gao, fangs, navel, (mature woman:1.3), thick messy hair, frizzy hair, orange hair, {50%hair between eyes|}, (lion girl:0.7), lion ears, fur-lined bra, (pelvic curtain, fur-lined loincloth:1.2), fur-lined elbow gloves, fur-lined thighhighs, whisker markings, orange choker**, nipples, pussy, tail, shoes, anthro**
+
+
+# Big and bulky metal golems.
+Masterpiece, best quality, high detail, by Gaston Bussière, Claude Monet, Artstation, flame particles, light particles, zoomed out, (full body:1.3), Golem, armored, full armor, metal skin, metal face, full helmet, inside a metalworking factory**, loli, female, shota, child, male**
+
+# Big and bulky rock golems.
+Masterpiece, best quality, high detail, by Gaston Bussière, Claude Monet, Artstation, zoomed out, (full body:1.3), Golem, (bipedal:1.2), (humanoid shape:1.2), earth body, earth construct, earthen skin, monster, faceless, two arms, two legs, one head**, loli, female, shota, child, male**
+
+# Big and bulky vine golems.
+Masterpiece, best quality, high detail, by Gaston Bussière, Claude Monet, Artstation, zoomed out, (full body:1.3), Golem, (bipedal:1.2), (humanoid shape:1.2), vine body, vine construct, vine skin, monster, faceless, two arms, two legs, one head**, loli, female, shota, child, male**
+
+# Big and bulky flame golems.
+Masterpiece, best quality, high detail, by Gaston Bussière, Claude Monet, Artstation, zoomed out, (full body:1.3), Golem, (bipedal:1.2), (humanoid shape:1.2), flame body, fire construct, armored skin, monster, faceless, two arms, two legs, one head, inside a world of fire and flame and lava veins**, loli, female, shota, child, male**
+
+#Big and bulky ocean golems.
+Masterpiece, best quality, high detail, by Gaston Bussière, Claude Monet, Artstation, zoomed out, (full body:1.3), Golem, (bipedal:1.2), (humanoid shape:1.2), liquid body, water body, water construct, liquid skin, monster, faceless, two arms, two legs, one head, standing in a patch of the marshlands**, loli, female, shota, child, male**
+
+# SFW Fairy Girls jumping happily
+masterpiece, best quality, SFW, 1girl, solo focus, (size difference, minigirl:1.2), {from above|from front}, standing on a table, happy, big smile, jumping for joy, (\o/, arms up, spread arms:1.2), magical girl, fairy girl, fairy wings, petal dress, sparkle, magic, aura, (mature woman, medium breasts:1.2), __REFS/BODY/Hair Lengths__, __REFS/BODY/Hair Styles__**, gigantic breasts, huge breasts, small breasts, flat chest**
+
+# Bipedal crocodilians, but they don't look good.
+#Masterpiece, best quality, high detail, by Gaston Bussière, Claude Monet, Artstation, solo focus, a bipedal (anthro:1.2) crocodile with two arms and legs standing upright, monster girl, reptile tail, scales, slit eyes
+
+# Random demon girls with many demonic skin colors
+Masterpiece, best quality, high detail, by Gaston Bussière, Claude Monet, Artstation, 1girl, solo focus, river of fire, lava, Hell, __REFS/SETUP/Emotions__,  __REFS/SETUP/Poses General__, Demon, demon girl, monster girl, demon horns, ({pale grey|dark red|dark black|blue|very brown|very dark|yellow} skinned girl:1.3), (__Colors__ Eyes:0.8), {small|medium|large} breasts, {10%abs, |10%muscular, abs, |}{demonic clothing|demonic armor}, __REFS/CLOTHING/ModifierSFW__, __REFS/BODY/Hair Lengths__, __REFS/BODY/Hair Styles__, mature woman**, loli, child, teenager, fully naked, exposed breasts, exposed pussy**
+
+
+# Light dragon girls with human skin but dragon 'armor'
+Masterpiece, best quality, high detail, by Gaston Bussière, Claude Monet, Artstation, 1girl, solo focus, from front, dragon girl, (dragon wings:1.2), dragon horns, scales, scaley, ({pale grey|dark red|dark black|blue|very brown|very dark|yellow|green|purple} scales:1.3), (__Colors__ Eyes:0.8), {medium|large} breasts, {10%abs, |10%muscular, abs, |} __REFS/BODY/Hair Lengths__, __REFS/BODY/Hair Styles__, mature woman
+
+# Medium dragon girls with dragonlike bodies and hair but human faces
+Masterpiece, best quality, high detail, by Gaston Bussière, Claude Monet, Artstation, 1girl, solo focus, from front, dragon girl, monster girl, dragon horns, (scales, scales on face, scaled skin:1.3), ({pale grey|dark red|dark black|blue|very brown|very dark|yellow|green|purple} scales:1.2), (__Colors__ Eyes:0.8), {medium|large} breasts, mature woman**, loli, child, teenager, dragon, human skin, human, fur, exposed skin, armor, clothes, human face, hair**
+
+# Extreme Dragon Girls, draconic face too
+Masterpiece, best quality, high detail, by Gaston Bussière, Claude Monet, Artstation, perfect face, 1girl, solo focus, dragon girl, monster girl, dragon horns, (scaled face:1.45), (scales, scaled skin:1.25), ({pale grey|dark red|dark black|blue|very brown|very dark|yellow|green|purple} scales:1.2), (__Colors__ Eyes:0.8), {medium|large} breasts, mature woman, dragon wings**, loli, child, teenager, dragon, human skin, human, fur, exposed skin, armor, clothes, human face, hair**
+
+# Dwarf girls, sometimes they appear bigger than the scenery but their proportions are usually correct
+Masterpiece, best quality, high detail, by Gaston Bussière, Claude Monet, Artstation, __REFS/SETUP/Camera Angles__, 1girl, solo focus, {in the middle of an old medieval village|in the middle of a fantasy village from lord of the rings|working inside a smithy}, __REFS/SETUP/Emotions__, (dwarf, shortstack:1.5), (small body:1.3), wide hips, muscular, __Colors__ Eyes, {medium|large} breasts, {full armor, fantasy armor, dwarven armor|white undershirt, brown apron, brown pants|blacksmith's outfit}, __REFS/BODY/Hair Lengths__, __REFS/BODY/Hair Styles__, __REFS/BODY/Hair Colors__**, tall body, large body, giant, huge body, normal sized human, average sized body, (beard:1.4), male, 1boy, multiple girls, multiple boys, multiple characters, boobplate**
+
+# Generic Random Vampiresses
+Masterpiece, best quality, high detail, by Gaston Bussière, Claude Monet, Artstation, __REFS/SETUP/Camera Angles__, 1girl, solo focus, {a bloody moon and castle in the background|a moon and castle in the background}, __REFS/SETUP/Emotions__, (vampire, pale white skin:1.3), (two fangs, blood on face:1.25), thin body, Deep Red Eyes, {medium|large} breasts, {vampire outfit|vampire dress|vampire costume}, cape, ruby earrings, red forehead jewel, __REFS/BODY/Hair Lengths__, __REFS/BODY/Hair Styles__, __REFS/BODY/Hair Colors__**, (sharp teeth:0.75)**
+
+# Random loli vampires (VERY SFW)
+Masterpiece, best quality, high detail, by Gaston Bussière, Claude Monet, Artstation, __REFS/SETUP/Camera Angles__, 1girl, solo focus, {a bloody moon and castle in the background|a moon and castle in the background}, {smile, happy|smug grin, mischievous, narrowed eyes|__REFS/SETUP/Emotions__}, (vampire, pale white skin:1.3), (two fangs, loli:1.25), petite, thin body, Deep Red Eyes, {flat chest|small breasts|medium breasts}, (black clothing:1.2), full body outfit, vampire dress, cape, ruby earrings, __REFS/BODY/Hair Lengths__, __REFS/BODY/Hair Styles__, __REFS/BODY/Hair Colors__**, (sharp teeth:0.75), mature female, large breasts, gigantic breasts, huge breasts, wings, bat wings, breasts, pussy, nipples, sideboob, 3 legs, 4 legs, 3 arms, 4 arms, multiple girls, multiple boys, multiple characters**
+
+# Random MILF Vampires
+Masterpiece, best quality, high detail, (detailed face and eyes:1.1), by Gaston Bussière, Claude Monet, Artstation, __REFS/SETUP/Camera Angles__, 1girl, solo focus, {a bloody moon and castle in the background|a moon and castle in the background}, {smile, happy|smug grin, mischievous, narrowed eyes|__REFS/SETUP/Emotions__}, (vampire, pale white skin:1.3), (two fangs, mature female:1.25), Deep Red Eyes, {large breasts|giant breasts}, cleavage, (black clothing:1.2), full body outfit, {vampire dress|black gothic frilled clothes}, cape, ruby earrings, __REFS/BODY/Hair Lengths__, __REFS/BODY/Hair Styles__, __REFS/BODY/Hair Colors__**, (sharp teeth:0.75), loli, flat chest, small breasts, medium breasts, wings, bat wings, pussy, nipples, 3 legs, 4 legs, 3 arms, 4 arms, multiple girls, multiple boys, multiple characters**
+
+# Generic Random Vampiresses but THEME OF BLACK
+Masterpiece, best quality, high detail, detailed face and eyes, (style of __Colors__ and black theme:1.1), __REFS/SETUP/Camera Angles__, 1girl, solo focus, {a bloody moon and castle in the background|a moon and castle in the background}, __REFS/SETUP/Emotions__, (vampire, pale white skin:1.3), (two fangs, blood on face:1.25), thin body, Deep Red Eyes, {medium|large} breasts, {vampire outfit|vampire dress|vampire costume}, cape, ruby earrings, red forehead jewel, __REFS/BODY/Hair Lengths__, __REFS/BODY/Hair Styles__, __REFS/BODY/Hair Colors__**, (sharp teeth:0.75)**
+
+# Random loli vampires but THEME OF BLACK (VERY SFW)
+Masterpiece, best quality, high detail, (detailed face and eyes:1.1), (style of __Colors__ and black theme:1.1), __REFS/SETUP/Camera Angles__, 1girl, solo focus, {a bloody moon and castle in the background|a moon and castle in the background}, {smile, happy|smug grin, mischievous, narrowed eyes|__REFS/SETUP/Emotions__}, (vampire, pale white skin:1.3), (two fangs, loli:1.25), petite, thin body, Deep Red Eyes, {flat chest|small breasts|medium breasts}, (black clothing:1.2), full body outfit, vampire dress, cape, ruby earrings, __REFS/BODY/Hair Lengths__, __REFS/BODY/Hair Styles__, __REFS/BODY/Hair Colors__**, (sharp teeth:0.75), mature female, large breasts, gigantic breasts, huge breasts, wings, bat wings, breasts, pussy, nipples, sideboob, 3 legs, 4 legs, 3 arms, 4 arms, multiple girls, multiple boys, multiple characters**
+
+# Random MILF Vampires but THEME OF BLACK
+Masterpiece, best quality, high detail, detailed face and eyes, (style of __Colors__ and black theme:1.1), __REFS/SETUP/Camera Angles__, 1girl, solo focus, {a bloody moon and castle in the background|a moon and castle in the background}, {smile, happy|smug grin, mischievous, narrowed eyes|__REFS/SETUP/Emotions__}, (vampire, pale white skin:1.3), (two fangs, mature female:1.25), Deep Red Eyes, {large breasts|giant breasts}, cleavage, {vampire dress|black gothic frilled clothes}, cape, ruby earrings, __REFS/BODY/Hair Lengths__, __REFS/BODY/Hair Styles__**, (sharp teeth:0.75), loli, flat chest, small breasts, medium breasts, wings, bat wings, pussy, nipples, 3 legs, 4 legs, 3 arms, 4 arms, multiple girls, multiple boys, multiple characters**
+
+# Frog Girl by LifeVirus
+monster girl, (frog girl:1.33), (webbed hands:1.33), (webbed feet:1.33), (frog like skin:1.33), green skin
+
+
+
+#blue skin, blue body, genie blue skin, lamp, __REFS/BODY/Body Types Male SFW__
+
+#Giantess, muscular, huge body, tall, very tall, __REFS/BODY/Body Types Female SFW__
+
+#Goblin, goblin girl, green skin, pointy ears, shortstack, short, __REFS/BODY/Body Types Female SFW__
+#Goblin, goblin girl, green skin, pointy ears, __REFS/BODY/Body Types Female SFW__
+
+#Harpies can only generate as female.
+#Harpy, harpy girl, harpies, anthro, harpy wings, wings, __REFS/BODY/Body Types Female SFW__
+
+#Robot, metal body, metal skin, armored, robotic, joints, doll joints, {__CONFIG/Clothes Config SFW U__|__CONFIG/Clothes Config NSFW U__}, __CONFIG/Clothes Extra Config__**(nipples:1.2)****(pussy:1.2)****(penis:1.2)**
+#Robot, metal body, metal skin, armored, robotic, {__CONFIG/Clothes Config SFW U__|__CONFIG/Clothes Config NSFW U__}, __CONFIG/Clothes Extra Config__**(nipples:1.2)****(pussy:1.2)****(penis:1.2)**
+
+#Troll, giant, giant body, monster, very muscular, __REFS/BODY/Body Types Female SFW__
+
+#Before you ask, yes, undead girls are very much a fetish. Sigh. Luckily male undead come in relatively equal levels.
+#Undead girl, {rotting skin, corpse-like|pale white skin}, dead eyes, soulless eyes, {50%monster, }sharp teeth, torn clothes, __REFS/BODY/Body Types Female SFW__

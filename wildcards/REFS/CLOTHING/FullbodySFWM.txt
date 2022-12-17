@@ -1,0 +1,78 @@
+Band Uniform
+Bodysuit
+Buruma
+Business Suit
+Caftan
+Casuals
+Cat Suit
+Chador
+Dolman
+Fatigues
+gym uniform
+habit uniform
+Habit
+Haik
+Hanbok
+Hauberk
+Jumper
+Jupon
+Kameez
+Kittel
+Lab Coat
+Long coat
+Butler Uniform
+Military Uniform
+Navy Uniform
+Parka
+Pinafore
+pilot suit
+Robe
+Sarong
+Ski Suit
+Smock
+suit
+business suit
+pant suit
+tuxedo
+Tracksuit
+Trench Coat
+Tuxedo
+Wet Suit
+armor
+black armor
+full armor
+bikesuit
+racing suit
+bodysuit
+jumpsuit
+kesa
+romper
+sarong
+tunic
+unitard
+chinese clothes
+changpao
+fengguan
+hanfu
+longpao
+tangzhuang
+dirndl
+japanese clothes
+fundoshi
+yamakasa
+geta
+hakama
+furisode
+haori
+happi
+chanchanko
+dotera
+hanten
+miko
+nontraditional miko
+sarashi
+straw cape (mino)
+mino boushi
+tabi
+tasuki
+korean clothes

@@ -1,0 +1,8 @@
+{Red|Yellow|White|Black|Blue|Green} Earrings
+{gold|silver} Earrings
+heart Earrings
+hoop Earrings
+stud Earrings
+dangle Earrings
+star Earrings
+cross Earrings

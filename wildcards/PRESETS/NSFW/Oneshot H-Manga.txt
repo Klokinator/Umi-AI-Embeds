@@ -1,0 +1,11 @@
+# Based off this prompt on 4chan https://boards.4chan.org/h/thread/6921069#p6921237 and https://i.imgur.com/UVDApop.png
+#
+monocolored, monochrome, (line-art), masterpiece, best quality, solo, (1boy, penis, 1girl:1.25), (__CONFIG/Oneshot H Manga Config__:1.6), (__REFS/BODY/Body Types Female NSFW__), (pov:1.3), nipples, (__REFS/BODY/Hair Lengths__, __REFS/BODY/Hair Styles__:1.3), ({__REFS/CLOTHING/UpperNSFWU__, __REFS/CLOTHING/LowerNSFWU__|__REFS/CLOTHING/FullbodyNSFWU__}:1.15), black choker, {30%blindfold, |}(detailed face:1.2), (__REFS/SETUP/Emotions__:1.2), (open mouth:0.95), [sweat], steam, [pussy juice], {30%hearts, |}(shiny skin:1.19), (Junji Ito:1.19), (carne griffiths:1.19), (WLOP:1.2)**, futanari,  armpit hair, full color, color**
+#
+#This next line is a specific variation of the above prompt. It generated a really great sex pose, so here's the seed for others to use.
+#
+monocolored, monochrome, (line-art), masterpiece, best quality, solo, (1boy, penis, 1girl:1.25), (girl on back, lying, breasts, navel, spread legs, pussy, sex, vaginal, looking at viewer:1.6), (__REFS/BODY/Body Types Female NSFW__), (Pov:1.3), nipples, (__REFS/BODY/Hair Lengths__, __REFS/BODY/Hair Styles__:1.3), ({__REFS/CLOTHING/UpperNSFWU__, __REFS/CLOTHING/LowerNSFWU__|__REFS/CLOTHING/FullbodyNSFWU__}:1.15), black choker, (detailed face:1.2), (__REFS/SETUP/Emotions__:1.2), (open mouth:0.95), [sweat], steam, [pussy juice], (shiny skin:1.2), (Junji Ito:1.2), (carne griffiths:1.2), (WLOP:1.2)**, futanari,  armpit hair, full color, color**
+#
+#
+#
+monocolored, monochrome, (line-art), masterpiece, best quality, from above, hetero, naked, ((1boy) and (penis) and (on back) and (lying) and (muscular)), ((1girl) with (pussy) and (on back) and (lying) and and (spread legs) and (nipples) and (__REFS/BODY/Body Types Female NSFW__)), ((sex) and (vaginal)), (shiny skin:1.2)), (Junji Ito:1.21), (carne griffiths:1.21), (WLOP:1.21)**, futanari,  armpit hair, full color, color**
