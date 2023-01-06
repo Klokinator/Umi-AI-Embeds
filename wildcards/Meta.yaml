@@ -1081,4491 +1081,2695 @@ Train Interior:
   - Location
 '{At|on} Floor In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Bed In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Table In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Desk In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Chair In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Window In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Carpet In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Rug In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wood Floor In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tile In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Stone In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wood In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Brick Floor In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Cracked Floor In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Checkered Floor In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Glowing Floor In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Marble Floor In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Invisible Floor In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wet Floor In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Computer In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Desk In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Bed In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Table In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wall In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Door In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Window In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Bookshelf In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Dresser In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Drawer In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Closet In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wardrobe In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Matress In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Mirror In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Picture In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Poster In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Shelves In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Curtain In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Chair In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Couch In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Sofa In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Tv In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Television In Bedroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Sink In Bathroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Toilet In Bathroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Bathtub In Bathroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Rug In Bathroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Carpet In Bathroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tile In Bathroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Floor In Bathroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Window In Bathroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Towel Rack In Bathroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Mirror In Bathroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Marble Floor In Bathroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Door In Bathroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Mirror In Bathroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Sink In Bathroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Toilet In Bathroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Bathtub In Bathroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Towel Rack In Bathroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Window In Bathroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Door In Bathroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tile Floor In Shower':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Floor In Shower':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wet Tile In Shower':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wet Floor In Shower':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tiles In Shower':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Glass In Shower':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wall In Shower':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Glass Door In Shower':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Tile Wall In Shower':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Shower Curtain In Shower':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Shower Head In Shower':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Floor In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Bed In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Table In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Desk In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Chair In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Window In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Carpet In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Rug In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wood Floor In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tile In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Stone In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wood In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Brick Floor In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Cracked Floor In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Checkered Floor In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Glowing Floor In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Marble Floor In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Invisible Floor In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wet Floor In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Desk In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Bed In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Table In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wall In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Door In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Window In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Bookshelf In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Dresser In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Drawer In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Closet In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wardrobe In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Matress In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Mirror In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Picture In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Poster In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Shelves In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Curtain In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Chair In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Couch In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Sofa In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Tv In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Television In Hotel Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Mattress In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Floor In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Bed In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Table In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Desk In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Chair In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Window In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Carpet In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Rug In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wood Floor In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tile In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Stone In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wood In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Book Stack In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Pile Of Books In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Pile Of Trash In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Trash Bag In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Clothes On Floor In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Computer In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Desk In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Bed In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Table In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wall In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Door In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Window In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Bookshelf In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Dresser In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Drawer In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Closet In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wardrobe In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Matress In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Mirror In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Picture In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Poster In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Shelves In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Curtain In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Chair In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Couch In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Sofa In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Tv In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Television In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Book Stack In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Pile Of Books In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Pile Of Trash In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Trash Bag In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Clothes On Floor In Messy Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Table In Dining Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Counter In Dining Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Chair In Dining Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Floor In Dining Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wood Floor In Dining Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tile Floor In Dining Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Stone Floor In Dining Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Brick Floor In Dining Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Table In Dining Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Chair In Dining Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Counter In Dining Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wall In Dining Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Window In Dining Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Door In Dining Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Desk In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Chair In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Lectern In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Bulletin Board In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Chalkboard In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Window In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wood Floor In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tile Floor In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} School Desk In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} School Chair In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Floor In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Door In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Book Stack In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Clock In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Doorway In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Computer In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Desk In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Chair In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Lectern In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Bulletin Board In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Window In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Chalkboard In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wall In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Door In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} School Desk In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} School Chair In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Book Stack In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Paper Stack In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Doorway In Classroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Box In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Cardboard Box In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Desk In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Chair In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Table In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Window In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Doorway In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Door In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Bookshelf In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Shelves In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Computer In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Bulletin In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Chalkboard In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wood Floor In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tile Floor In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} School Desk In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} School Chair In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Floor In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Book Stack In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Clock In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Sign In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Poster In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Curtains In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Easel In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Electric Fan In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Sculpture In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Sculpture In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Electric Fan In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Poster In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Sign In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Curtains In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Easel In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Book Stack In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Box In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Cardboard Box In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Desk In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Chair In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Lectern In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Bulletin Board In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Window In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Chalkboard In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wall In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Door In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} School Desk In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} School Chair In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Paper Stack In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Doorway In Clubroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Bookshelf':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Locker In Changing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Laundry Basket In Changing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Towel In Changing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Basket In Changing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Clothes Hanger In Changing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Shelf In Changing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Bench In Changing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Doorway In Changing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Door In Changing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Window In Changing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wood Floor In Changing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tile Floor In Changing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Curtains In Changing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Laundry Basket In Changing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Basket In Changing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Bench In Changing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Locker In Changing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Sign In Changing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Window In Changing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wall In Changing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Door In Changing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Doorway In Changing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Bed In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Toilet In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Sink In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Door In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Doorway In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Bars In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Shackles In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Stone Floor In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wood Floor In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wet Floor In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Chair In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Desk In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Bench In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Table In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Window In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Floor In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Table In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Window In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wall In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Stone Wall In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Brick Wall In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Bars In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Bed In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Bench In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Desk In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Chair In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Door In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Doorway In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Sink In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Toilet In Prison Cell':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Bed In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Toilet In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Sink In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Door In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Doorway In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Bars In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Shackles In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Stone Floor In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wood Floor In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wet Floor In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Chair In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Desk In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Bench In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Table In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Window In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Floor In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Table In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Window In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wall In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Stone Wall In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Brick Wall In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Bars In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Bed In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Bench In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Desk In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Chair In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Door In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Doorway In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Sink In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Toilet In Dungeon':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Locker In Dressing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Laundry Basket In Dressing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Towel In Dressing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Basket In Dressing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Clothes Hanger In Dressing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Shelf In Dressing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Bench In Dressing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Doorway In Dressing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Door In Dressing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Window In Dressing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wood Floor In Dressing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tile Floor In Dressing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Curtains In Dressing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Laundry Basket In Dressing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Basket In Dressing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Bench In Dressing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Locker In Dressing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Sign In Dressing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Window In Dressing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wall In Dressing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Door In Dressing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Doorway In Dressing Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Locker In Fitting Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Laundry Basket In Fitting Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Towel In Fitting Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Basket In Fitting Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Clothes Hanger In Fitting Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Shelf In Fitting Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Bench In Fitting Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Doorway In Fitting Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Door In Fitting Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Window In Fitting Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wood Floor In Fitting Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tile Floor In Fitting Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Curtains In Fitting Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Laundry Basket In Fitting Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Basket In Fitting Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Bench In Fitting Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Locker In Fitting Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Sign In Fitting Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Window In Fitting Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wall In Fitting Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Door In Fitting Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Doorway In Fitting Room':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Floor At Pool':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tiles At Pool':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tile Floor At Pool':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Diving Board At Pool':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Poolside At Pool':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Pool Ladder At Pool':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Innertube In Pool':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wet Floor At Pool':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Shower At Pool':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wall At Pool':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Tile Wall At Pool':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Innertube At Pool':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Diving Board At Pool':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Pool Ladder At Pool':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Shower At Pool':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Microphone On Stage':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Stage Lights On Stage':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Instrument On Stage':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Drum On Stage':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Bass Guitar On Stage':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Electric Guitar On Stage':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Spotlight On Stage':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Screen On Stage':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Microphone Stand On Stage':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Curtains On Stage':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Truss On Stage':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Microphone Stand On Stage':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Spotlight On Stage':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Screen On Stage':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Instrument On Stage':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Microphone On Stage':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Stage Lights On Stage':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Truss On Stage':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Table In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Chair In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Bench In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Counter In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Window In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Door In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Doorway In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Vending Machine In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Soda Fountain In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Microwave In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Trash Can In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Recycle Bin In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Poster In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Floor In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tiles In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tile Floor In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Brick Floor In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wood Floor In Cafeteria ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Table In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Chair In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Bench In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Counter In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Window In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Door In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Doorway In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Vending Machine In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Soda Fountain In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Microwave In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Trash Can In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Recycle Bin In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Poster In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Floor In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wall In Cafeteria':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Table In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Chair In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Furnace In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Anvil In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tools In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Cupboard In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Workbench In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Shelf In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Window In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Scale In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wooden Table In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wooden Chair In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Metal Chair In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Metal Table In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Machine In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Toolbox In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Stool In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Drawer In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Drill Press In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Press In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Trash Can In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Oxygen Tank In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Fireplace In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Saw In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wheel In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Car In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Cart In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tank In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Airplane In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Helicopter In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Turret In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Crane (Machine) In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Ammunition In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Machinery In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Torpedo In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Submarine In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wood In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Computer In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Calender (Object) In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Ladder In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Android In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Refrigerator In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Door In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Doorway In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Metal Door In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wood Door In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Floor In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wood Floor In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wet Floor In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Metal Floor In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Brick Floor In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tile Floor In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Scaffolding In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Table In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Chair In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Furnace In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Anvil In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Tools In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Cupboard In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Workbench In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Shelf In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Window In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Scale In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wooden Table In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wooden Chair In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Metal Chair In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Metal Table In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Machine In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Toolbox In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Stool In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Drawer In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Drill Press In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Press In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Trash Can In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Oxygen Tank In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Fireplace In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Saw In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wheel In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Car In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Cart In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Tank In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Airplane In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Helicopter In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Turret In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Crane (Machine) In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Ammunition In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Machinery In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Torpedo In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Submarine In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wood In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Computer In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Calender (Object) In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Ladder In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Android In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Refrigerator In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Door In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Doorway In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Metal Door In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wood Door In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Scaffolding In Workshop':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Rock In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Stone In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Crystal In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Minecart In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Waterfall In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Stalactite In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Skull In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Bones In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Mushroom In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Railroad Tracks In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Spider Web In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Statue In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Sculpture In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Snow In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} River In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Egg In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Moss In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Plants In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Gold In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Boat In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Mineshaft In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Pool Of Liquid In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Grass In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Flower In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Roots In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Ice In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Sandstone In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Bridge In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Path In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Pillar In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tree In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Hole In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Floor In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wet Floor In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Stone Floor In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Mud Floor In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Dirt Floor In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Crystal Floor In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Sandy Floor In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Rock In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Stone In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Crystal In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Minecart In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Waterfall In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Stalactite In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Skull In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Bones In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Mushroom In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Railroad Tracks In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Spider Web In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Statue In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Sculpture In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Snow In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} River In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Egg In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Moss In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Plants In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Gold In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Boat In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Mineshaft In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Pool Of Liquid In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Grass In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Flower In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Roots In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Ice In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Sandstone In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Bridge In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Path In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Pillar In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Tree In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Hole In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wall In Cave':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on}weapon Rack In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on}ammunition Box In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on}ammo Box In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on}shelf In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on}table In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on}chair In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on}cabinet In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on}window In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on}door In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on}doorway In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on}barrel In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on}armor In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on}lamp In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on}sack In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on}shield In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on}hammer In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on}sword In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on}helmet In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on}carpet In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on}rug In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on}floor In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on}wood Floor In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on}metal Floor In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on}tile Floor In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on}concrete Floor In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on}stone Floor In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on}stairs In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Stairs In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Weapon Rack In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Ammunition Box In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Ammo Box In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Shelf In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Table In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Chair In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Cabinet In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Window In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Door In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Doorway In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Barrel In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Armor In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Lamp In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Sack In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Shield In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Hammer In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Sword In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Helmet In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wood Wall In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Concrete Wall In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Stone Wall In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Brick Wall In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Tile Wall In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Metal Wall In Armory':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Vaulting Horses In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Mats In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Hurdles In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Traffic Cones In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Olleyballs In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Basketballs In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Soccerballs In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tennis Racket In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tennis Balls In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Hockey Sticks In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Hockey Masks In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Boxes In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Cardboard Boxes In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Barbells In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Dumbbells In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Water Bottles In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Weights In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Door In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Doorway In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Window In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Floor In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wood Floor In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Metal Floor In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tile Floor In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Concrete Floor In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Stone Floor In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wood Wall In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Concrete Wall In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Stone Wall In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Brick Wall In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Tile Wall In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Metal Wall In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Door In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Doorway In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Window In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Vaulting Horses In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Mats In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Hurdles In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Traffic Cones In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Volleyballs In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Basketballs In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Soccerballs In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Tennis Racket In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Tennis Balls In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Hockey Sticks In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Hockey Masks In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Boxes In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Cardboard Boxes In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Barbells In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Dumbbells In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Water Bottles In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Weights In Gym Storeroom':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Vaulting Horses In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Mats In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Hurdles In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Traffic Cones In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Olleyballs In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Basketballs In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Soccerballs In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tennis Racket In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tennis Balls In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Hockey Sticks In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Hockey Masks In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Boxes In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Cardboard Boxes In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Barbells In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Dumbbells In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Water Bottles In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Weights In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Door In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Doorway In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Window In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Floor In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wood Floor In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Metal Floor In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tile Floor In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Concrete Floor In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Stone Floor In Gym':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Volleyball Net In Gym ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Basketball Hoop In Gym ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tennis Net In Gym ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Exercise Machine In Gym ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Treadmill In Gym ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Bleachers In Gym ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Bench In Gym ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Exercise Bike In Gym ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Mirror In Gym ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Exercise Ball In Gym ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wood Wall In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Concrete Wall In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Stone Wall In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Brick Wall In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Tile Wall In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Metal Wall In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Door In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Doorway In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Window In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Vaulting Horses In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Mats In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Hurdles In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Traffic Cones In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Volleyballs In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Basketballs In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Soccerballs In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Tennis Racket In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Tennis Balls In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Hockey Sticks In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Hockey Masks In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Boxes In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Cardboard Boxes In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Barbells In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Dumbbells In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Water Bottles In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Weights In Gym  ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Volleyball Net In Gym ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Basketball Hoop In Gym ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Tennis Net In Gym ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Exercise Machine In Gym ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Treadmill In Gym ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Bleachers In Gym ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Bench In Gym ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Exercise Bike In Gym ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Mirror In Gym ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Exercise Ball In Gym ':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Ice On Glacier':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Snow On Glacier':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Water On Glacier':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Cracked Floor On Glacier':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tent On Glacier':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Campfire On Glacier':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Waterfall On Glacier':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Mountain On Glacier':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Crack On Glacier':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Hole On Glacier':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Ice On Glacier':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Snow On Glacier':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Water On Glacier':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Cracked Floor On Glacier':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Tent On Glacier':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Campfire On Glacier':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Waterfall On Glacier':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Mountain On Glacier':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Crack On Glacier':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Hole On Glacier':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Trash Can In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Dumpster In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Trash Bag In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Boxes In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Cardboard Boxes In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Railing In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Air Conditioner In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Cable In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Pipe In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Industrial Pipe In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Power Lines In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Stairs In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Metal Stairs In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wood Stairs In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Brick Stairs In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Concrete Stairs In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Stone Stairs In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Bench In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Chair In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Table In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Couch In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Vending Machine In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Payphone In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Floor In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wood Floor In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Metal Floor In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Tile Floor In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Concrete Floor In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Stone Floor In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Cracked Floor In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wet Floor In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wet Wood Floor In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wet Metal Floor In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wet Tile Floor In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wet Concrete Floor In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wet Stone Floor In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wet Cracked Floor In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Sidewalk In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Window In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Door In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Wood Door In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{At|on} Metal Door In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Trash Can In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Dumpster In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Trash Bag In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Boxes In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Cardboard Boxes In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Railing In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Air Conditioner In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Cable In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Pipe In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Industrial Pipe In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Power Lines In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Stairs In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Metal Stairs In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wood Stairs In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Brick Stairs In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Concrete Stairs In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Stone Stairs In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Bench In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Chair In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Table In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Couch In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Vending Machine In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Payphone In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Window In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Door In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wood Door In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Metal Door In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wood Wall In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Concrete Wall In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Stone Wall In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Brick Wall In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Tile Wall In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Metal Wall In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Graffiti Wood Wall In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Graffiti Concrete Wall In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Graffiti Stone Wall In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Graffiti Brick Wall In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Graffiti Tile Wall In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Graffiti Metal Wall In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wet Wood Wall In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wet Concrete Wall In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wet Stone Wall In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wet Brick Wall In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wet Tile Wall In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Wet Metal Wall In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation
 '{Against|beside} Chain-link Fence In Alley':
  Tags:
-  - Meta
-  - Location
-  - Pose
+  - AIOLocation

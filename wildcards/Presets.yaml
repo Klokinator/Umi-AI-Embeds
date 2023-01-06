@@ -1,24 +1,33 @@
-'SFW, 1girl, solo focus, full body, __Art Styles__, <[Camera Angle]>, <[Emotions]>,  <[Pose][--Location]>, {<[HighSFW|MedSFW|LowSFW][Fullbody]>|<[Torso][--Sexywear]>, <[Waist][--Sexywear]>}, {20%<[Modifier][SFW]>, }<[Age][Female][Adult]>, <[Hair Length]>, <[Hair Style]>, <[Hair Color Types]>':
+'SFW, 1girl, solo focus, full body, __Art Styles__, <[Camera Angle]>, <[Emotions]>,  <[Pose]>, {<[HighSFW|MedSFW|LowSFW][Fullbody]>|<[Torso][--Sexywear]>, <[Waist][--Sexywear]>}, {20%<[Modifier][SFW]>, |}<[Age][Female][Adult]>, <[Hair Length]>, <[Hair Style]>, <[Hair Color Types]>':
  Description:
   - "A fully randomized SFW Female character."
  Tags:
   - Preset
-  - RandGirl
+  - AIOGirl
   - SFW
-'NSFW, 1girl, solo focus, full body, __Art Styles__, <[Camera Angle]>, <[Age][Female][Adult]>, <[Emotions]>,  <[Pose][--Location]>, {<[HighNSFW|MedNSFW|LowNSFW][Fullbody]>|<[Torso][Sexywear|--Modest]>, <[Waist][Sexywear|--Modest]>}, {20%<[Modifier][NSFW|SFW]>, }<[Hair Length]>, <[Hair Style]>, <[Hair Color Types]>':
+'NSFW, 1girl, solo focus, full body, __Art Styles__, <[Camera Angle]>, <[Age][Female][Adult]>, <[Emotions]>,  <[Pose]>, {<[HighNSFW|MedNSFW|LowNSFW][Fullbody]>|<[Torso][Sexywear|--Modest]>, <[Waist][Sexywear|--Modest]>}, {20%<[Modifier][NSFW|SFW]>, |}<[Hair Length]>, <[Hair Style]>, <[Hair Color Types]>':
  Description:
   - "A randomized NSFW Female character."
  Tags:
   - Preset
-  - RandGirl
+  - AIOGirl
   - NSFW
-<[Hair Length]>, <[Hair Style]>, <[Hair Color Types]>:
+'nsfw, 1girl, __Art Styles__, full body, from front, solo focus, (no bra, no panties:1.1), (<[Harnesses]>:1.3), (breasts out, between breasts:1.1), nipples, intricate pussy, revealing clothing, skimpy clothing, {shackles, restrained, helpless, arms up, legs up, legs spread|<[Pose]>}, (__Franchise Girls__:1.2), <[Emotions]>, <[Location]>, <[EZWoman]>':
  Description:
-  - "This is the quickie to generate random hair for females."
+  - "A randomized NSFW Female character in a bondage harness with a HUGE variety of styles."
  Tags:
   - Preset
-  - Female
-  - RandHair
+  - NSFW
+  - BDSM
+  - AIOHarnessesAnime
+'nsfw, 1girl, photorealistic, photo, realistic, full body, from front, solo focus, (no bra, no panties:1.1), (<[Harnesses]>:1.3), (breasts out, between breasts:1.1), nipples, intricate pussy, revealing clothing, skimpy clothing, {shackles, restrained, helpless, arms up, legs up, legs spread|<[Pose]>}, (__Franchise Girls__:1.2), <[Emotions]>, <[Location]>, {20|24|28|32} years old, mature woman, {medium|large} breasts':
+ Description:
+  - "A randomized NSFW Female character in a bondage harness with a HUGE variety of styles."
+ Tags:
+  - Preset
+  - NSFW
+  - BDSM
+  - AIOHarnessesRealism
 '(masterpiece:1.1), best quality, (POV:1.2), (1boy, veiny penis), <[Age][Female][Adult]>, ((penis between breasts:1.1), (paizuri:1.2), (fellatio:1.3)), (:>=:1.3), saliva, {20%lots of semen, |} (1girl, holding breasts, hands on breasts, squeezing breasts), <[Emotions]>, <[Hair Length]>, <[Hair Style]>, <[Hair Color Types]>, {20%<[Head Top][Animal Ears]> ,|}{50%<[Facial Decorations]>|}**, (multiple views:1.4)**':
  Description:
   - "The classic Cocksucking Cunts seed. For best results, roll until you find a good seed, lock the seed, then do variations with a low strength. I use seed 1743752671 or 2045923399."
@@ -183,7 +192,7 @@
   - NSFW
   - Species
   - Nymphs
-'NSFW, 1girl, solo focus, Masterpiece, best quality, highly detailed eyes, watery eyes, innocent eyes, (style of poison ivy:1.2), <[Camera Angle]>, <[Pose][--Location]>, (plant dryad:1.5), (nymph:1.2), (plant:1.1), monster girl, (vines on body:1.2), leaves, (green skin:1.5), flowers on body, (plant body:1.5), standing, sun, leaf clothes, long hair, plant hair, flower crown, vines, nipples, plant clothing, flower trim, {small|medium|large|gigantic} breasts, <[Emotions]>':
+'NSFW, 1girl, solo focus, Masterpiece, best quality, highly detailed eyes, watery eyes, innocent eyes, (style of poison ivy:1.2), <[Camera Angle]>, <[Pose]>, (plant dryad:1.5), (nymph:1.2), (plant:1.1), monster girl, (vines on body:1.2), leaves, (green skin:1.5), flowers on body, (plant body:1.5), standing, sun, leaf clothes, long hair, plant hair, flower crown, vines, nipples, plant clothing, flower trim, {small|medium|large|gigantic} breasts, <[Emotions]>':
  Description:
   - "NSFW Forest Dryad by Klok"
  Tags:
@@ -192,7 +201,7 @@
   - NSFW
   - Species
   - Dryads
-'Masterpiece, best quality, detailed face and eyes, (1girl, ({flower|plant|tree|leaf} dryad:1.5), <[Hair Color Types]>, {plant|vine|leaf|flower} clothes, plant hair, {small|medium|large} breasts, {plants|vines|leaf|flower} on body,), <[Pose][--Location]>, white background, <[Camera Angle]>, <[Emotions]>, NSFW, nipples, pussy':
+'Masterpiece, best quality, detailed face and eyes, (1girl, ({flower|plant|tree|leaf} dryad:1.5), <[Hair Color Types]>, {plant|vine|leaf|flower} clothes, plant hair, {small|medium|large} breasts, {plants|vines|leaf|flower} on body,), <[Pose]>, white background, <[Camera Angle]>, <[Emotions]>, NSFW, nipples, pussy':
  Description:
   - "NSFW Forest Dryad by Nebula"
  Tags:
@@ -201,7 +210,7 @@
   - NSFW
   - Species
   - Dryads
-'Masterpiece, best quality, detailed face and eyes, (1girl, (mushroom dryad:1.5), <[Hair Color Types]>, {plant|vine|leaf|flower} clothes, mushroom hair, {small|medium|large} breasts, mushrooms on body), <[Pose][--Location]>, <[Camera Angle]>, <[Emotions]>, NSFW, nipples, pussy, mushroom hat':
+'Masterpiece, best quality, detailed face and eyes, (1girl, (mushroom dryad:1.5), <[Hair Color Types]>, {plant|vine|leaf|flower} clothes, mushroom hair, {small|medium|large} breasts, mushrooms on body), <[Pose]>, <[Camera Angle]>, <[Emotions]>, NSFW, nipples, pussy, mushroom hat':
  Description:
   - "NSFW Mushroom Dryad Variant by Klok"
  Tags:
@@ -210,7 +219,7 @@
   - NSFW
   - Species
   - Dryads
-'Masterpiece, best quality, detailed face and eyes, radiant light, god rays, blue sunbeam, (style of glowing blue light:1.5), blue light rays, 1girl, ({forest|flower|plant|tree|leaf} dryad:1.4), {plant|vine|leaf|flower} clothes, {small|medium|large} breasts, <[Pose][--Location]>, <[Camera Angle]>, <[Emotions]>, NSFW, nipples, pussy':
+'Masterpiece, best quality, detailed face and eyes, radiant light, god rays, blue sunbeam, (style of glowing blue light:1.5), blue light rays, 1girl, ({forest|flower|plant|tree|leaf} dryad:1.4), {plant|vine|leaf|flower} clothes, {small|medium|large} breasts, <[Pose]>, <[Camera Angle]>, <[Emotions]>, NSFW, nipples, pussy':
  Description:
   - "NSFW Girl in a glowing forest"
  Tags:
@@ -219,7 +228,7 @@
   - NSFW
   - Species
   - Dryads
-'Masterpiece, best quality, detailed face and eyes, radiant light, god rays, blue sunbeam, (style of ori and the blind forest:1.3), blue light rays, 1girl, ({forest|flower|plant|tree|leaf} dryad:1.3), {plant|vine|leaf|flower} clothes, {small|medium|large} breasts, <[Pose][--Location]>, <[Camera Angle]>, <[Emotions]>, NSFW, nipples, pussy':
+'Masterpiece, best quality, detailed face and eyes, radiant light, god rays, blue sunbeam, (style of ori and the blind forest:1.3), blue light rays, 1girl, ({forest|flower|plant|tree|leaf} dryad:1.3), {plant|vine|leaf|flower} clothes, {small|medium|large} breasts, <[Pose]>, <[Camera Angle]>, <[Emotions]>, NSFW, nipples, pussy':
  Description:
   - "Forest girl in the Ori art style..."
  Tags:
@@ -237,7 +246,7 @@
   - NSFW
   - Species
   - Centaurs
-'__Art Styles__, <[Camera Angle]>, <[Emotions]>,  <[Location][--Pose]>, <[Pose][--Location]>, 1girl, game cg, monster_girl, slime_girl:1.4, lewd, blue_skin, blue_slime, blue_eyes, blue_hair, blue_sclera, completely_nude, slime (substance), skindentation, shiny, shiny_skin':
+'__Art Styles__, <[Camera Angle]>, <[Emotions]>,  <[Location]>, <[Pose]>, 1girl, game cg, monster_girl, slime_girl:1.4, lewd, blue_skin, blue_slime, blue_eyes, blue_hair, blue_sclera, completely_nude, slime (substance), skindentation, shiny, shiny_skin':
  Description:
   - "This prompt generates extremely convincing slimegirls."
  Tags:
@@ -342,7 +351,7 @@
   - Preset
   - Female
   - SFW
-  - RandGirl
+  - AIOGirl
   - Fun Prompts
 '1girl, (Solo Focus:1.3), (masterpiece:1.3), best quality, lineart, hyper extreme detailed, (full body: 1.3|upper body :1.3), detailed face, bright playful eyes, detailed pupils, (realistic:0.3), good hands, female, fantasy':
  Description:
@@ -359,7 +368,7 @@
   - Preset
   - Female
   - SFW
-  - RandGirl
+  - AIOGirl
   - Fun Prompts
 'masterpiece, best quality, bright playful eyes, detailed pupils, god rays, sunbeam, {inside a church|outside a church|standing in a field of flowers|kneeling in a field of flowers}, smiling, big smile, 1girl, solo focus, (Angel:1.2), halo, aura, magic, <[Eye Color]>, ({Dark|Light} Skinned Female:1.2), Long Religious Robes, Latin Cross, (<[Hair Length]>, <[Hair Style]>, <[Hair Color Types]>:0.8)':
  Description:
@@ -406,7 +415,7 @@
   - SFW
   - Species
   - Angels
-'1girl, solo focus, __Art Styles__, <[Camera Angle]>, <[Location][--Pose]>, <[Emotions]>,  <[Pose][--Location]>, Cat girl, Cat ears, __Colors__ Cat Eyes, {50%Collar with bell, |} <[Age][Female][Adult]>, {<[HighSFW|MedSFW|LowSFW][Fullbody]>|<[Torso][--Sexywear]>, <[Waist][--Sexywear]>}, <[Modifier][SFW]>, <[Hair Length]>, <[Hair Style]>, <[Hair Color Types]>':
+'1girl, solo focus, __Art Styles__, <[Camera Angle]>, <[Location]>, <[Emotions]>,  <[Pose]>, Cat girl, Cat ears, __Colors__ Cat Eyes, {50%Collar with bell, |} <[Age][Female][Adult]>, {<[HighSFW|MedSFW|LowSFW][Fullbody]>|<[Torso][--Sexywear]>, <[Waist][--Sexywear]>}, <[Modifier][SFW]>, <[Hair Length]>, <[Hair Style]>, <[Hair Color Types]>':
  Description:
   - "These are randomized catgirls. They are not furry/anthro."
  Tags:
@@ -415,7 +424,7 @@
   - SFW
   - Species
   - Catkin
-'1boy, solo focus, __Art Styles__, <[Camera Angle]>, <[Location][--Pose]>, <[Emotions]>,  <[Pose][--Location]>, Cat boy, Cat ears, __Colors__ Cat Eyes, {50%Collar with bell, |} <[Age][Male]>, <[Body Mass][Male|Unisex]>, {<[HighSFW|MedSFW|LowSFW][Fullbody][--Female]>|<[Torso][--Sexywear][--Female]>, <[Waist][--Sexywear][--Female]>}, short hair, <[Hair Color Types]>':
+'1boy, solo focus, __Art Styles__, <[Camera Angle]>, <[Location]>, <[Emotions]>,  <[Pose]>, Cat boy, Cat ears, __Colors__ Cat Eyes, {50%Collar with bell, |} <[Age][Male]>, <[Body Mass][Male|Unisex]>, {<[HighSFW|MedSFW|LowSFW][Fullbody][--Female]>|<[Torso][--Sexywear][--Female]>, <[Waist][--Sexywear][--Female]>}, short hair, <[Hair Color Types]>':
  Description:
   - "These are randomized catboys. They are not furry/anthro."
  Tags:
@@ -532,7 +541,7 @@
   - SFW
   - Species
   - Crocodiles
-'Masterpiece, best quality, high detail, by Gaston Bussière, Claude Monet, Artstation, 1girl, solo focus, river of fire, lava, Hell, <[Emotions]>,  <[Pose][--Location]>, Demon, demon girl, monster girl, demon horns, ({pale grey|dark red|dark black|blue|very brown|very dark|yellow} skinned girl:1.3), (<[Eye Color]>:0.8), {small|medium|large} breasts, {10%abs, |10%muscular, abs, |}{demonic clothing|demonic armor}, <[Modifier][SFW]>, <[Hair Length]>, <[Hair Style]>, mature woman**, loli, child, teenager, fully naked, exposed breasts, exposed pussy**':
+'Masterpiece, best quality, high detail, by Gaston Bussière, Claude Monet, Artstation, 1girl, solo focus, river of fire, lava, Hell, <[Emotions]>,  <[Pose]>, Demon, demon girl, monster girl, demon horns, ({pale grey|dark red|dark black|blue|very brown|very dark|yellow} skinned girl:1.3), (<[Eye Color]>:0.8), {small|medium|large} breasts, {10%abs, |10%muscular, abs, |}{demonic clothing|demonic armor}, <[Modifier][SFW]>, <[Hair Length]>, <[Hair Style]>, mature woman**, loli, child, teenager, fully naked, exposed breasts, exposed pussy**':
  Description:
   - "Random demon girls with many demonic skin colors"
  Tags:
