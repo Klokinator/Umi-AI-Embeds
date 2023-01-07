@@ -263,3 +263,12 @@ Preset Tags:
  - Robots
  - Golems
  - Crocodiles
+Location tags:
+ - Bathroom
+ - Bedroom
+ - Classroom
+ - Clubroom
+ - Hotel Room
+ - Messy Room
+ - School
+ - Shower
