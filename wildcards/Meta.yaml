@@ -84,6 +84,12 @@ Ahegao, open mouth, saliva, tongue:
   - Emotions
   - Positive
   - NSFW
+torogao, blush, open mouth, {2-3$$drool, (saliva:0.8) | (tears:0.8) | heavy breathing | exhausted | light smile | {half-closed eyes | closed eyes}}:
+ Tags:
+  - Meta
+  - Emotions
+  - Positive
+  - NSFW
 Bored, {Narrowed eyes|Half-closed eyes|Blank stare|Ringed eyes|Expressionless|Tired eyes}:
  Tags:
   - Meta
@@ -219,22 +225,28 @@ Bathroom:
  Tags:
   - Meta
   - Location
+  - Bathroom
 Shower:
  Tags:
   - Meta
   - Location
+  - Shower
+  - Bathroom
 Bedroom:
  Tags:
   - Meta
   - Location
+  - Bedroom
 Hotel Room:
  Tags:
   - Meta
   - Location
+  - Hotel Room
 Messy Room:
  Tags:
   - Meta
   - Location
+  - Messy Room
 Otaku Room:
  Tags:
   - Meta
@@ -251,10 +263,14 @@ Classroom:
  Tags:
   - Meta
   - Location
+  - Classroom
+  - School
 Clubroom:
  Tags:
   - Meta
   - Location
+  - Clubroom
+  - School
 Conservatory:
  Tags:
   - Meta
@@ -1082,750 +1098,1086 @@ Train Interior:
 '{At|on} Floor In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{At|on} Bed In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{At|on} Table In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{At|on} Desk In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{At|on} Chair In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{At|on} Window In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{At|on} Carpet In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{At|on} Rug In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{At|on} Wood Floor In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{At|on} Tile In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{At|on} Stone In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{At|on} Wood In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{At|on} Brick Floor In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{At|on} Cracked Floor In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{At|on} Checkered Floor In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{At|on} Glowing Floor In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{At|on} Marble Floor In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{At|on} Invisible Floor In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{At|on} Wet Floor In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{At|on} Computer In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{Against|beside} Desk In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{Against|beside} Bed In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{Against|beside} Table In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{Against|beside} Wall In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{Against|beside} Door In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{Against|beside} Window In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{Against|beside} Bookshelf In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{Against|beside} Dresser In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{Against|beside} Drawer In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{Against|beside} Closet In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{Against|beside} Wardrobe In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{Against|beside} Matress In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{Against|beside} Mirror In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{Against|beside} Picture In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{Against|beside} Poster In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{Against|beside} Shelves In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{Against|beside} Curtain In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{Against|beside} Chair In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{Against|beside} Couch In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{Against|beside} Sofa In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{Against|beside} Tv In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{Against|beside} Television In Bedroom':
  Tags:
   - AIOLocation
+  - Bedroom
 '{At|on} Sink In Bathroom':
  Tags:
   - AIOLocation
+  - Bathroom
 '{At|on} Toilet In Bathroom':
  Tags:
   - AIOLocation
+  - Bathroom
 '{At|on} Bathtub In Bathroom':
  Tags:
   - AIOLocation
+  - Bathroom
 '{At|on} Rug In Bathroom':
  Tags:
   - AIOLocation
+  - Bathroom
 '{At|on} Carpet In Bathroom':
  Tags:
   - AIOLocation
+  - Bathroom
 '{At|on} Tile In Bathroom':
  Tags:
   - AIOLocation
+  - Bathroom
 '{At|on} Floor In Bathroom':
  Tags:
   - AIOLocation
+  - Bathroom
 '{At|on} Window In Bathroom':
  Tags:
   - AIOLocation
+  - Bathroom
 '{At|on} Towel Rack In Bathroom':
  Tags:
   - AIOLocation
+  - Bathroom
 '{At|on} Mirror In Bathroom':
  Tags:
   - AIOLocation
+  - Bathroom
 '{At|on} Marble Floor In Bathroom':
  Tags:
   - AIOLocation
+  - Bathroom
 '{At|on} Door In Bathroom':
  Tags:
   - AIOLocation
+  - Bathroom
 '{Against|beside} Mirror In Bathroom':
  Tags:
   - AIOLocation
+  - Bathroom
 '{Against|beside} Sink In Bathroom':
  Tags:
   - AIOLocation
+  - Bathroom
 '{Against|beside} Toilet In Bathroom':
  Tags:
   - AIOLocation
+  - Bathroom
 '{Against|beside} Bathtub In Bathroom':
  Tags:
   - AIOLocation
+  - Bathroom
 '{Against|beside} Towel Rack In Bathroom':
  Tags:
   - AIOLocation
+  - Bathroom
 '{Against|beside} Window In Bathroom':
  Tags:
   - AIOLocation
+  - Bathroom
 '{Against|beside} Door In Bathroom':
  Tags:
   - AIOLocation
+  - Bathroom
 '{At|on} Tile Floor In Shower':
  Tags:
   - AIOLocation
+  - Bathroom
+  - Shower
 '{At|on} Floor In Shower':
  Tags:
   - AIOLocation
+  - Bathroom
+  - Shower
 '{At|on} Wet Tile In Shower':
  Tags:
   - AIOLocation
+  - Bathroom
+  - Shower
 '{At|on} Wet Floor In Shower':
  Tags:
   - AIOLocation
+  - Bathroom
+  - Shower
 '{At|on} Tiles In Shower':
  Tags:
   - AIOLocation
+  - Bathroom
+  - Shower
 '{Against|beside} Glass In Shower':
  Tags:
   - AIOLocation
+  - Bathroom
+  - Shower
 '{Against|beside} Wall In Shower':
  Tags:
   - AIOLocation
+  - Bathroom
+  - Shower
 '{Against|beside} Glass Door In Shower':
  Tags:
   - AIOLocation
+  - Bathroom
+  - Shower
 '{Against|beside} Tile Wall In Shower':
  Tags:
   - AIOLocation
+  - Bathroom
+  - Shower
 '{Against|beside} Shower Curtain In Shower':
  Tags:
   - AIOLocation
+  - Bathroom
+  - Shower
 '{Against|beside} Shower Head In Shower':
  Tags:
   - AIOLocation
+  - Bathroom
+  - Shower
 '{At|on} Floor In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{At|on} Bed In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{At|on} Table In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{At|on} Desk In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{At|on} Chair In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{At|on} Window In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{At|on} Carpet In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{At|on} Rug In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{At|on} Wood Floor In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{At|on} Tile In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{At|on} Stone In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{At|on} Wood In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{At|on} Brick Floor In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{At|on} Cracked Floor In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{At|on} Checkered Floor In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{At|on} Glowing Floor In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{At|on} Marble Floor In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{At|on} Invisible Floor In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{At|on} Wet Floor In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{Against|beside} Desk In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{Against|beside} Bed In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{Against|beside} Table In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{Against|beside} Wall In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{Against|beside} Door In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{Against|beside} Window In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{Against|beside} Bookshelf In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{Against|beside} Dresser In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{Against|beside} Drawer In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{Against|beside} Closet In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{Against|beside} Wardrobe In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{Against|beside} Matress In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{Against|beside} Mirror In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{Against|beside} Picture In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{Against|beside} Poster In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{Against|beside} Shelves In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{Against|beside} Curtain In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{Against|beside} Chair In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{Against|beside} Couch In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{Against|beside} Sofa In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{Against|beside} Tv In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{Against|beside} Television In Hotel Room':
  Tags:
   - AIOLocation
+  - Hotel Room
 '{At|on} Mattress In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{At|on} Floor In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{At|on} Bed In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{At|on} Table In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{At|on} Desk In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{At|on} Chair In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{At|on} Window In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{At|on} Carpet In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{At|on} Rug In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{At|on} Wood Floor In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{At|on} Tile In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{At|on} Stone In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{At|on} Wood In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{At|on} Book Stack In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{At|on} Pile Of Books In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{At|on} Pile Of Trash In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{At|on} Trash Bag In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{At|on} Clothes On Floor In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{At|on} Computer In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{Against|beside} Desk In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{Against|beside} Bed In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{Against|beside} Table In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{Against|beside} Wall In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{Against|beside} Door In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{Against|beside} Window In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{Against|beside} Bookshelf In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{Against|beside} Dresser In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{Against|beside} Drawer In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{Against|beside} Closet In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{Against|beside} Wardrobe In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{Against|beside} Matress In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{Against|beside} Mirror In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{Against|beside} Picture In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{Against|beside} Poster In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{Against|beside} Shelves In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{Against|beside} Curtain In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{Against|beside} Chair In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{Against|beside} Couch In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{Against|beside} Sofa In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{Against|beside} Tv In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{Against|beside} Television In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{Against|beside} Book Stack In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{Against|beside} Pile Of Books In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{Against|beside} Pile Of Trash In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{Against|beside} Trash Bag In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{Against|beside} Clothes On Floor In Messy Room':
  Tags:
   - AIOLocation
+  - Messy Room
 '{At|on} Table In Dining Room':
  Tags:
   - AIOLocation
+  - Dining Room
 '{At|on} Counter In Dining Room':
  Tags:
   - AIOLocation
+  - Dining Room
 '{At|on} Chair In Dining Room':
  Tags:
   - AIOLocation
+  - Dining Room
 '{At|on} Floor In Dining Room':
  Tags:
   - AIOLocation
+  - Dining Room
 '{At|on} Wood Floor In Dining Room':
  Tags:
   - AIOLocation
+  - Dining Room
 '{At|on} Tile Floor In Dining Room':
  Tags:
   - AIOLocation
+  - Dining Room
 '{At|on} Stone Floor In Dining Room':
  Tags:
   - AIOLocation
+  - Dining Room
 '{At|on} Brick Floor In Dining Room':
  Tags:
   - AIOLocation
+  - Dining Room
 '{Against|beside} Table In Dining Room':
  Tags:
   - AIOLocation
+  - Dining Room
 '{Against|beside} Chair In Dining Room':
  Tags:
   - AIOLocation
+  - Dining Room
 '{Against|beside} Counter In Dining Room':
  Tags:
   - AIOLocation
+  - Dining Room
 '{Against|beside} Wall In Dining Room':
  Tags:
   - AIOLocation
+  - Dining Room
 '{Against|beside} Window In Dining Room':
  Tags:
   - AIOLocation
+  - Dining Room
 '{Against|beside} Door In Dining Room':
  Tags:
   - AIOLocation
+  - Dining Room
 '{At|on} Desk In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{At|on} Chair In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{At|on} Lectern In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{At|on} Bulletin Board In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{At|on} Chalkboard In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{At|on} Window In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{At|on} Wood Floor In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{At|on} Tile Floor In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{At|on} School Desk In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{At|on} School Chair In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{At|on} Floor In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{At|on} Door In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{At|on} Book Stack In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{At|on} Clock In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{At|on} Doorway In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{At|on} Computer In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{Against|beside} Desk In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{Against|beside} Chair In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{Against|beside} Lectern In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{Against|beside} Bulletin Board In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{Against|beside} Window In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{Against|beside} Chalkboard In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{Against|beside} Wall In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{Against|beside} Door In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{Against|beside} School Desk In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{Against|beside} School Chair In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{Against|beside} Book Stack In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{Against|beside} Paper Stack In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{Against|beside} Doorway In Classroom':
  Tags:
   - AIOLocation
+  - Classroom
+  - School
 '{At|on} Box In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{At|on} Cardboard Box In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{At|on} Desk In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{At|on} Chair In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{At|on} Table In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{At|on} Window In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{At|on} Doorway In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{At|on} Door In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{At|on} Bookshelf In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{At|on} Shelves In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{At|on} Computer In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{At|on} Bulletin In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{At|on} Chalkboard In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{At|on} Wood Floor In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{At|on} Tile Floor In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{At|on} School Desk In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{At|on} School Chair In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{At|on} Floor In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{At|on} Book Stack In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{At|on} Clock In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{At|on} Sign In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{At|on} Poster In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{At|on} Curtains In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{At|on} Easel In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{At|on} Electric Fan In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{At|on} Sculpture In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{Against|beside} Sculpture In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{Against|beside} Electric Fan In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{Against|beside} Poster In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{Against|beside} Sign In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{Against|beside} Curtains In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{Against|beside} Easel In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{Against|beside} Book Stack In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{Against|beside} Box In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{Against|beside} Cardboard Box In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{Against|beside} Desk In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{Against|beside} Chair In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{Against|beside} Lectern In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{Against|beside} Bulletin Board In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{Against|beside} Window In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{Against|beside} Chalkboard In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{Against|beside} Wall In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{Against|beside} Door In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{Against|beside} School Desk In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{Against|beside} School Chair In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{Against|beside} Paper Stack In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{Against|beside} Doorway In Clubroom':
  Tags:
   - AIOLocation
+  - Clubroom
+  - School
 '{Against|beside} Bookshelf':
  Tags:
   - AIOLocation
