@@ -1,12 +1,2 @@
-
-xy_grid.py
-sd_upscale.py
-prompts_from_file.py
-prompt_matrix.py
-poor_mans_outpainting.py
-outpainting_mk_2.py
-loopback.py
-img2imgalt.py
-custom_code.py
 .idea
 .env
