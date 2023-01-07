@@ -130,7 +130,7 @@ Kikyou \(Classroom Of The Elite Series\)
 Sae \(Classroom Of The Elite Series\)
 Suzune \(Classroom Of The Elite Series\)
 Anya \(Code Geass Series\)
-C.c.
+C.c. \(Code Geass Series\)
 Cordelia \(Code Geass Series\)
 Euphemia \(Code Geass Series\)
 Kallen \(Code Geass Series\)
@@ -381,7 +381,7 @@ Shion Murasaki \(Hololive Series\)
 Subaru Oozora \(Hololive Series\)
 Suisei Hoshimachi \(Hololive Series\)
 Towa Tokoyami \(Hololive Series\)
-5pb.
+5pb. \(Hyperdimension Neptunia Series\)
 Blanc \(Hyperdimension Neptunia Series\)
 Nepgear \(Hyperdimension Neptunia Series\)
 Neptune \(Hyperdimension Neptunia Series\)
@@ -768,18 +768,18 @@ Anya \(Spy X Family Series\)
 Anya Forger \(Spy X Family Series\)
 Yor \(Spy X Family Series\)
 Yor Forger \(Spy X Family Series\)
-Faris \(Steins
-Kagari \(Steins
-Kurisu \(Steins
-Kurisu Makise \(Steins
-Luka \(Steins
-Maho Hiyajo \(Steins
-Mayuri \(Steins
-Mayuri Shiina \(Steins
-Moeka \(Steins
-Nae \(Steins
-Suzuha \(Steins
-Yuki \(Steins
+Faris \(Steins Gate Series\)
+Kagari \(Steins Gate Series\)
+Kurisu \(Steins Gate Series\)
+Kurisu Makise \(Steins Gate Series\)
+Luka \(Steins Gate Series\)
+Maho Hiyajo \(Steins Gate Series\)
+Mayuri \(Steins Gate Series\)
+Mayuri Shiina \(Steins Gate Series\)
+Moeka \(Steins Gate Series\)
+Nae \(Steins Gate Series\)
+Suzuha \(Steins Gate Series\)
+Yuki \(Steins Gate Series\)
 Cammy \(Street Fighter Series\)
 Chun-li \(Street Fighter Series\)
 Aiba \(Strike The Blood Series\)
