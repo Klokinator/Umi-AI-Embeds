@@ -16,6 +16,7 @@ from modules.processing import Processed, process_images
 from modules.shared import opts, cmd_opts, state
 from modules import scripts, script_callbacks, shared
 from modules.styles import StyleDatabase
+import modules.textual_inversion.textual_inversion
 
 from modules.sd_samplers import samplers, samplers_for_img2img
 
@@ -447,6 +448,15 @@ class SettingsGenerator:
 class Script(scripts.Script):
     is_txt2img = False
 
+    embedding_db = modules.textual_inversion.textual_inversion.EmbeddingDatabase()
+
+    def __init__(self):
+        embedding_dir = os.path.join(
+        pathlib.Path(inspect.getfile(lambda: None)).parent.parent, "embeddings")
+        print(f'umi embeds in: {embedding_dir}')
+        self.embedding_db.add_embedding_dir(embedding_dir)
+        self.embedding_db.load_textual_inversion_embeddings(force_reload=True)
+
     def title(self):
         return "Prompt generator"
 
@@ -458,7 +468,7 @@ class Script(scripts.Script):
         with gr.Group():
             with gr.Row():
                 enabled = gr.Checkbox(label="UmiAI enabled", value=True)
-                verbose = gr.Checkbox(label="Verbose logging", value=True)
+                verbose = gr.Checkbox(label="Verbose logging", value=False)
                 cache_files = gr.Checkbox(label="Cache files", value=True)
                 same_seed = gr.Checkbox(label='Same prompt in batch',
                                         value=False)
