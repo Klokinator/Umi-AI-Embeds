@@ -453,7 +453,6 @@ class Script(scripts.Script):
     def __init__(self):
         embedding_dir = os.path.join(
         pathlib.Path(inspect.getfile(lambda: None)).parent.parent, "embeddings")
-        print(f'umi embeds in: {embedding_dir}')
         self.embedding_db.add_embedding_dir(embedding_dir)
         self.embedding_db.load_textual_inversion_embeddings(force_reload=True)
 
