@@ -264,11 +264,25 @@ Preset Tags:
  - Golems
  - Crocodiles
 Location tags:
+ - Alley
  - Bathroom
  - Bedroom
+ - Cafeteria
+ - Cave
+ - Changing Room
  - Classroom
  - Clubroom
+ - Dressing Room
+ - Dungeon
+ - Fitting Room
+ - Glacier
+ - Gym
+ - Gym Storeroom
  - Hotel Room
  - Messy Room
+ - Pool
+ - Prison Cell
  - School
  - Shower
+ - Stage
+ - Workshop
