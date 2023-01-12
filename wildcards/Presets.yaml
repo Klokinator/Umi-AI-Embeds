@@ -361,7 +361,7 @@
   - Female
   - SFW
   - Fun Prompts
-'1girl, solo focus, (detailed face and <[Eye Color]>:1.4), (detailed lips:1.4), lineart, (realistic:0.4), {<[HighSFW|MedSFW|LowSFW][Fullbody]>|<[HighNSFW|MedNSFW|LowNSFW][Fullbody]>}, 1girl, <[Age][Female][Adult]>, <[Breast Size]>, <[Emotions]>, <[Hair Length]>, <[Hair Style]>, <[Hair Color Types]>, <[20%Earrings|]>, <[20%Eyewear]>, {20%<[Neckwear][--Cape]>|}':
+'1girl, solo focus, (detailed face and <[Eye Color]>:1.4), (detailed lips:1.4), lineart, (realistic:0.4), {<[HighSFW|MedSFW|LowSFW][Fullbody]>|<[HighNSFW|MedNSFW|LowNSFW][Fullbody]>}, 1girl, <[Age][Female][Adult]>, <[Breast Size]>, <[Emotions]>, <[Hair Length]>, <[Hair Style]>, <[Hair Color Types]>, {20%<[Earrings]>, |}{20%<[Eyewear]>, |}{20%<[Neckwear][--Cape]>|}':
  Description:
   - "Detailed Face Girls, a closeup of very pretty girl faces."
  Tags:
