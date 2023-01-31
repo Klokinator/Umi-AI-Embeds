@@ -453,6 +453,7 @@ class Script(scripts.Script):
     embedding_db = modules.textual_inversion.textual_inversion.EmbeddingDatabase()
 
     def __init__(self):
+        pass
         embedding_dir = os.path.join(
         pathlib.Path(inspect.getfile(lambda: None)).parent.parent, "embeddings")
         self.embedding_db.add_embedding_dir(embedding_dir)
@@ -578,3 +579,7 @@ class Script(scripts.Script):
             if verbose:
                 p.extra_generation_params["File includes"] = "|".join(
                     TagLoader.files)
+
+from modules import sd_hijack
+path = os.path.join(scripts.basedir(), "embeddings")
+sd_hijack.model_hijack.embedding_db.add_embedding_dir(path)
