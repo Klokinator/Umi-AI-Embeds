@@ -1,0 +1,12 @@
+[Anime] Dutch's Macross v4.safetensors [d356a70414], [Anime] Anything-V3.0.ckpt [8712e20a5d], [Realistic] Dutch's Aphrodite v9.safetensors, [Realistic] Art and Eros Pruned Fix.safetensors
+
+Females Positive Prompt:
+CHAR-F Ace Attorney Geiru Toneido by Shurik, SFW, 1girl, solo focus, full body, zoomed out, from front, Standing, <[Emotions]>, <[Location]>
+
+Males Positive Prompt:
+CHAR-M DBZ Son Goku WEAK, SFW, 1boy, solo focus, full body, zoomed out, from front, Standing, <[Emotions]>, <[Location]>
+
+Artstyles:
+ART 80sCyberCar by simpleweigh, __Franchise Girls__, SFW, 1girl, solo focus, cowboy shot, zoomed out, from front, Standing, <[Emotions]>, <[Location]>
+
+Negative prompt: (from behind:1.2), lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, out of focus, censorship, (multiple boys, multiple characters, multiple girls, multiple views:1.2), boobplate, NEGS Bad Artist Anime, NEGS Bad Artist OG, NEGS Bad Hands,  NEGS Bad Image v4, NEGS Bad Prompt v2, NEGS Deep Negative v1.75T
