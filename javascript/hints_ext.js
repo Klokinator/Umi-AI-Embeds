@@ -32,16 +32,12 @@ function respondToVisibility(element, callback) {
   }
 
 window.onload = () => {
-    console.log('UmiAI loaded', window.APNG)
-
     const interval = setInterval(() => {
         const root = document.getElementsByTagName('gradio-app')?.[0]?.shadowRoot;
-        console.log(root);
         if (root) {
             clearInterval(interval);
             
             const cards = root.querySelectorAll('.card');
-            
             for (let card of cards) {
                 const url = card.style.backgroundImage.replace('url("', '').replace('")', '');
 
@@ -84,22 +80,4 @@ window.onload = () => {
             }
         }
     }, 100);
-
-    window.APNG.parseURL("./APNG-cube.png").then((apng) => {
-        const canvas = document.createElement("canvas");
-        canvas.width = apng.width;
-        canvas.height = apng.height;
-        document.getElementById("p").appendChild(canvas);
-        
-        apng.addContext(canvas.getContext("2d"));
-        apng.play();
-        
-        document.getElementById("play-btn").addEventListener("click", () => {
-            apng.play();
-        });
-        
-        document.getElementById("stop-btn").addEventListener("click", () => {
-            apng.rewind();
-        });
-    });
 }
