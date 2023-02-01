@@ -31,75 +31,45 @@ function respondToVisibility(element, callback) {
     observer.observe(element);
   }
 
-window.onload = () => {
-    console.log('UmiAI loaded', window.APNG)
+const map = new Map();
 
+window.onload = () => {
     const interval = setInterval(() => {
         const root = document.getElementsByTagName('gradio-app')?.[0]?.shadowRoot;
-        console.log(root);
         if (root) {
             clearInterval(interval);
             
             const cards = root.querySelectorAll('.card');
-            
             for (let card of cards) {
                 const url = card.style.backgroundImage.replace('url("', '').replace('")', '');
 
-                let over;
-                let out;
+                const promise = window.APNG.parseURL(url).then((apng) => {
+                    map.set(url, apng);
+                    return apng;
+                });
 
-                respondToVisibility(card, (visible) => {
-                    if (visible) {
-                        window.APNG.parseURL(url).then((apng) => {
-                            const canvas = document.createElement("canvas");
-                            canvas.width = 512;
-                            canvas.height = 768;
-                            canvas.style.transform = 'scale(0.44)';
-                            canvas.style.transformOrigin = 'top left';
-                            card.prepend(canvas);
-        
-                            apng.addContext(canvas.getContext("2d"));
-                            apng.play();
-                            setTimeout(() => apng.rewind(), 100);
+                if (url !== '') card.style.backgroundImage = 'none';
 
-                            card.style.backgroundImage = 'none';
+                promise.then((apng) => {
+                    const canvas = document.createElement("canvas");
+                    canvas.width = 512;
+                    canvas.height = 768;
+                    canvas.style.transform = 'scale(0.44)';
+                    canvas.style.transformOrigin = 'top left';
+                    card.prepend(canvas);
 
-                            over = () => {
-                                apng.play();
-                            };
+                    apng.addContext(canvas.getContext("2d"));
+                    apng.play();
+                    setTimeout(() => apng.rewind(), 100);
 
-                            out = () => {
-                                apng.rewind();
-                            };
-
-                            card.addEventListener('mouseover', over);
-                            card.addEventListener('mouseout', out);                            
-                        });
-                    } else {
-                        card.getElementsByTagName('canvas')?.[0]?.remove();
-                        card.removeEventListener('mouseover', over);
-                        card.removeEventListener('mouseout', out);
-                    }
+                    card.addEventListener('mouseover', () => {
+                        apng.play();
+                    });
+                    card.addEventListener('mouseout', () => {
+                        apng.rewind();
+                    });                            
                 });
             }
         }
     }, 100);
-
-    window.APNG.parseURL("./APNG-cube.png").then((apng) => {
-        const canvas = document.createElement("canvas");
-        canvas.width = apng.width;
-        canvas.height = apng.height;
-        document.getElementById("p").appendChild(canvas);
-        
-        apng.addContext(canvas.getContext("2d"));
-        apng.play();
-        
-        document.getElementById("play-btn").addEventListener("click", () => {
-            apng.play();
-        });
-        
-        document.getElementById("stop-btn").addEventListener("click", () => {
-            apng.rewind();
-        });
-    });
 }
