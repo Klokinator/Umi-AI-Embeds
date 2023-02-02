@@ -191,7 +191,9 @@ class TagSelector:
                     f'UmiAI: No tags found in wildcard file "{parsed_tag}" or file does not exist'
                 )
             return False
-        print(f'Loaded tag more than 50000 times {parsed_tag}, this indicates a tag reference loop. Inspect your tags and remove any loops.')
+        if self.previously_selected_tags.get(tag) == 50000:
+            self.previously_selected_tags[tag] += 1
+            print(f'Processed more than 50000 tags, this may indicate a tag reference loop. Inspect your tags and remove any loops.')
         return False
 
 
@@ -519,7 +521,7 @@ class Script(scripts.Script):
                 if (shared_seed):
                     random.seed(p.all_seeds[p.batch_size *cur_count if same_seed else index])
                 else:
-                    random.seed(time.time())
+                    random.seed(time.time()+index*10)
                 
                 if debug: print(f'{"Batch #"+str(cur_count) if same_seed else "Prompt #"+str(index):=^30}')
 
