@@ -82,10 +82,13 @@ class TagLoader:
                         for item in data:
                             if (hasattr(output, item) and verbose):
                                 print(f"Duplicate key {item} in {file}")
-                            output[item] = {
-                                x.lower().strip()
-                                for i, x in enumerate(data[item]['Tags'])
-                            }
+                            if data[item] and 'Tags' in data[item]:
+                                output[item] = {
+                                    x.lower().strip()
+                                    for i, x in enumerate(data[item]['Tags'])
+                                }
+                            else:
+                                print(f'Issue with tags found in {file} at item {item}')
                     except yaml.YAMLError as exc:
                         print(exc)
             self.loaded_tags[key] = output
@@ -451,13 +454,6 @@ class Script(scripts.Script):
     is_txt2img = False
 
     embedding_db = modules.textual_inversion.textual_inversion.EmbeddingDatabase()
-
-    def __init__(self):
-        pass
-        embedding_dir = os.path.join(
-        pathlib.Path(inspect.getfile(lambda: None)).parent.parent, "embeddings")
-        self.embedding_db.add_embedding_dir(embedding_dir)
-        self.embedding_db.load_textual_inversion_embeddings(force_reload=True)
 
     def title(self):
         return "Prompt generator"
