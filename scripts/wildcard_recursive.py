@@ -178,7 +178,7 @@ class TagSelector:
     def select(self, tag, groups=None):
         self.previously_selected_tags.setdefault(tag, 0)
 
-        if self.previously_selected_tags.get(tag) < 100:
+        if self.previously_selected_tags.get(tag) < 50000:
             self.previously_selected_tags[tag] += 1
             parsed_tag = parse_tag(tag)
             tags = self.tag_loader.load_tags(parsed_tag, self.verbose, self.cache_files)
@@ -191,7 +191,7 @@ class TagSelector:
                     f'UmiAI: No tags found in wildcard file "{parsed_tag}" or file does not exist'
                 )
             return False
-        print(f'loaded tag more than 100 times {parsed_tag}')
+        print(f'Loaded tag more than 50000 times {parsed_tag}, this indicates a tag reference loop. Inspect your tags and remove any loops.')
         return False
 
 
