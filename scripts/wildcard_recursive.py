@@ -82,10 +82,13 @@ class TagLoader:
                         for item in data:
                             if (hasattr(output, item) and verbose):
                                 print(f"Duplicate key {item} in {file}")
-                            output[item] = {
-                                x.lower().strip()
-                                for i, x in enumerate(data[item]['Tags'])
-                            }
+                            if data[item] and 'Tags' in data[item]:
+                                output[item] = {
+                                    x.lower().strip()
+                                    for i, x in enumerate(data[item]['Tags'])
+                                }
+                            else:
+                                print(f'Issue with tags found in {file} at item {item}')
                     except yaml.YAMLError as exc:
                         print(exc)
             self.loaded_tags[key] = output
@@ -175,7 +178,7 @@ class TagSelector:
     def select(self, tag, groups=None):
         self.previously_selected_tags.setdefault(tag, 0)
 
-        if self.previously_selected_tags.get(tag) < 100:
+        if self.previously_selected_tags.get(tag) < 50000:
             self.previously_selected_tags[tag] += 1
             parsed_tag = parse_tag(tag)
             tags = self.tag_loader.load_tags(parsed_tag, self.verbose, self.cache_files)
@@ -188,7 +191,9 @@ class TagSelector:
                     f'UmiAI: No tags found in wildcard file "{parsed_tag}" or file does not exist'
                 )
             return False
-        print(f'loaded tag more than 100 times {parsed_tag}')
+        if self.previously_selected_tags.get(tag) == 50000:
+            self.previously_selected_tags[tag] += 1
+            print(f'Processed more than 50000 tags, this may indicate a tag reference loop. Inspect your tags and remove any loops.')
         return False
 
 
@@ -450,13 +455,6 @@ class Script(scripts.Script):
 
     embedding_db = modules.textual_inversion.textual_inversion.EmbeddingDatabase()
 
-    def __init__(self):
-        pass
-        embedding_dir = os.path.join(
-        pathlib.Path(inspect.getfile(lambda: None)).parent.parent, "embeddings")
-        self.embedding_db.add_embedding_dir(embedding_dir)
-        self.embedding_db.load_textual_inversion_embeddings(force_reload=True)
-
     def title(self):
         return "Prompt generator"
 
@@ -523,7 +521,7 @@ class Script(scripts.Script):
                 if (shared_seed):
                     random.seed(p.all_seeds[p.batch_size *cur_count if same_seed else index])
                 else:
-                    random.seed(time.time())
+                    random.seed(time.time()+index*10)
                 
                 if debug: print(f'{"Batch #"+str(cur_count) if same_seed else "Prompt #"+str(index):=^30}')
 
