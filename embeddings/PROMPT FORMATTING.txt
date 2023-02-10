@@ -1,12 +1,178 @@
-[Anime] Dutch's Macross v4.safetensors [d356a70414], [Anime] Anything-V3.0.ckpt [8712e20a5d], [Realistic] Dutch's Aphrodite v9.safetensors, [Realistic] Art and Eros Pruned Fix.safetensors
+---Programs you'll want---
+Filename Copier: https://www.extrabit.com/copyfilenames
+Bulk File Renamer: https://www.bulkrenameutility.co.uk/Download.php
+Ethereal's Preview-tools: https://github.com/etherealxx/pngtile-cutteranim
+(You will need to customize his tool later but I'll paste the code snippet)
+Notepad++: https://notepad-plus-plus.org/downloads/
 
+---Step 1: Download Embeds---
+There are three main places where you can find embeddings.
+1. Civtai https://civitai.com/ (Sort by date posted, limit to Textual Inversion)
+2. Waifu Diffusioncord: https://discord.gg/touhouai https://discord.com/channels/930499730843250783/1044620915377451058
+(Sort at the top-left by date posted)
+3. Huggingface:
+https://huggingface.co/sd-concepts-library
+https://huggingface.co/sd-concepts-library
+
+A lot of these will be duplicates, sorting those out is tricky. Most files have hashes you can check, but I usually just use Notepad++ to open the .pt files up and see if their contents look different, if they have more lines/more characters written, etc.
+
+
+---Step 2: Rename the Embeds---
+All embeds go under a certain naming convention for organizational purposes.
+> TAG Keyword1 Keyword2 by EmbedCreator
+Examples:
+ART 80sCyberCar by simpleweigh
+CLOTHES NSFW Cupless Bra Anime by Realos Lakrell
+CLOTHES Cowboy Chaps by FlameLaw
+CHAR-F Ace Attorney Geiru Toneido by Shurik
+CHAR-M Evangelion Shinji Ikari by Onko
+IRL-F Alyson Hannigan by Bionic_Oldmando
+IRL-M Henry Cavill by Gathero
+NSFW Blowjob Backview by paradoxical13
+SPECIES Harpy Basic by Tamzaiy
+
+Etc... renaming these appropriately is important but it's also the easiest step, I can always fix it if you name things wrong so it's not a big deal.
+
+
+Once you have all the embeds made, you will want to download the Models required for the embed previews.
+
+
+---Step 4: Download the Models--- 
+DOWNLOAD LINK: https://umiai.allsync.com/s/A9Qe4cec98Kioey (AI Model folders, for Umi/Public, will have all of the models below)
+Download all of these models, and try to keep their names intact.
+[Landscape] Dutch's Olympus
+[Anime] Dutch's Macross Embed
+[Anime] Elysium v3 Kuro
+[Anime] Ligne Claire
+[Anime] Abyss Orange Mix Hardcore v2
+[Anime] WLOP-Any
+[Realistic] Dutch's Aphrodite Launch
+[Realistic] Art and Eros Pruned Fix
+[Realistic] Protogen x5.3
+[Realistic] Clarity
+[Realistic] Hassanblend 1.5.1.2
+[Realistic] Elden Apocalypse
+
+
+
+
+You should have everything you need to start generating previews now. So, make sure you're fully updated on Umi AI and Webui, then open WebUI and start adjusting your settings like so:
+Anime Models: https://i.imgur.com/huOlBgF.png
+Realistic Models: https://i.imgur.com/YUKPFGC.png
+(Note the face restore on realism)
+
+Here are the two model sets for anime and realistic that you can copypaste into the X value:
+
+[Landscape] Dutch's Olympus.safetensors [230102ba0f], [Anime] Dutch's Macross Embed.safetensors [d356a70414], [Anime] Elysium v3 Kuro.safetensors, [Anime] Ligne Claire.safetensors, [Anime] Abyss Orange Mix Hardcore v2.safetensors, [Anime] WLOP-Any.safetensors
+
+[Realistic] Dutch's Aphrodite Launch.safetensors [611daf4cb7], [Realistic] Art and Eros Pruned Fix.safetensors [7380c43842], [Realistic] Protogen x5.3.safetensors [93a10d6661], [Realistic] Clarity.safetensors, [Realistic] Hassanblend 1.5.1.2.safetensors, [Realistic] Elden Apocalypse.safetensors
+
+As for the Y value, select all of your target embeds of a specific type and copy their filenames: https://i.imgur.com/e6VZFYN.png
+Paste them into Notepad++: https://i.imgur.com/Utv7GtE.png
+IMPORTANT: You will be needing this exact list later for the Ethereal renaming tool, so make sure you don't lose it. Even a single addition or removal of a name/file will throw the ordering off!
+Then go to find/replace and replace .bin and .pt like so: https://i.imgur.com/BFb42da.png
+
+.pt\r\n
+, 
+
+AND
+
+.bin\r\n
+, 
+
+That will give you a list like this: https://i.imgur.com/N79YXJq.png
+Paste that into the Y value of WebUI, making sure to set the Y value to Prompt S/R: https://i.imgur.com/jCc744Z.png
+
+
+Finally, you just need to make sure all your other settings are correct and that you have the proper prompt made and completed. Note that I have 'Show legend' turned off, and "-1 for all seeds" unchecked.
+
+
+--GENERIC POSITIVE PROMPTS---
 Females Positive Prompt:
-CHAR-F Ace Attorney Geiru Toneido by Shurik, SFW, 1girl, solo focus, full body, zoomed out, from front, Standing, <[Emotions]>, <[Location]>
+FIRST FEMALE EMBED NAME, SFW, 1girl, solo focus, full body, zoomed out, from front, Standing, <[Location]>
 
 Males Positive Prompt:
-CHAR-M DBZ Son Goku WEAK, SFW, 1boy, solo focus, full body, zoomed out, from front, Standing, <[Emotions]>, <[Location]>
+FIRST MALE EMBED NAME, SFW, 1boy, solo focus, full body, zoomed out, from front, Standing, <[Location]>
 
 Artstyles:
-ART 80sCyberCar by simpleweigh, __Franchise Girls__, SFW, 1girl, solo focus, cowboy shot, zoomed out, from front, Standing, <[Emotions]>, <[Location]>
+FIRST ARTSTYLE EMBED NAME, __Franchise Girls__, SFW, 1girl, solo focus, cowboy shot, zoomed out, from front, Standing, <[Emotions]>, <[Location]>
 
-Negative prompt: (from behind:1.2), lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, out of focus, censorship, (multiple boys, multiple characters, multiple girls, multiple views:1.2), boobplate, NEGS Bad Artist Anime, NEGS Bad Artist OG, NEGS Bad Hands,  NEGS Bad Image v4, NEGS Bad Prompt v2, NEGS Deep Negative v1.75T
+(Other types are less well-defined and may require some brainstorming between us)
+
+---NEGATIVES---
+Negative prompt: nudity, naked, nipples, penis, (from behind:1.2), lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, out of focus, censorship, (multiple boys, multiple characters, multiple girls, multiple views:1.2), NEGS Bad Artist Anime, NEGS Bad Artist OG, NEGS Bad Hands, NEGS Bad Image v4, NEGS Bad Prompt v2, NEGS Deep Negative v1.75T
+
+
+By this point, you can hit generate. Then when you've made two giga-grids for anime and realism, you can splice them together, and we'll move on to using Aexiel's tools.
+
+
+
+...
+
+The next step, after you've generated the grids and spliced them together, will be to finally split them apart and rename them. This step is done entirely through Ethereal's splitting tool which does a LOT of the work for you.
+
+
+First, download Ethereal's splicing tool. Please go to this link and read about the prerequisite programs you need to install. https://github.com/etherealxx/pngtile-cutteranim
+
+Once you've done that, you can download the tool by clicking the green Code button and clicking Download ZIP. https://i.imgur.com/GFHkwbo.png
+We only give a shit about the .bat and .py files, so once you extract those, you have what you need.
+
+Go into the .py file, and look at the customization section. Change it to these settings:
+
+#customizable
+splitted_width = 512
+splitted_height = 768
+number_of_splits = 12
+texts = ["Umi AI Olympus", "Umi AI Macross", "Elysium Kuro", "Ligne Claire", "Abyss Orange", "WLOP-Any", "Umi AI Aphrodite", "Art and Eros (Fixed)", "Protogen x5.3", "Clarity", "Hassanblend 1.5.1.2", "Elden Apocalypse Fixed"] #be sure to add text to this when you add more number of splits
+x_pos_of_text = [205, 270, 130, 70] #ignore this if text_on_the_left is true
+textfont = "OpenSansCondensed-Bold.ttf" #name of the font located on C:\Windows\Font
+text_on_the_left = True #if true, all text will get x=10 from the left
+textsize = 40
+#customizable
+
+Then just save, and you're good to go.
+
+
+...
+
+
+Now, let's get back to that grid you made.
+
+First, name the grid something simple. Doesn't matter what. Maybe "Anime Girls".
+
+Place the grid by itself in a folder: https://i.imgur.com/VjkcatW.png
+
+Then drag that folder onto Ethereal's splicing tool: https://discord.com/channels/@me/1072284152092696667/1072948271091294238
+At this point, you just need to wait for the splicing to complete. For my pc it took two hours. For yours, probably a fraction of the time.
+
+
+
+
+What this process does:
+1. Cuts the giga-sheet into horizontal rows.
+2. Each horizontal row has their file renamed based upon the names of the Embed list that you saved earlier.
+3. Adds text to those rows after step 1 completes. This text is the name of each model per image.
+4. Starts cutting each row into individual images, with 12 in total. Image_1, Image_2, etc.
+5. It then makes the aPNGs.
+6. Finally, it creates compressed versions of the individual images as jpegs, then it makes compressed versions of the rows.
+
+
+
+
+Remember earlier when you made a list of all the embed names? https://i.imgur.com/Utv7GtE.png
+Save that list as a text file with the same name as your giga-grid. If the grid is Anime Girls.png, your text file should be Anime Girls.txt
+
+Please refer to the video I sent you on Discord. There you will see how the folders should be lined up, the name of files, and that the .txt file should be in the same folder as the .png gigagrid.
+
+At this point, you just drag the folder onto the script and sit back and wait.
+
+You will end up with these five folders: https://i.imgur.com/1Zi6ZXp.png
+- Individual images that are uncompressed PNGs. These do not presently have a purpose, but we'll keep them for the future.
+- Individual images that are compressed Jpgs. This folder is now formatted so that if you renamed things properly, they will be draggable and droppable into the embed folders. They even have preview.jpg appended!
+- aPNGs that have been compressed to about 2.5MBs. These will ultimately go in the Embed folders as the animated previews.
+- The original raw gigagrid and its text file. You'll probably want to save these in case anything went wrong.
+- Row-images that are uncompressed. These will allow people to view all of the models for each embed at a glance instead of waiting for animations. We'll be putting them in the Umi Goldmine.
+
+At this point, you're done. You just need to make previews for everything, get them in the embed folders, and then upload them to Github.
+
+I'll personally walk you through the Github part!
