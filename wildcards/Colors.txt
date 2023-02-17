@@ -1,20 +1,32 @@
-aqua
-black
-yellow
-blue
-light blue
-dark blue
-brown
-light brown
-green
-dark green
-light green
-grey
-orange
-pink
-purple
-light purple
-red
-white
-gold
-silver
+White
+Silver
+Grey
+Light Black
+Black
+Dark Brown
+Brown
+Light Brown
+Bright Pink
+Neon Pink
+Pink
+Light Red
+Red
+Fuchsia
+Magenta
+Dark Red
+Light Orange
+Orange
+Dark Orange
+Light Yellow
+Yellow
+Dark Yellow
+Gold
+Light Green
+Green
+Dark Green
+Light Blue
+Aqua Blue
+Blue
+Dark Blue
+Purple
+Light Purple
