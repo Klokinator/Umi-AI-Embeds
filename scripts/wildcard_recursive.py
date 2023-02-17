@@ -356,8 +356,7 @@ class PromptGenerator:
         self.replacers = [
             self.settings_generator,
             TagReplacer(self.tag_selector, options),
-            DynamicPromptReplacer(),
-            self.negative_tag_generator
+            DynamicPromptReplacer()
         ]
         self.verbose = dict(options).get('verbose', False)
 
@@ -374,6 +373,7 @@ class PromptGenerator:
         while previous_prompt != prompt:
             previous_prompt = prompt
             prompt = self.use_replacers(prompt)
+        prompt = self.negative_tag_generator.replace(prompt)
         end = time.time()
         if self.verbose:
             print(f"Prompt generated in {end - start} seconds")
