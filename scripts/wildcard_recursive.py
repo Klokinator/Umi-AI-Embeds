@@ -177,7 +177,8 @@ class TagSelector:
 
     def select(self, tag, groups=None):
         self.previously_selected_tags.setdefault(tag, 0)
-
+        if (tag.count(':')==2) or (len(tag) < 2):
+            return False
         if self.previously_selected_tags.get(tag) < 50000:
             self.previously_selected_tags[tag] += 1
             parsed_tag = parse_tag(tag)
