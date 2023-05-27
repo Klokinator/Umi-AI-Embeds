@@ -288,8 +288,6 @@ class DynamicPromptReplacer:
         if match is None or len(match.groups()) == 0:
             return ""
 
-        print (f'replace combinations match {match.groups()[0]}')
-
         combinations_str = match.groups()[0]
 
         variants = [s.strip() for s in combinations_str.split("|")]
@@ -321,7 +319,6 @@ class DynamicPromptReplacer:
                 variants.pop(index)
                 weights.pop(index)
 
-            print(f"Picked:\n{' , '.join(picked)}\n")
             return " , ".join(picked)
         except ValueError as e:
             return ""
@@ -367,7 +364,6 @@ class PromptGenerator:
             self.settings_generator,
             TagReplacer(self.tag_selector, options),
             DynamicPromptReplacer()
-            # self.negative_tag_generator
         ]
         self.verbose = dict(options).get('verbose', False)
 
@@ -405,7 +401,6 @@ class NegativePromptGenerator:
 
     def strip_negative_tags(self, tags):
         matches = re.findall('\*\*.*?\*\*', tags)
-        print(f'stripping negative tags {tags} {matches}')
         if matches:
             for match in matches:
                 self.negative_tag.add(match.replace("**", ""))
