@@ -130,14 +130,31 @@ class TagSelector:
     def __init__(self, tag_loader, options):
         self.tag_loader = tag_loader
         self.previously_selected_tags = {}
+        self.used_values = {}
         self.selected_options = dict(options).get('selected_options', {})
         self.verbose = dict(options).get('verbose', False)
         self.cache_files = dict(options).get('cache_files', True)
+    
+    def select_value_from_candidates(self, candidates):
+        if len(candidates) == 1:
+            print(f'UmiAI: Only one value {candidates} found. Returning that choice.')
+            self.used_values[candidates[0]] = True
+            return candidates[0]
+        if len(candidates) > 1:
+            for candidate in candidates:
+                if candidate not in self.used_values:
+                    self.used_values[candidate] = True
+                    return candidate
+            print(f'UmiAI: All values in {candidates} were used. Returning unaltered tag.')
+            return ''
 
     def get_tag_choice(self, parsed_tag, tags):
         if self.selected_options.get(parsed_tag.lower()) is not None:
             return tags[self.selected_options.get(parsed_tag.lower())]
-        return choices(tags)[0] if len(tags) > 0 else ""
+        if len(tags) == 0:
+            return ""
+        random.shuffle(tags)
+        return self.select_value_from_candidates(tags)
 
     def get_tag_group_choice(self, parsed_tag, groups, tags):
         #print('selected_options', self.selected_options)
@@ -177,7 +194,8 @@ class TagSelector:
                 print(
                     f'UmiAI: Found {len(candidates)} candidates for "{parsed_tag}" with tags: {groups}, first 10: {candidates[:10]}'
                 )
-            return choices(candidates)[0]
+            random.shuffle(candidates)
+            return self.select_value_from_candidates(candidates)
         print(
             f'UmiAI: No tag candidates found for: "{parsed_tag}" with tags: {groups}'
         )
@@ -202,7 +220,7 @@ class TagSelector:
             return False
         if self.previously_selected_tags.get(tag) == 50000:
             self.previously_selected_tags[tag] += 1
-            print(f'Processed more than 50000 tags, this may indicate a tag reference loop. Inspect your tags and remove any loops.')
+            print(f'Processed more than 50000 hits on "{tag}". This probaly is a reference loop. Inspect your tags and remove any loops.')
         return False
 
 
@@ -461,8 +479,6 @@ class SettingsGenerator:
 class Script(scripts.Script):
     is_txt2img = False
 
-    embedding_db = modules.textual_inversion.textual_inversion.EmbeddingDatabase()
-
     def title(self):
         return "Prompt generator"
 
@@ -586,4 +602,8 @@ class Script(scripts.Script):
 
 from modules import sd_hijack
 path = os.path.join(scripts.basedir(), "embeddings")
-sd_hijack.model_hijack.embedding_db.add_embedding_dir(path)
+try:
+    sd_hijack.model_hijack.embedding_db.add_embedding_dir(path)
+except:
+    print("UmiAI: Failed to load embeddings. Your a1111 installation is ancient. Update it.")
+    pass
