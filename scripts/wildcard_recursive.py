@@ -137,7 +137,7 @@ class TagSelector:
     
     def select_value_from_candidates(self, candidates):
         if len(candidates) == 1:
-            print(f'UmiAI: Only one value {candidates} found. Returning that choice.')
+            print(f'UmiAI: Only one value {candidates} found. Returning it.')
             self.used_values[candidates[0]] = True
             return candidates[0]
         if len(candidates) > 1:
@@ -145,8 +145,9 @@ class TagSelector:
                 if candidate not in self.used_values:
                     self.used_values[candidate] = True
                     return candidate
-            print(f'UmiAI: All values in {candidates} were used. Returning unaltered tag.')
-            return ''
+            random.shuffle(candidates)
+            print(f'UmiAI: All values in {candidates} were used. Returning random tag ({candidates[0]}).')
+            return candidates[0]
 
     def get_tag_choice(self, parsed_tag, tags):
         if self.selected_options.get(parsed_tag.lower()) is not None:
