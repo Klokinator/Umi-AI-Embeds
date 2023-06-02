@@ -154,8 +154,9 @@ class TagSelector:
             return tags[self.selected_options.get(parsed_tag.lower())]
         if len(tags) == 0:
             return ""
-        random.shuffle(tags)
-        return self.select_value_from_candidates(tags)
+        shuffled_tags = list(tags)
+        random.shuffle(shuffled_tags)
+        return self.select_value_from_candidates(shuffled_tags)
 
     def get_tag_group_choice(self, parsed_tag, groups, tags):
         #print('selected_options', self.selected_options)
