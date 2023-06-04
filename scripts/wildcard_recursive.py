@@ -80,7 +80,7 @@ class TagLoader:
                     path = os.path.relpath(file.name)
                     try:
                         data = yaml.safe_load(file)
-                        if not isinstance(data, dict):
+                        if not isinstance(data, dict) and verbose:
                             print(f'Warning: Missing contents in {path}')
                             continue
 
@@ -88,7 +88,7 @@ class TagLoader:
                             if (hasattr(output, item) and verbose):
                                 print(f'Warning: Duplicate key "{item}" in {path}')
                             if data[item] and 'Tags' in data[item]:
-                                if not isinstance(data[item]['Tags'], list):
+                                if not isinstance(data[item]['Tags'], list) and verbose:
                                     print(f'Warning: No tags found in at item "{item}" (add at least one tag to it) in {path}')
                                     continue
                                 output[item] = {
@@ -96,7 +96,7 @@ class TagLoader:
                                     for i, x in enumerate(data[item]['Tags'])
                                 }
                             else:
-                                print(f'Warning: No "Tags" section found in at item "{item}" in {path}')
+                                if verbose: print(f'Warning: No "Tags" section found in at item "{item}" in {path}')
                     except yaml.YAMLError as exc:
                         print(exc)
             self.loaded_tags[key] = output
@@ -137,7 +137,7 @@ class TagSelector:
     
     def select_value_from_candidates(self, candidates):
         if len(candidates) == 1:
-            print(f'UmiAI: Only one value {candidates} found. Returning it.')
+            if self.verbose: print(f'UmiAI: Only one value {candidates} found. Returning it.')
             self.used_values[candidates[0]] = True
             return candidates[0]
         if len(candidates) > 1:
@@ -146,7 +146,7 @@ class TagSelector:
                     self.used_values[candidate] = True
                     return candidate
             random.shuffle(candidates)
-            print(f'UmiAI: All values in {candidates} were used. Returning random tag ({candidates[0]}).')
+            if self.verbose: print(f'UmiAI: All values in {candidates} were used. Returning random tag ({candidates[0]}).')
             return candidates[0]
 
     def get_tag_choice(self, parsed_tag, tags):
@@ -198,9 +198,7 @@ class TagSelector:
                 )
             random.shuffle(candidates)
             return self.select_value_from_candidates(candidates)
-        print(
-            f'UmiAI: No tag candidates found for: "{parsed_tag}" with tags: {groups}'
-        )
+        if self.verbose: print(f'UmiAI: No tag candidates found for: "{parsed_tag}" with tags: {groups}')
         return ""
 
     def select(self, tag, groups=None):
