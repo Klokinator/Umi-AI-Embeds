@@ -53,23 +53,47 @@ class TagLoader:
     loaded_tags = {}
     missing_tags = set()
 
+    def __init__(self, options):
+        self.ignore_paths = dict(options).get('ignore_paths', True)
+        self.all_txt_files = glob.glob(os.path.join(self.wildcard_location, '**/*.txt'), recursive=True)
+        self.all_yaml_files = glob.glob(os.path.join(self.wildcard_location, '**/*.yaml'), recursive=True)
+        self.txt_basename_to_path = {os.path.basename(file).lower().split('.')[0]: file for file in self.all_txt_files}
+        self.yaml_basename_to_path = {os.path.basename(file).lower().split('.')[0]: file for file in self.all_yaml_files}
+        self.verbose = dict(options).get('verbose', False)
+        if self.verbose:
+            print(f'UmiAI: Found {len(self.all_txt_files)} txt files and {len(self.all_yaml_files)} yaml files in {self.wildcard_location}')
+            print(f'UmiAI: Ignoring paths is {"enabled" if self.ignore_paths else "disabled"}')
+            print(f'UmiAI: Caching files is {"enabled" if dict(options).get("cache_files", True) else "disabled"}')
+            print(self.txt_basename_to_path)
+
     def load_tags(self, file_path, verbose=False, cache_files=True):
         if cache_files and self.loaded_tags.get(file_path):
             return self.loaded_tags.get(file_path)
 
-        txt_file_path = os.path.join(self.wildcard_location, f'{file_path}.txt')
-        yaml_file_path = os.path.join(self.wildcard_location,
-                                      f'{file_path}.yaml')
+        if (self.ignore_paths):
+            txt_file_path = self.txt_basename_to_path.get(file_path.lower()) or ''
+            yaml_file_path = self.yaml_basename_to_path.get(file_path.lower()) or ''
+        else:
+            txt_file_path = os.path.join(self.wildcard_location, f'{file_path}.txt')
+            yaml_file_path = os.path.join(self.wildcard_location, f'{file_path}.yaml')
+        print(f'UmiAI: Loading tags from {txt_file_path} and {yaml_file_path}')
+
 
         if (file_path == ALL_KEY):
             key = ALL_KEY
         else:
+            if (self.ignore_paths):
+                basename = os.path.basename(file_path.lower())
             key = file_path.lower()
 
         if self.wildcard_location and os.path.isfile(txt_file_path):
             with open(txt_file_path, encoding="utf8") as file:
                 self.files.append(f"{file_path}.txt")
                 self.loaded_tags[key] = read_file_lines(file)
+                if (self.ignore_paths):
+                    if (self.loaded_tags.get(basename)):
+                        print(f'UmiAI: Warning: Duplicate filename "{basename}" in {txt_file_path}. Only the last one will be used.')
+                    self.loaded_tags[basename] = self.loaded_tags[key]
 
         if key is ALL_KEY and self.wildcard_location:
             files = glob.glob(os.path.join(self.wildcard_location, '**/*.yaml'), recursive=True)
@@ -88,8 +112,9 @@ class TagLoader:
                             if (hasattr(output, item) and verbose):
                                 print(f'Warning: Duplicate key "{item}" in {path}')
                             if data[item] and 'Tags' in data[item]:
-                                if not isinstance(data[item]['Tags'], list) and verbose:
-                                    print(f'Warning: No tags found in at item "{item}" (add at least one tag to it) in {path}')
+                                if not isinstance(data[item]['Tags'], list):
+                                    if verbose:
+                                        print(f'Warning: No tags found in at item "{item}" (add at least one tag to it) in {path}')
                                     continue
                                 output[item] = {
                                     x.lower().strip()
@@ -113,6 +138,10 @@ class TagLoader:
                             for i, x in enumerate(data[item]['Tags'])
                         }
                     self.loaded_tags[key] = output
+                    if (self.ignore_paths):
+                        if (self.loaded_tags.get(basename)):
+                            print(f'UmiAI: Warning: Duplicate filename "{basename}" in {yaml_file_path}. Only the last one will be used.')
+                        self.loaded_tags[basename] = self.loaded_tags[key]
                 except yaml.YAMLError as exc:
                     print(exc)
 
@@ -203,7 +232,7 @@ class TagSelector:
 
     def select(self, tag, groups=None):
         self.previously_selected_tags.setdefault(tag, 0)
-        if (tag.count(':')==2) or (len(tag) < 2):
+        if (tag.count(':')==2) or (len(tag) < 2 and groups):
             return False
         if self.previously_selected_tags.get(tag) < 50000:
             self.previously_selected_tags[tag] += 1
@@ -347,34 +376,10 @@ class DynamicPromptReplacer:
 
         return self.re_combinations.sub(self.replace_combinations, template)
 
-
-class OptionGenerator:
-
-    def __init__(self, tag_loader):
-        self.tag_loader = tag_loader
-
-    def get_configurable_options(self):
-        return self.tag_loader.load_tags('configuration')
-
-    def get_option_choices(self, tag):
-        return self.tag_loader.load_tags(parse_tag(tag))
-
-    def parse_options(self, options):
-        tag_presets = {}
-        for i, tag in enumerate(self.get_configurable_options()):
-            parsed_tag = parse_tag(tag)
-            location = get_index(self.tag_loader.load_tags(parsed_tag),
-                                 options[i])
-            if location is not None:
-                tag_presets[parsed_tag.lower()] = location
-
-        return tag_presets
-
-
 class PromptGenerator:
 
     def __init__(self, options):
-        self.tag_loader = TagLoader()
+        self.tag_loader = TagLoader(options)
         self.tag_selector = TagSelector(self.tag_loader, options)
         self.negative_tag_generator = NegativePromptGenerator()
         self.settings_generator = SettingsGenerator()
@@ -492,6 +497,7 @@ class Script(scripts.Script):
                 enabled = gr.Checkbox(label="UmiAI enabled", value=True)
                 verbose = gr.Checkbox(label="Verbose logging", value=False)
                 cache_files = gr.Checkbox(label="Cache files", value=True)
+                ignore_folders = gr.Checkbox(label="Ignore folders", value=True)
                 same_seed = gr.Checkbox(label='Same prompt in batch',
                                         value=False)
                 negative_prompt = gr.Checkbox(label='**negative keywords**',
@@ -499,19 +505,10 @@ class Script(scripts.Script):
                 shared_seed = gr.Checkbox(label="Static wildcards",
                                           value=False)
 
-            option_generator = OptionGenerator(TagLoader())
-            options = [
-                gr.Dropdown(label=opt,
-                            choices=["RANDOM"] +
-                            option_generator.get_option_choices(opt),
-                            value="RANDOM")
-                for opt in option_generator.get_configurable_options()
-            ]
+        return [enabled, verbose, cache_files, ignore_folders, same_seed, negative_prompt, shared_seed,
+                ]
 
-        return [enabled, verbose, cache_files, same_seed, negative_prompt, shared_seed
-                ] + options
-
-    def process(self, p, enabled, verbose, cache_files, same_seed, negative_prompt,
+    def process(self, p, enabled, verbose, cache_files, ignore_folders, same_seed, negative_prompt,
                 shared_seed, *args):
         if not enabled:
             return
@@ -528,11 +525,10 @@ class Script(scripts.Script):
         TagLoader.files.clear()
         original_prompt = p.all_prompts[0]
 
-        option_generator = OptionGenerator(TagLoader())
         options = {
-            'selected_options': option_generator.parse_options(args),
             'verbose': verbose,
             'cache_files': cache_files,
+            'ignore_folders': ignore_folders,
         }
         prompt_generator = PromptGenerator(options)
 
