@@ -60,24 +60,17 @@ class TagLoader:
         self.txt_basename_to_path = {os.path.basename(file).lower().split('.')[0]: file for file in self.all_txt_files}
         self.yaml_basename_to_path = {os.path.basename(file).lower().split('.')[0]: file for file in self.all_yaml_files}
         self.verbose = dict(options).get('verbose', False)
-        if self.verbose:
-            print(f'UmiAI: Found {len(self.all_txt_files)} txt files and {len(self.all_yaml_files)} yaml files in {self.wildcard_location}')
-            print(f'UmiAI: Ignoring paths is {"enabled" if self.ignore_paths else "disabled"}')
-            print(f'UmiAI: Caching files is {"enabled" if dict(options).get("cache_files", True) else "disabled"}')
-            print(self.txt_basename_to_path)
 
     def load_tags(self, file_path, verbose=False, cache_files=True):
         if cache_files and self.loaded_tags.get(file_path):
             return self.loaded_tags.get(file_path)
 
-        if (self.ignore_paths):
-            txt_file_path = self.txt_basename_to_path.get(file_path.lower()) or ''
-            yaml_file_path = self.yaml_basename_to_path.get(file_path.lower()) or ''
-        else:
-            txt_file_path = os.path.join(self.wildcard_location, f'{file_path}.txt')
-            yaml_file_path = os.path.join(self.wildcard_location, f'{file_path}.yaml')
-        print(f'UmiAI: Loading tags from {txt_file_path} and {yaml_file_path}')
-
+        txt_full_file_path = os.path.join(self.wildcard_location, f'{file_path}.txt')
+        yaml_full_file_path = os.path.join(self.wildcard_location, f'{file_path}.yaml')
+        txt_file_match = self.txt_basename_to_path.get(file_path.lower()) or txt_full_file_path
+        yaml_file_match = self.yaml_basename_to_path.get(file_path.lower()) or yaml_full_file_path
+        txt_file_path = txt_file_match if self.ignore_paths else txt_full_file_path
+        yaml_file_path = yaml_file_match if self.ignore_paths else yaml_full_file_path
 
         if (file_path == ALL_KEY):
             key = ALL_KEY
