@@ -473,6 +473,8 @@ class SettingsGenerator:
     def get_setting_overrides(self):
         return self.setting_overrides
 
+def _get_effective_prompt(prompts: list[str], prompt: str) -> str:
+    return prompts[0] if prompts else prompt
 
 class Script(scripts.Script):
     is_txt2img = False
@@ -509,14 +511,16 @@ class Script(scripts.Script):
         debug = False
 
         if debug: print(f'\nModel: {p.sampler_name}, Seed: {int(p.seed)}, Batch Count: {p.n_iter}, Batch Size: {p.batch_size}, CFG: {p.cfg_scale}, Steps: {p.steps}\nOriginal Prompt: "{p.prompt}"\nOriginal Negatives: "{p.negative_prompt}"\n')
-        original_prompt = p.all_prompts[0]
-        if hasattr(p, "all_negative_prompts"): # hasattr to fix crash on old webui versions
-            original_negative = p.all_negative_prompts[0]
-        else:
-            original_negative = ""
+        
+        original_prompt = _get_effective_prompt(p.all_prompts, p.prompt)
+        original_negative_prompt = _get_effective_prompt(
+            p.all_negative_prompts,
+            p.negative_prompt,
+        )
+
+        hr_fix_enabled = getattr(p, "enable_hr", False)
 
         TagLoader.files.clear()
-        original_prompt = p.all_prompts[0]
 
         options = {
             'verbose': verbose,
@@ -542,13 +546,17 @@ class Script(scripts.Script):
 
                 prompt = prompt_generator.generate_single_prompt(original_prompt)
                 p.all_prompts[index] = prompt
+                if hr_fix_enabled:
+                    p.all_hr_prompts[index] = prompt
 
                 if debug: print(f'Prompt: "{prompt}"')
 
-                negative = original_negative
+                negative = original_negative_prompt
                 if negative_prompt and hasattr(p, "all_negative_prompts"): # hasattr to fix crash on old webui versions
                     negative += prompt_generator.get_negative_tags()
                     p.all_negative_prompts[index] = negative
+                    if hr_fix_enabled:
+                        p.all_hr_negative_prompts[index] = negative
                     if debug: print(f'Negative: "{negative}\n"')
 
                 # same prompt per batch
