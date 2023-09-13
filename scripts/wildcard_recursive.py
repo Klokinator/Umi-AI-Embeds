@@ -601,7 +601,7 @@ class Script(scripts.Script):
 
                 # same prompt per batch
                 if (same_seed):
-                    for index, i in enumerate(p.all_prompts)::
+                    for index, i in enumerate(p.all_prompts):
                         p.all_prompts[index] = prompt
                     break
 
