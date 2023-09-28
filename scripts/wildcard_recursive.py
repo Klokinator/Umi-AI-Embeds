@@ -105,7 +105,7 @@ class TagLoader:
         else:
             if (self.ignore_paths):
                 basename = os.path.basename(file_path.lower())
-            key = file_path.lower()
+            key = file_path
 
         if self.wildcard_location and os.path.isfile(txt_file_path):
             with open(txt_file_path, encoding="utf8") as file:
