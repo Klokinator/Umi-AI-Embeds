@@ -519,30 +519,41 @@ class Script(scripts.Script):
 
     def ui(self, is_img2img):
         self.is_txt2img = is_img2img == False
-        with gr.Accordion('UmiAI', open=True, elem_id="umiai"):
+        elemid_prefix = "img2img-umiai-" if is_img2img else "txt2img-umiai-"
+        with gr.Accordion('UmiAI', 
+                          open=True, 
+                          elem_id=elemid_prefix + "accordion"):
             with gr.Row():
-                enabled = gr.Checkbox(label="Enable UmiAI", value=True, elem_id="umiai-toggle")
+                enabled = gr.Checkbox(label="Enable UmiAI", 
+                                      value=True, 
+                                      elem_id=elemid_prefix + "toggle")
             with gr.Tab("Settings"):       
-                with gr.Row(elem_id="umiai-seeds"):
-                    shared_seed = gr.Checkbox(label="Static wildcards", value=False, 
-                                            elem_id="umiai-static-wildcards",
-                                            tooltip="Always picks the same random/wildcard options when using a static seed.")
-                    same_seed = gr.Checkbox(label='Same prompt in batch', value=False, 
-                                            elem_id="umiai-same-seed",
+                with gr.Row(elem_id=elemid_prefix + "seeds"):
+                    shared_seed = gr.Checkbox(label="Static wildcards", 
+                                              value=False, 
+                                              elem_id=elemid_prefix + "static-wildcards", 
+                                              tooltip="Always picks the same random/wildcard options when using a static seed.")
+                    same_seed = gr.Checkbox(label='Same prompt in batch', 
+                                            value=False, 
+                                            elem_id=elemid_prefix + "same-seed", 
                                             tooltip="Same prompt will be used for all generated images in a batch.")
-                with gr.Row(elem_id="umiai-lesser"):                
-                    cache_files = gr.Checkbox(label="Cache tag files", value=True,
-                                            elem_id="umiai-cache-files", 
-                                            tooltip="Cache .txt and .yaml files at runtime. Speeds up prompt generation. Disable if you're editing wildcard files to see changes instantly.")
-                    verbose = gr.Checkbox(label="Verbose logging", value=False, 
-                                            elem_id="umiai-verbose",
-                                            tooltip="Displays UmiAI log messages. Useful when prompt crafting, or debugging file-path errors.")
-                    negative_prompt = gr.Checkbox(label='**negative keywords**', value=True,
-                                            elem_id="umiai-negative-keywords", 
-                                            tooltip="Collect and add **negative keywords** from wildcards to Negative Prompts.")
-                    ignore_folders = gr.Checkbox(label="Ignore folders", value=False,
-                                            elem_id="umiai-ignore-folders",
-                                            tooltip="Ignore folder structure, will choose first file found if duplicate file names exist.")
+                with gr.Row(elem_id=elemid_prefix + "lesser"):                
+                    cache_files = gr.Checkbox(label="Cache tag files", 
+                                              value=True, 
+                                              elem_id=elemid_prefix + "cache-files", 
+                                              tooltip="Cache .txt and .yaml files at runtime. Speeds up prompt generation. Disable if you're editing wildcard files to see changes instantly.")
+                    verbose = gr.Checkbox(label="Verbose logging", 
+                                          value=False, 
+                                          elem_id=elemid_prefix + "verbose",
+                                          tooltip="Displays UmiAI log messages. Useful when prompt crafting, or debugging file-path errors.")
+                    negative_prompt = gr.Checkbox(label='**negative keywords**', 
+                                                  value=True,
+                                                  elem_id=elemid_prefix + "negative-keywords", 
+                                                  tooltip="Collect and add **negative keywords** from wildcards to Negative Prompts.")
+                    ignore_folders = gr.Checkbox(label="Ignore folders", 
+                                                 value=False,
+                                                 elem_id=elemid_prefix + "ignore-folders",
+                                                 tooltip="Ignore folder structure, will choose first file found if duplicate file names exist.")
                                             
             with gr.Tab("Usage"):
                 gr.Markdown(UsageGuide)
